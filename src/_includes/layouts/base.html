@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    <link
+      rel="stylesheet"
+      media="print"
+      href="/fonts/fonts.css"
+      onload="this.media='all'"
+    />
+  </head>
+  <body>
+    <article class="wrapper flow">
+      <header>
+        <h1 class="major">{{ title }}</h1>
+      </header>
+      <main class="flow">{{ content | safe }}</main>
+    </article>
+  </body>
+</html>
