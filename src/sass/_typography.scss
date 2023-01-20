@@ -1,9 +1,14 @@
+@use "./design-tokens/breakpoints";
+
 body {
-  font-size: var(--fs-400);
+  font-size: var(--s-400);
   line-height: var(--lh-regular);
   font-family: var(--ff-sans);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-medium);
   color: var(--color-text-primary);
+  // @include breakpoints.md {
+  //   font-weight: var(--fw-regular);
+  // }
 }
 
 h1,
@@ -14,36 +19,64 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-weight: var(--fw-extraBold);
+  font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
+  letter-spacing: -0.03em;
 }
 
-h1.major, .h1.major {
-  font-size: var(--step-7);
- 
+h1.major,
+.h1.major {
+  font-size: var(--s-900);
 }
 
 h1,
 .h1 {
-  font-size: var(--step-6);
-  --flow-space: var(--fs-900);
+  font-size: var(--s-900);
+  --flow-space: var(--s-900);
+  @include breakpoints.md {
+    font-size: var(--s-1000);
+  }
 }
 
 h2,
 .h2 {
-  font-size: var(--step-5);
+  font-size: var(--step-3);
   line-height: var(--lh-tight);
-  --flow-space: var(--fs-900);
+  --flow-space: var(--s-900);
 }
 
 h3,
 .h3 {
   font-size: var(--step-4);
-  --flow-space: var(--fs-900);
+  --flow-space: var(--s-900);
 }
 
 h4,
 .h4 {
   font-size: var(--step-2);
-  --flow-space: var(--fs-900);
+  --flow-space: var(--s-900);
+}
+
+p.lead {
+  font-weight: var(--fw-bold);
+}
+
+.gradient-text {
+  font-weight: var(--fw-bold);
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #ee0979, #ff6a00);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }

@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %} {% block content %}
+<div class="[ hero ] [ panel ]">
+  <article class="[ wrapper ] [ flow ]" style="--flow-space: var(--fs-700)">
+    <p class="eyebrow">{{ hero.eyebrow}}</p>
+    <h1>{{ hero.title | safe }}</h1>
+    <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
+    <img src="{{ hero.image }}" alt="" />
+  </article>
+</div>
+<div class="[ intro ] [ panel ]">
+  <article class="[ wrapper ]">
+    <div class="container">
+      <div class="intro__mission">
+        <p class="eyebrow">My mission</p>
+        <h3>
+          Build high-performing, empowered teams that deliver great products and
+          drive business growth.
+        </h3>
+      </div>
+
+      <div class="[ intro__text ] [ flow ]">
+        <p class="lead">
+          High performing, empowered product teams are the backbone of today's
+          most successful tech-driven product companies.
+        </p>
+        <p>
+          These teams not only have the skills to build great apps and services,
+          they also have the competences needed to learn what your company
+          should be building in the first place, to succeed.
+        </p>
+        <p>
+          They achieve this by
+          <span class="gradient-text">excelling at discovery</span>, to uncover
+          more valuable opportunities and better solutions. They
+          <span class="gradient-text">experiment rapidly</span>, to minimise
+          development risks and maximise the impact on business objectives. And
+          their members’
+          <span class="gradient-text">collaborate creatively</span> to design
+          products that go beyond what anyone would have known to ask of them.
+        </p>
+        <p>
+          They do all of this in the pursuit of exceeding customer expectations
+          and driving business growth.
+        </p>
+        <p>
+          <strong
+            >And these are the teams I help product companies build.
+          </strong>
+        </p>
+        <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
+        <a href="#" class="button">Find out more about me</a>
+      </div>
+      <div class="intro__image">
+        <img src="{{ hero.image }}" alt="" />
+      </div>
+    </div>
+  </article>
+</div>
+
+{% endblock %}

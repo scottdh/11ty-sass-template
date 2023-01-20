@@ -1,19 +1,51 @@
+@use "./design-tokens/generator";
+
 @use "./reset";
-@use "./fluid-type-scale";
+
 @use "./typography";
 
 /* Utilities */
 @use "./utilities/flow";
 @use "./utilities/wrapper";
 @use "./utilities/sr-only";
+@use "./utilities/panel";
 
 /* Components */
+@use "./components/site-head";
+@use "./components/footer";
 @use "./components/button";
 @use "./components/msg";
+@use "./components/skip-link";
 
-@import "./config";
-@import "../../node_modules/gorko/gorko.scss";
+/* Pages */
+@use "./home";
 
 body {
   background-color: var(--color-z0);
+}
+
+a[class] {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+}
+a:not([class]) {
+  color: currentColor;
+  text-decoration-color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+:focus {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
 }

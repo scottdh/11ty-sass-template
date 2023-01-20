@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 70ch;
+  max-width: calc(80rem + 4%);
   margin-inline: auto;
-  padding: 4rem 2rem;
+  padding: 0 4%;
 }

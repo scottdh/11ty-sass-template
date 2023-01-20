@@ -1,0 +1,28 @@
+@use "./fluid-type-scale";
+
+// font-sizes
+// generated from fluid-type-scale
+
+// font-families
+$ff: (
+  sans:
+    "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;",
+  serif:
+    "Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;",
+  mono: "Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;",
+);
+
+// line-heights
+$lh: (
+  tight: 1.1,
+  regular: 1.5,
+);
+
+// font-weights
+$fw: (
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extraBold: 800,
+);

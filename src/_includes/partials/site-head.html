@@ -1,0 +1,32 @@
+<a class="skip-link button" href="#main-content">Skip to content</a>
+<header role="banner" class="site-head">
+  <div class="wrapper site-head__inner">
+    <div class="site-head__logo">
+      <a
+        href="/"
+        aria-label="{{ site.name }}"
+        class="site-head__logo__lettering"
+      >
+        Scott Herrington
+      </a>
+    </div>
+    <nav class="[ nav ] [ site-head__inner__nav ]" aria-label="Primary">
+      <ul class="nav__list">
+        {% for item in navigation.items %}
+        <li>
+          <a
+            href="{{ item.url }}"
+            {{
+            helpers.getLinkActiveState(item.url,
+            page.url)
+            |
+            safe
+            }}
+            >{{ item.text }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
