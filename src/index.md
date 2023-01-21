@@ -5,7 +5,7 @@ hero:
   eyebrow: "Hey, I’m Scott. I help tech companies..."
   title: "Build brilliant teams that build breakthrough products"
   buttonText: "Get in touch"
-  image: ./images/sketch-placeholder.png
+  image: /images/sketch-placeholder.png
 whatIdo:
   title: "Product design consulting and team coaching"
   text:
