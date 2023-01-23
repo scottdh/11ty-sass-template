@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %} {% block content %}
 <div class="[ hero ] [ panel ]">
-  <article class="[ wrapper ] [ flow ]" style="--flow-space: var(--fs-700)">
+  <article class="[ wrapper ] [ flow ]">
     <p class="eyebrow">{{ hero.eyebrow}}</p>
     <h1>{{ hero.title | safe }}</h1>
     <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
@@ -9,15 +9,17 @@
 </div>
 <div class="[ intro ] [ panel ]">
   <article class="[ wrapper ]">
-    <div class="container">
-      <div class="intro__mission">
+    <div class="grid">
+      <div class="intro__mission flow">
         <p class="eyebrow">My mission</p>
         <h3>
-          Build high-performing, empowered teams that deliver great products and
-          drive business growth.
+          Build teams that foster innovation, ship better products and drive
+          sustained success.
         </h3>
       </div>
-
+      <div class="intro__image">
+        <img src="{{ hero.image }}" alt="" />
+      </div>
       <div class="[ intro__text ] [ flow ]">
         <p class="lead">
           High performing, empowered product teams are the backbone of today's
@@ -25,34 +27,47 @@
         </p>
         <p>
           These teams not only have the skills to build great apps and services,
-          they also have the competences needed to learn what your company
-          should be building in the first place, to succeed.
-        </p>
-        <p>
-          They achieve this by
-          <span class="gradient-text">excelling at discovery</span>, to uncover
-          more valuable opportunities and better solutions. They
+          they also have the competences needed to
+          <span class="gradient-text">excel at discovery</span>, to uncover more
+          valuable opportunities and better solutions. To
           <span class="gradient-text">experiment rapidly</span>, to minimise
           development risks and maximise the impact on business objectives. And
-          their members’
-          <span class="gradient-text">collaborate creatively</span> to design
+          to <span class="gradient-text">collaborate creatively</span> to design
           products that go beyond what anyone would have known to ask of them.
         </p>
         <p>
-          They do all of this in the pursuit of exceeding customer expectations
-          and driving business growth.
+          The result is measurably better products and consistent business
+          growth.
         </p>
         <p>
-          <strong
-            >And these are the teams I help product companies build.
-          </strong>
+          <strong>These are the teams I can help your company build. </strong>
         </p>
         <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
         <a href="#" class="button">Find out more about me</a>
       </div>
-      <div class="intro__image">
-        <img src="{{ hero.image }}" alt="" />
+    </div>
+  </article>
+</div>
+<div class="[ intro ] [ panel ]">
+  <article class="[ wrapper ]">
+    <div class="grid">
+      <div class="flow">
+        <p class="eyebrow">Strategy and focus</p>
+        <h3>
+          Move forward <span class="gradient-text">faster, together</span>.
+        </h3>
+        <p>
+          I’ll help you create a strong, shared understanding of exactly what
+          your product does now, and is envisioned to do later, getting everyone
+          on the same page. We’ll do this by mapping your product in a way
+          everyone can understand, gathering insights and candidly assessing
+          product performance to identify the biggest value next steps. By
+          prioritising tasks and outcomes, not solutions and outputs, your teams
+          can work smarter and more autonomously, while collectively moving
+          towards something increasingly spectacular.
+        </p>
       </div>
+      <div><img src="{{ hero.image }}" alt="" /></div>
     </div>
   </article>
 </div>

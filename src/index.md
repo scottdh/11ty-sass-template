@@ -1,9 +1,9 @@
 ---
 layout: layouts/home.html
-pagetitle: "Build teams that build breakthrough products"
+pagetitle: "Build teams that ship products customers love"
 hero:
-  eyebrow: "Hey, I’m Scott. I help tech companies..."
-  title: "Build brilliant teams that build breakthrough products"
+  eyebrow: "Hello, I’m Scott. I help tech companies..."
+  title: "Build teams that ship products customers love"
   buttonText: "Get in touch"
   image: /images/sketch-placeholder.png
 whatIdo:
