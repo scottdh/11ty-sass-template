@@ -40,14 +40,14 @@ h1,
 
 h2,
 .h2 {
-  font-size: var(--step-3);
+  font-size: var(--s-900);
   line-height: var(--lh-tight);
   --flow-space: var(--s-900);
 }
 
 h3,
 .h3 {
-  font-size: var(--step-4);
+  font-size: var(--s-800);
   --flow-space: var(--s-900);
 }
 
@@ -79,4 +79,8 @@ p.lead {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+.text-align-center {
+  text-align: center;
 }
