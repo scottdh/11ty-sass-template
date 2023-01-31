@@ -2,7 +2,7 @@
 layout: layouts/home.html
 pagetitle: "Build teams that ship products customers love"
 hero:
-  eyebrow: "Hello, I’m Scott. I help tech companies..."
+  eyebrow: "Consulting | Coaching | Training"
   title: "Build teams that ship products customers love"
   buttonText: "Get in touch"
   image: /images/sketch-placeholder.png

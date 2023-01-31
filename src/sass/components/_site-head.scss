@@ -62,7 +62,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      font-weight: var(--fw-semibold);
+      color: var(--color-text-secondary);
       min-width: 96px;
 
       // Adds the fake border to active state items
