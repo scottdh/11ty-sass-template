@@ -22,24 +22,7 @@
 @use "./home";
 
 body {
-  background-color: var(--color-z0);
-}
-
-a[class] {
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
-  }
-}
-a:not([class]) {
-  color: currentColor;
-  text-decoration-color: var(--color-primary);
-
-  &:hover {
-    color: var(--color-primary);
-  }
+  background-color: var(--color-z1);
 }
 
 :focus {

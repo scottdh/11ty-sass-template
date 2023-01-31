@@ -89,7 +89,7 @@ $themes: (
     "text-primary": map-get($color-palette, "salt1100"),
     "text-secondary": hsla(230, 3%, 7%, 60%),
     "text-tertiary": hsla(230, 3%, 34%, 30%),
-    "z0": map-get($color-palette, "salt100"),
+    "z0": map-get($color-palette, "salt150"),
     "z1": map-get($color-palette, "salt100"),
     "negative-text-primary": map-get($color-palette, "berry800"),
     "negative-text-secondary": map-get($color-palette, "berry700"),
@@ -97,6 +97,6 @@ $themes: (
   ),
   dark: (
     // "text-primary": map-get($color-palette, "salt100"),
-    // "z0": map-get($color-palette, "salt1100"),,,,,
+    // "z0": map-get($color-palette, "salt1100"),,,,,,
   ),
 );

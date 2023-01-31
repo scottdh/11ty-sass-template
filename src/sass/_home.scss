@@ -2,8 +2,6 @@
 
 .hero {
   article {
-    // min-height: calc(100vh - 96px - var(--s-1300));
-    // min-height: 66vh;
     padding: var(--s-500) 4%;
     display: flex;
     flex-direction: column;
@@ -13,11 +11,13 @@
     text-align: center;
   }
 
+  h1 {
+    margin: 0;
+  }
   .eyebrow {
     letter-spacing: -0.03em;
-    // font-weight: var(--fw-semibold);
+    font-weight: var(--fw-semibold);
     font-size: var(--s-500);
-    // line-height: 1.2em;
   }
 }
 
@@ -27,27 +27,34 @@ img {
   max-height: 5em;
 }
 
-.eyebrow {
-  font-size: var(--s-400);
-  font-weight: var(--fw-bold);
-  display: block;
-  margin-bottom: -2em;
+.muted-card {
+  background-color: var(--color-z0);
+  padding: var(--s-700);
+  border-radius: 1rem;
+  font-size: var(--s-300);
+  font-size: 0.9em;
+  // max-width: 28rem;
+  align-self: center;
+  ul {
+    padding-left: 1em;
+  }
 }
 
 @include breakpoints.md {
-  .grid {
-    .image-area {
-      align-self: center;
-      justify-self: center;
+  #intro .grid {
+    grid-column-gap: var(--s-1200);
+    grid-row-gap: var(--s-900);
+    .intro__heading {
+      grid-column: span 2;
     }
-  }
+    // .intro__whyworkwithme {
+    //   * {
+    //     align-self: end;
+    //   }
+    // }
 
-  .intro__image {
-    grid-row-start: 2;
-    align-self: end;
-  }
-
-  .intro__text {
-    grid-row-start: 2;
+    .intro__text {
+      grid-row-start: 2;
+    }
   }
 }

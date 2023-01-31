@@ -1,47 +1,76 @@
 {% extends "layouts/base.html" %} {% block content %}
 <div class="[ hero ] [ panel ]">
   <article class="[ wrapper ] [ flow ]">
-    <p class="eyebrow">{{ hero.eyebrow}}</p>
+    <p class="eyebrow">{{ hero.eyebrow }}</p>
     <h1>{{ hero.title | safe }}</h1>
     <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
     <img src="{{ hero.image }}" alt="" />
   </article>
 </div>
-<div id="[ intro ]" class="[ panel ]">
+<div id="intro" class="[ panel ]">
   <article class="[ wrapper ]">
     <div class="grid md-grid-col-2">
-      <div class="flow">
-        <p class="eyebrow">My mission</p>
+      <div class="[ flow ] [ intro__heading ]">
         <h3>
-          Build teams that foster innovation, ship better products and drive
-          sustained success.
+          <span class="color-text-secondary" style="display: block"
+            >Hello, I’m Scott.</span
+          >
+          I help tech leaders build
+          <span class="text-gradient">high-performing</span> product teams that
+          foster innovation, ship better products and drive
+          <span class="text-gradient">outstanding results</span>.
         </h3>
-      </div>
-      <div class="intro__image">
-        <img src="{{ hero.image }}" alt="" />
       </div>
       <div class="[ intro__text ] [ flow ]">
         <p class="lead">
-          High performing, empowered product teams are the backbone of today's
-          most successful tech-driven product companies.
+          I work with startups and other tech-driven product companies to help
+          build the high performing cultures and empowered product teams that
+          are the backbone of today's most successful tech businesses.
         </p>
         <p>
-          These teams not only have the skills to build great apps and services,
-          they also have the competences needed to
-          <span class="gradient-text">excel at discovery</span>, to uncover more
-          valuable opportunities and better solutions. To
-          <span class="gradient-text">experiment rapidly</span>, to minimise
+          Thanks to these self-driven teams of designers, engineers and product
+          managers, their companies are able to consistently find new and better
+          ways to delight customers with products they love, by effectively
+          solving problems they care about.
+        </p>
+        <p>
+          They achieve this by
+          <span class="text-gradient">excelling at discovery</span>, to uncover
+          more valuable opportunities and better solutions. They
+          <span class="text-gradient">experiment rapidly</span>, to minimise
           development risks and maximise the impact on business objectives. And
-          to <span class="gradient-text">collaborate creatively</span> to design
-          products that go beyond what anyone would have known to ask of them.
+          their members
+          <span class="text-gradient">collaborate creatively</span>, to push
+          themselves and each others’ ideas further..
         </p>
         <p>
-          The result is measurably better products and consistent business
-          growth.
+          <strong
+            >These are the teams I love to help product companies build.</strong
+          >
         </p>
-        <p>
-          <strong>These are the teams I can help your company build. </strong>
-        </p>
+      </div>
+      <div class="intro__whyworkwithme flow">
+        <div class="muted-card">
+          <h4>Why work with me?</h4>
+          <ul>
+            <li>
+              Successful track record working with teams to achieve great
+              results <a href="#">View case studies</a>
+            </li>
+            <li>
+              13+ years as product designer and manager in product teams across
+              Europe.
+            </li>
+            <li>
+              A tailored approach: Teams upskill while progressing with your
+              business’ priorities.
+            </li>
+            <li>
+              Worked with teams of various sizes in domains such as fintech,
+              motoring and public services.
+            </li>
+          </ul>
+        </div>
         <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
         <a href="#" class="button">Find out more about me</a>
       </div>
@@ -65,7 +94,7 @@
       <div class="flow">
         <p class="eyebrow">Strategy and focus</p>
         <h3>
-          Move forward <span class="gradient-text">faster, together</span>.
+          Move forward <span class="text-gradient">faster, together</span>.
         </h3>
         <p>
           I’ll help you create a strong, shared understanding of exactly what
@@ -90,8 +119,8 @@
       <div class="flow">
         <p class="eyebrow">Continuous discovery & design</p>
         <h3>
-          Build <span class="gradient-text">better products</span> that
-          <span class="gradient-text">drive growth</span>.
+          Build <span class="text-gradient">better products</span> that
+          <span class="text-gradient">drive growth</span>.
         </h3>
         <p>
           I’ll work with teams to build a rapid, repeatable process of product
@@ -117,7 +146,7 @@
         <p class="eyebrow">High performance</p>
         <h3>
           Master collaboration and
-          <span class="gradient-text">foster innovation</span>.
+          <span class="text-gradient">foster innovation</span>.
         </h3>
         <p>
           Build teams of fulfilled designers, devs and product managers that
