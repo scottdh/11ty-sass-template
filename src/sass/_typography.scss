@@ -6,11 +6,11 @@ body {
   font-family: var(--ff-sans);
   font-weight: var(--fw-medium);
   color: var(--color-text-primary);
-  // @include breakpoints.md {
-  //   font-weight: var(--fw-regular);
-  // }
 }
 
+// p {
+//   font-family: var(--ff-mono);
+// }
 a[class] {
   text-decoration: none;
   color: inherit;
@@ -24,6 +24,7 @@ a[class] {
 a.muted {
   color: inherit;
 }
+
 a:not([class]) {
   color: currentColor;
   font-weight: var(--fw-bold);
@@ -37,7 +38,7 @@ a:not([class]) {
 
 ul:not([class]) {
   li {
-    margin-bottom: var(--s-400);
+    margin-bottom: 0.5em;
   }
 }
 
@@ -114,4 +115,18 @@ p.lead {
 
 .text-align-center {
   text-align: center;
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+}
+
+.eyebrow {
+  font-weight: var(--fw-bold);
+  & + h1,
+  h2,
+  h3,
+  h4 {
+    --flow-space: 0;
+  }
 }

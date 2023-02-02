@@ -2,7 +2,7 @@
 <div class="[ hero ] [ panel ]">
   <article class="[ wrapper ] [ flow ]">
     <p class="eyebrow">{{ hero.eyebrow }}</p>
-    <h1>{{ hero.title | safe }}</h1>
+    <h1 style="max-width: 18ch">{{ hero.title | safe }}</h1>
     <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
     <img src="{{ hero.image }}" alt="" />
   </article>
@@ -23,25 +23,24 @@
       </div>
       <div class="[ intro__text ] [ flow ]">
         <p class="lead">
-          I work with startups and other tech-driven product companies to help
-          build the high performing cultures and empowered product teams that
-          are the backbone of today's most successful tech businesses.
+          For tech-driven product companies, the pressure to perform is huge.
+          The breakneck speed at which technology, customer expectations and new
+          competition evolve means only the most agile and fast learning
+          companies are able to adapt and survive long term.
         </p>
         <p>
-          Thanks to these self-driven teams of designers, engineers and product
-          managers, their companies are able to consistently find new and better
-          ways to delight customers with products they love, by effectively
-          solving problems they care about.
+          That’s why empowered, self-driven product teams are the backbone of
+          today's most successful tech businesses.
         </p>
         <p>
-          They achieve this by
-          <span class="text-gradient">excelling at discovery</span>, to uncover
-          more valuable opportunities and better solutions. They
+          These teams
+          <span class="text-gradient">excel at discovery</span>, to continuously
+          uncover new opportunities and more effective solutions. They
           <span class="text-gradient">experiment rapidly</span>, to minimise
-          development risks and maximise the impact on business objectives. And
-          their members
-          <span class="text-gradient">collaborate creatively</span>, to push
-          themselves and each others’ ideas further than the competition.
+          risks and costs while learning how to maximise impact. And their
+          members <span class="text-gradient">collaborate creatively</span>, to
+          push themselves and each others’ ideas further than anyone would have
+          known to ask for.
         </p>
         <p>
           <strong
@@ -78,87 +77,36 @@
   </article>
 </div>
 <div class="panel">
-  <article class="wrapper flow text-align-center">
-    <h2>What we’ll work on and how.</h2>
-    <p class="measure-long" style="margin-left: auto; margin-right: auto">
-      I’ll work with you and your product teams on a regular basis via a mix of
-      workshops and coaching sessions, tweaking, nudging and examining everyday
-      practices for continuous improvement. All while working on your business’
-      most pressing challenges!
+  <article class="wrapper flow">
+    <h2>The skills we’ll work on</h2>
+    <p class="text-muted">
+      There is no “one right way” to build great products. There are a number of
+      key principles though, that are shared across high-performing cultures and
+      teams. All my work with teams revolves around putting these principles
+      into practise, in ways that fit the characters and cultures of the team
+      and company.
     </p>
-  </article>
-</div>
-<div id="[ home-strategy&focus ]" class="[ panel ]">
-  <article class="[ wrapper ]">
-    <div class="grid md-grid-col-2">
-      <div class="flow">
-        <p class="eyebrow">Strategy and focus</p>
-        <h3>
-          Move forward <span class="text-gradient">faster, together</span>.
-        </h3>
-        <p>
-          I’ll help you create a strong, shared understanding of exactly what
-          your product does now, and is envisioned to do later, getting everyone
-          on the same page. We’ll do this by mapping your product in a way
-          everyone can understand, gathering insights and candidly assessing
-          product performance to identify the biggest value next steps. By
-          prioritising tasks and outcomes, not solutions and outputs, your teams
-          can work smarter and more autonomously, while collectively moving
-          towards something increasingly spectacular.
-        </p>
-      </div>
-      <div class="align-self-center justify-self-center">
-        <img src="{{ hero.image }}" alt="" />
-      </div>
-    </div>
-  </article>
-</div>
-<div id="[ home-discovery&design ]" class="[ panel ]">
-  <article class="[ wrapper ]">
-    <div class="grid md-grid-col-2">
-      <div class="flow">
-        <p class="eyebrow">Continuous discovery & design</p>
-        <h3>
-          Build <span class="text-gradient">better products</span> that
-          <span class="text-gradient">drive growth</span>.
-        </h3>
-        <p>
-          I’ll work with teams to build a rapid, repeatable process of product
-          discovery and learning, to continually uncover customer needs and
-          valuable opportunities, while rooting out assumptions and blindspots
-          that help us minimise risks and avoid costly missteps. This same
-          process will also enable us to test our ideas, to get more right more
-          often, maximising impact on business goals. Done right, it’s perhaps
-          the most effective way to improve product value, quality and long term
-          innovation.
-        </p>
-      </div>
-      <div class="align-self-center justify-self-center md-order--1">
-        <img src="{{ hero.image }}" alt="" />
-      </div>
-    </div>
-  </article>
-</div>
-<div id="[ home-high-performance ]" class="[ panel ]">
-  <article class="[ wrapper ]">
-    <div class="grid md-grid-col-2">
-      <div class="flow">
-        <p class="eyebrow">High performance</p>
-        <h3>
-          Master collaboration and
-          <span class="text-gradient">foster innovation</span>.
-        </h3>
-        <p>
-          Build teams of fulfilled designers, devs and product managers that
-          trust each other, bring out the best in each other, put customers
-          first and routinely go beyond ‘good enough’ to deliver solutions your
-          competition don’t.
-        </p>
-      </div>
-      <div class="align-self-center justify-self-center">
-        <img src="{{ hero.image }}" alt="" />
-      </div>
-    </div>
+    <ol id="core-competences">
+      {% for item in corecompetences %}
+      <li>
+        <p class="eyebrow">{{ item.eyebrow }}</p>
+        <div class="grid md-grid-col-2">
+          <div class="flow">
+            <h3>{{ item.title }}</h3>
+          </div>
+          <div class="flow">
+            <p>{{ item.description }}</p>
+            <ul>
+              {% for skill in item.keyskills %}
+              <li>{{ skill }}</li>
+              {% endfor %}
+            </ul>
+            <a href="#" class="button">Find out more</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
   </article>
 </div>
 
