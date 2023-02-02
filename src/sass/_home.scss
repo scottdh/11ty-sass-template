@@ -45,7 +45,7 @@ img {
   & > li {
     list-style: none;
     padding: var(--s-1000) 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-border-primary);
     ul {
       font-size: 0.9em;
       li {
