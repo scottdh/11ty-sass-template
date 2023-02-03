@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %} {% block content %}
 <div class="[ hero ] [ panel ]">
   <article class="[ wrapper ] [ flow ]">
-    <p class="eyebrow">{{ hero.eyebrow }}</p>
+    <p>{{ hero.eyebrow }}</p>
     <h1 style="max-width: 18ch">{{ hero.title | safe }}</h1>
     <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
     <img src="{{ hero.image }}" alt="" />
@@ -11,22 +11,21 @@
   <article class="[ wrapper ]">
     <div class="grid md-grid-col-2">
       <div class="[ flow ] [ intro__heading ]">
-        <h3>
+        <h3 class="fw-regular">
           <span class="color-text-secondary" style="display: block"
             >Hello, I’m Scott.</span
           >
           I help product leaders build
-          <span class="text-gradient">high-performing</span> product teams that
-          foster innovation, ship better products and drive
-          <span class="text-gradient">outstanding results</span>.
+          <strong>high-performing</strong> product teams that foster innovation,
+          ship better products and drive <strong>outstanding results</strong>.
         </h3>
       </div>
       <div class="[ intro__text ] [ flow ]">
         <p class="lead">
-          For tech-driven product companies, the pressure to perform is huge.
-          The breakneck speed at which technology, customer expectations and new
+          For tech-driven product companies, there's always pressure. The
+          breakneck speed at which technology, customer expectations and new
           competition evolve means only the most agile and fast learning
-          companies are able to adapt and survive long term.
+          companies are able to survive long term.
         </p>
         <p>
           That’s why empowered, self-driven product teams are the backbone of
@@ -34,13 +33,12 @@
         </p>
         <p>
           These teams
-          <span class="text-gradient">excel at discovery</span>, to continuously
-          uncover new opportunities and more effective solutions. They
-          <span class="text-gradient">experiment rapidly</span>, to minimise
-          risks and costs while learning how to maximise impact. And their
-          members <span class="text-gradient">collaborate creatively</span>, to
-          push themselves and each others’ ideas further than anyone would have
-          known to ask for.
+          <strong>excel at discovery</strong>, to continuously uncover new
+          opportunities and more effective solutions. They
+          <strong>experiment rapidly</strong>, to minimise risks and costs while
+          learning how to maximise impact. And their members
+          <strong>collaborate creatively</strong>, to push themselves and each
+          others’ ideas further than anyone would have known to ask for.
         </p>
         <p>
           <strong
@@ -79,26 +77,25 @@
 <div class="panel">
   <article class="wrapper flow">
     <h2>The skills we’ll work on</h2>
-    <p class="text-muted">
-      There is no “one right way” to build great products. There are a number of
-      key principles though, that are shared across high-performing cultures and
-      teams. All my work with teams revolves around putting these principles
-      into practise, in ways that fit the characters and cultures of the team
-      and company.
+    <p class="text-muted measure-short fw-semibold">
+      There is no “one right way” to build great products. All my work with
+      teams revolves around putting proven core principles that lead to success
+      into practise, in a way that works for the team.
     </p>
     <ol id="core-competences">
       {% for item in corecompetences %}
       <li>
         <p class="eyebrow">{{ item.eyebrow }}</p>
         <div class="grid md-grid-col-2">
-          <div class="flow">
+          <div class="flow grid">
             <h3>{{ item.title }}</h3>
+            <img src="{{ item.image }}" alt="" style="align-self: end" />
           </div>
           <div class="flow">
             <p>{{ item.description }}</p>
             <ul>
               {% for skill in item.keyskills %}
-              <li>{{ skill }}</li>
+              <li>{{ skill | safe }}</li>
               {% endfor %}
             </ul>
             <a href="#" class="button">Find out more</a>
