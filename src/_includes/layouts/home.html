@@ -5,6 +5,7 @@
     <h1 style="max-width: 18ch">{{ hero.title | safe }}</h1>
     <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
     <img src="{{ hero.image }}" alt="" />
+    <img src="{{ corecompetences.image }}" alt="" />
   </article>
 </div>
 <div id="intro" class="[ panel ]">
@@ -22,9 +23,9 @@
       </div>
       <div class="[ intro__text ] [ flow ]">
         <p class="lead">
-          For tech-driven product companies, there's always pressure. The
-          breakneck speed at which technology, customer expectations and new
-          competition evolve means only the most agile and fast learning
+          For tech-driven product companies, the pressure's always on.
+          Technology, customer expectations and new competition evolve at
+          breakneck speeds, meaning only the most agile and fast learning
           companies are able to survive long term.
         </p>
         <p>
@@ -101,6 +102,25 @@
             <a href="#" class="button">Find out more</a>
           </div>
         </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </article>
+</div>
+<div class="panel">
+  <article class="wrapper flow">
+    <h2>Sound good? Here’s how it works...</h2>
+    <p class="text-muted measure-short fw-semibold">
+      Like me, it’s all pretty straight forward and simple. Getting started’s
+      free, and if we do decide to work together, it’ll be a on a rolling
+      monthly contract that keeps you in control.
+    </p>
+    <ol id="workprocess__steps">
+      {% for step in workprocess %}
+      <li class="flow" style="--flow-space: var(--s-200)">
+        <h4>{{ step.step }}</h4>
+        <p class="text-muted fs-300">{{ step.explanation }}</p>
+        {{ step.cta | safe }}
       </li>
       {% endfor %}
     </ol>

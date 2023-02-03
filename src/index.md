@@ -5,7 +5,7 @@ hero:
   eyebrow: "Consulting | Coaching | Training"
   title: "Build teams that ship products customers love"
   buttonText: "Get in touch"
-  image: /images/sketch-placeholder.png
+  image: /images/team-placeholder.svg
 corecompetences:
   - eyebrow: "Strategy and focus"
     title: "Move forward faster, together"
@@ -14,24 +14,34 @@ corecompetences:
       - "Build a shared understanding of user goals"
       - "Create alignment with business strategy"
       - "Define goals and metrics for continuous improvement"
-    image: /images/sketch-placeholder.png
+    image: /images/team-placeholder.svg
   - eyebrow: "Continuous discovery and design"
     title: "Be more right, more often"
     description: "Great product teams always find new ways to delight customers, minimise the cost of inevitable missteps and maximise the chance of successful business outcomes. To do this they must be rapidly, and continuously, learning and sharing their findings."
     keyskills:
-      - "Product discovery and Lean UX"
-      - "PdM, designer and engineering collaboration"
-      - "User-centric ‘build-measure-learn’ loops"
-      - "Working Agile"
-      - "Planning for the unpredictable"
-    image: /images/sketch-placeholder.png
+      - "Spot new opportunities and understand customer pain-points"
+      - "Minimise risks. Maximise positive outcomes"
+      - "Make better decisions in collaboration with business"
+    image: /images/team-placeholder.svg
   - eyebrow: "Creative collaboration"
     title: "Master collaboration and foster innovation"
     description: "Getting the very best from the diverse people you hire is key to high performance. We are hardwired for harmonious cooperation, not creative collaboration. The former is easier to manage, but it’s the latter that drives innovative thinking, breakthrough ideas and fulfilled team members."
     keyskills:
       - "Thriving in conflict"
       - "Intercultural competence"
-    image: /images/sketch-placeholder.png
+    image: /images/team-placeholder.svg
+workprocess:
+  - step: "Free introductory chat, to discuss challenges and goals"
+    explanation: "Typically lasts 30 mins. If I think I can help, and you like what you hear... we move on."
+    cta: "<a href='#' class='button' data-type='primary'>Book now</a>"
+  - step: "I meet the team(s) I’m to work with."
+    explanation: "I spend up to a day meeting team members 1:1. Their buy in is essential and it helps me understand how I can best help."
+  - step: "I put together a tailored programme that covers the first 1 - 3 months"
+    explanation: "I’ll provide a basic outline of proposed activities and outcomes. If you and the team agree - we sign contracts."
+  - step: "The team(s) and I get cracking, with regular reviews"
+    explanation: "I work with the team. We review progress against outcomes fortnightly. A rolling monthly contract means you’re in control."
+  - step: "Achieve the performance your teams are capable of, and your business needs"
+    explanation: "You bask in the glory of the incredible work your teams are doing :)"
 ---
 
 Let's get going on your next project!
