@@ -4,7 +4,6 @@ button,
   width: fit-content;
   text-decoration: none;
   cursor: pointer;
-  font-family: var(--ff-mono);
   font-weight: var(--fw-bold);
   color: var(--color-primary);
   background: transparent;
@@ -18,7 +17,7 @@ button,
     content: "\f061";
     color: white;
     margin-inline-start: 0.5em;
-    background: linear-gradient(var(--color-primary-gradient));
+    background: var(--color-primary);
     padding: 0.45em 0.5em;
     border-radius: 100%;
   }
@@ -34,10 +33,10 @@ button,
 
   &[data-type="primary"] {
     padding: 0.5em 1em;
-    background: linear-gradient(var(--color-primary-gradient));
+    background: var(--color-primary);
     // box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
     color: white;
-    border: 1px dotted transparent;
+    border: 1px solid transparent;
     &::after {
       background: transparent;
       padding: 0;
@@ -45,11 +44,12 @@ button,
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
-        border-color: green;
-        background: green;
+        border-color: var(--color-primary-lighter);
+        background: var(--color-primary-lighter);
+        color: white;
         text-decoration: none;
         &::after {
-          color: var(--color-primary);
+          color: white;
         }
       }
     }
