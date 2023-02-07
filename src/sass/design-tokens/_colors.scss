@@ -68,9 +68,10 @@ $themes: (
     "brand": map-get($color-palette, "berry500"),
     "primary-lighter": map-get($color-palette, "mint400"),
     "primary": map-get($color-palette, "mint500"),
-    "secondary": map-get($color-palette, "lemonade500"),
-    "tertiary": map-get($color-palette, "water500"),
-    "quaternary": map-get($color-palette, "berry500"),
+    "water": map-get($color-palette, "water500"),
+    "berry": map-get($color-palette, "berry500"),
+    "mint": map-get($color-palette, "mint500"),
+    "lemonade": map-get($color-palette, "lemonade500"),
     "grey7": map-get($color-palette, "salt700"),
     "grey6": map-get($color-palette, "salt600"),
     "grey5": map-get($color-palette, "salt500"),
@@ -87,6 +88,6 @@ $themes: (
   ),
   dark: (
     // "text-primary": map-get($color-palette, "salt100"),
-    // "z0": map-get($color-palette, "salt1100"),,,,,,,,,,,,,,
+    // "z0": map-get($color-palette, "salt1100"),,,,,,,,,,,,,,,,
   ),
 );

@@ -49,7 +49,7 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
   letter-spacing: -0.03em;
 }
@@ -63,15 +63,13 @@ h1,
 .h1 {
   font-size: var(--s-900);
   --flow-space: var(--s-900);
-  font-weight: var(--fw-bold);
-  line-height: var(--lh-tight);
 }
 
 h2,
 .h2 {
   font-size: var(--s-800);
   line-height: var(--lh-tight);
-  --flow-space: var(--s-900);
+  --flow-space: var(--s-800);
 }
 
 h3,
@@ -84,6 +82,11 @@ h4,
 .h4 {
   font-size: var(--s-600);
   --flow-space: var(--s-900);
+}
+
+.subhead {
+  --flow-space: 0.25em;
+  color: var(--color-text-secondary);
 }
 
 p.lead {
