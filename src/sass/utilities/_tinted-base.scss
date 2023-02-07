@@ -1,0 +1,32 @@
+.tinted-base::after {
+  min-width: 100%;
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  height: 3rem;
+  bottom: 0;
+}
+
+[data-tint="water"] {
+  &::after {
+    background-color: var(--color-water) !important;
+  }
+}
+
+[data-tint="berry"] {
+  &::after {
+    background-color: var(--color-berry) !important;
+  }
+}
+
+[data-tint="mint"] {
+  &::after {
+    background-color: var(--color-mint) !important;
+  }
+}
+
+[data-tint="lemonade"] {
+  &::after {
+    background-color: var(--color-lemonade) !important;
+  }
+}

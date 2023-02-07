@@ -14,22 +14,25 @@ corecompetences:
       - "Build a shared understanding of user goals"
       - "Create alignment with business strategy"
       - "Define goals and metrics for continuous improvement"
-    image: /images/team-placeholder.svg
-  - eyebrow: "Continuous discovery and design"
-    title: "Be more right, more often"
+    image: /images/team-strategy.svg
+    tint: "water"
+  - eyebrow: "User-centric discovery and design"
+    title: "Learn more to achieve more"
     description: "Great product teams always find new ways to delight customers, minimise the cost of inevitable missteps and maximise the chance of successful business outcomes. To do this they must be rapidly, and continuously, learning and sharing their findings."
     keyskills:
       - "Spot new opportunities and understand customer pain-points"
       - "Minimise risks. Maximise positive outcomes"
       - "Make better decisions in collaboration with business"
-    image: /images/team-placeholder.svg
+    image: /images/team-discovery.svg
+    tint: "berry"
   - eyebrow: "Creative collaboration"
     title: "Master collaboration and foster innovation"
     description: "Getting the very best from the diverse people you hire is key to high performance. We are hardwired for harmonious cooperation, not creative collaboration. The former is easier to manage, but it’s the latter that drives innovative thinking, breakthrough ideas and fulfilled team members."
     keyskills:
       - "Thriving in conflict"
       - "Intercultural competence"
-    image: /images/team-placeholder.svg
+    image: /images/team-ideas.svg
+    tint: "lemonade"
 workprocess:
   - step: "Free introductory chat, to discuss challenges and goals"
     explanation: "Typically lasts 30 mins. If I think I can help, and you like what you hear... we move on."

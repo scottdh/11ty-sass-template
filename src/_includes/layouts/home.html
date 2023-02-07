@@ -1,20 +1,23 @@
 {% extends "layouts/base.html" %} {% block content %}
-<div class="[ hero ] [ panel ]">
+<div class="[ hero tinted-base ]" data-tint="lemonade">
   <article class="[ wrapper ] [ flow ]">
     <p class="text-muted">{{ hero.eyebrow }}</p>
     <h1 style="max-width: 18ch">{{ hero.title | safe }}</h1>
     <a href="#" class="button" data-type="primary">{{ hero.buttonText }}</a>
-    <img src="{{ hero.image }}" alt="" />
+
     <img src="{{ corecompetences.image }}" alt="" />
   </article>
+  <img src="{{ hero.image }}" alt="" />
 </div>
 <div id="intro" class="[ panel ]">
   <article class="[ wrapper ]">
     <div class="grid md-grid-col-2">
       <div class="[ flow ] [ intro__heading ]">
         <h3 class="fw-regular">
-          <span class="color-text-secondary" style="display: block"
-            >Hello, I’m Scott.</span
+          <strong
+            ><span class="text-muted" style="display: block"
+              >Hello, I’m Scott.</span
+            ></strong
           >
           I help product leaders build
           <strong>high-performing</strong> product teams that foster innovation,
@@ -77,30 +80,34 @@
 </div>
 <div class="panel">
   <article class="wrapper flow">
-    <h2>The skills we’ll work on</h2>
-    <p class="text-muted measure-short fw-semibold">
+    <h2 class="h3">The skills we’ll work on</h2>
+    <p class="subhead measure-short">
       There is no “one right way” to build great products. All my work with
-      teams revolves around putting proven core principles that lead to success
-      into practise, in a way that works for the team.
+      teams revolves around putting proven principles into practise.
     </p>
-    <ol id="core-competences">
+    <ol class="core-competences flow">
       {% for item in corecompetences %}
-      <li>
-        <p class="eyebrow">{{ item.eyebrow }}</p>
-        <div class="grid md-grid-col-2">
-          <div class="flow grid">
-            <h3>{{ item.title }}</h3>
-            <img src="{{ item.image }}" alt="" style="align-self: end" />
-          </div>
-          <div class="flow">
-            <p>{{ item.description }}</p>
-            <ul>
-              {% for skill in item.keyskills %}
-              <li>{{ skill | safe }}</li>
-              {% endfor %}
-            </ul>
-            <a href="#" class="button">Find out more</a>
-          </div>
+      <li class="grid md-grid-col-2">
+        <div class="core-competences__heading flow">
+          <h4>{{ item.title }}</h4>
+          <p class="subhead">{{ item.eyebrow }}</p>
+        </div>
+
+        <div
+          class="core-competences__image tinted-base"
+          data-tint="{{ item.tint }}"
+        >
+          <img src="{{ item.image }}" alt="" style="align-self: end" />
+        </div>
+
+        <div
+          class="core-competences__description flow"
+          style="--flow-space: var(--s-500)"
+        >
+          <p>{{ item.description }}</p>
+          <a href="#" class="button" data-tint="{{ item.tint }}"
+            >Find out more</a
+          >
         </div>
       </li>
       {% endfor %}
@@ -109,16 +116,16 @@
 </div>
 <div class="panel">
   <article class="wrapper flow">
-    <h2>Sound good? Here’s how it works...</h2>
-    <p class="text-muted measure-short fw-semibold">
+    <h2 class="h3">Sound good? Here’s how it works...</h2>
+    <p class="subhead measure-short">
       Like me, it’s all pretty straight forward and simple. Getting started’s
       free, and if we do decide to work together, it’ll be a on a rolling
       monthly contract that keeps you in control.
     </p>
-    <ol id="workprocess__steps">
+    <ol class="workprocess__steps">
       {% for step in workprocess %}
       <li class="flow" style="--flow-space: var(--s-200)">
-        <h4>{{ step.step }}</h4>
+        <p><strong>{{ step.step }}</strong></p>
         <p class="text-muted fs-300">{{ step.explanation }}</p>
         {{ step.cta | safe }}
       </li>

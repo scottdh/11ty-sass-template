@@ -1,8 +1,14 @@
 @use "./design-tokens/breakpoints";
 
 .hero {
+  position: relative;
+  padding-top: var(--s-800);
+  min-height: calc(90vh - 3em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   article {
-    padding: var(--s-500) 4%;
+    // padding: var(--s-500) 4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,22 +21,14 @@
     margin: 0;
   }
 
-  .eyebrow {
-    letter-spacing: -0.03em;
-    font-weight: var(--fw-regular);
-    font-size: var(--s-500);
+  img {
+    margin-bottom: 3rem; //same as height of coloured-base
+    max-height: 4em;
   }
-}
-
-#intro {
-  padding-top: 0;
 }
 
 img {
   --flow-space: var(--s-900);
-  margin-top: var(--s-900);
-  max-height: 5em;
-  opacity: 0.8;
 }
 
 .muted-card {
@@ -46,17 +44,13 @@ img {
   }
 }
 
-#core-competences {
+.core-competences {
+  --flow-space: var(--s-1200);
   padding: 0;
   & > li {
+    grid-column-gap: 10rem;
+    --flow-space: var(--s-1200);
     list-style: none;
-    padding: var(--s-800) 0;
-    border-bottom: 1px solid var(--color-border-primary);
-    @include breakpoints.md {
-      div:first-child {
-        padding-right: 10rem;
-      }
-    }
     ul {
       font-size: 0.9em;
       li {
@@ -65,10 +59,38 @@ img {
       }
     }
   }
+  &__heading {
+    @include breakpoints.md {
+      grid-column-start: 2;
+    }
+  }
+  &__description {
+    @include breakpoints.md {
+      grid-row: span 2;
+    }
+  }
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 3rem;
+    grid-row-start: 3;
+    @include breakpoints.md {
+      grid-row: 1 / 4;
+    }
+    img {
+      max-height: 8em;
+      @include breakpoints.md {
+        max-height: 12em;
+      }
+    }
+  }
 }
 
-#workprocess__steps {
-  padding: 0;
+.workprocess__steps {
+  list-style: decimal !important;
+  padding-left: 1em;
   & > li {
     padding: var(--s-500) 0;
     border-bottom: 1px solid var(--color-border-primary);
