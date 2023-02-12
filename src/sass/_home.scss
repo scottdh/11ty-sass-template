@@ -1,5 +1,52 @@
 @use "./design-tokens/breakpoints";
 
+#scroll-container {
+  // background-color: pink;
+  padding: 0;
+  line-height: 1.1em;
+  min-height: fit-content;
+  font-size: calc(var(--s-1300) * 2);
+  overflow: hidden;
+
+  @include breakpoints.md {
+    margin-top: var(--s-900);
+    font-size: calc(var(--s-1300) * 1.8);
+  }
+
+  @include breakpoints.lg {
+    margin-top: var(--s-900);
+    font-size: calc(var(--s-1300) * 2.5);
+  }
+}
+
+#scroll-text {
+  width: 40ch;
+  letter-spacing: -0.05em;
+  // white-space: nowrap;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 28s linear infinite;
+  -webkit-animation: my-animation 28s linear infinite;
+  animation: my-animation 28s linear infinite;
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  to {
+    -moz-transform: translateX(-65%);
+    -webkit-transform: translateX(-65%);
+    transform: translateX(-65%);
+  }
+}
+
+/// OLD STUFF
 .hero {
   position: relative;
   padding-top: var(--s-800);
