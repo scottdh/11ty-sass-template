@@ -1,5 +1,12 @@
 @use "./design-tokens/breakpoints";
 
+.intro {
+  margin: var(--s-800) 0;
+  &__image {
+    max-width: 140px;
+  }
+}
+
 #scroll-container {
   // background-color: pink;
   padding: 0;

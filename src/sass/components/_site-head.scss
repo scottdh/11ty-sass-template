@@ -12,99 +12,71 @@
   width: 100%;
   top: 0;
   z-index: 100;
-  padding: var(--s-500) 0;
+  font-size: var(--s-700);
+  margin-top: var(--s-300);
 
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(16px, 1fr));
-    grid-template-rows: var(--s-1100);
-    min-width: 100%;
-    gap: var(--grid-gap, var(--s-500));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 
-    @include breakpoints.md {
-      grid-template-columns: repeat(12, minmax(16px, 1fr));
-      grid-template-rows: auto;
-    }
+  &__logo {
+    flex-shrink: 0;
+    margin-inline-end: var(--s-600); // Prevents nav bunching up to the logo
+    cursor: pointer;
+    height: var(--s-900);
+    display: flex;
+    align-items: center;
+    gap: 4px;
 
-    &__logo {
-      flex-shrink: 0;
-      grid-column: span 2;
-      margin-inline-end: var(--s-600); // Prevents nav bunching up to the logo
-      // cursor: pointer;
+    img {
+      max-height: var(--s-600);
     }
-    &__image {
-      grid-row-start: 2;
-      grid-column: span 2;
-      max-width: 130px;
-      margin-top: 0.5rem;
-      @include breakpoints.md {
-        grid-row-start: 1;
-        grid-column: 4 / 6;
-        justify-self: end;
+  }
+  .nav {
+    color: var(--color-text-secondary);
+    line-height: 1;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      @media (max-width: 319px) {
+        transform: translateX(-16px);
+      }
+
+      li + li {
+        padding-inline-start: 0.8em;
       }
     }
-    &__text {
-      grid-row-start: 3;
-      grid-column: span 3;
-      @include breakpoints.md {
-        grid-row-start: 1;
-        grid-column: 6 / 10;
-      }
-    }
-    &__cta {
-      grid-column: 3 / 5;
-      justify-self: end;
-      @include breakpoints.md {
-        grid-row-start: 1;
-        grid-column: 11 / 13;
+
+    a {
+      text-decoration: none;
+      display: block;
+      position: relative;
+      height: var(--s-900);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-secondary);
+      font-size: var(--s-600);
+
+      // Adds the fake border to active state items
+      &[data-state="active"],
+      &[aria-current="page"] {
+        color: var(--color-text-primary);
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background: var(--color-brand);
+        }
+        border-bottom: 1px solid var(--color-text-primary);
       }
     }
   }
-
-  // .nav {
-  //   color: var(--color-text-secondary);
-  //   line-height: 1;
-  //   &__list {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     padding-left: 0;
-  //     @media (max-width: 598px) {
-  //       transform: translateX(-20px);
-  //     }
-
-  //     li:last-child {
-  //       padding-right: 0;
-  //     }
-  //   }
-
-  //   a {
-  //     text-decoration: none;
-  //     display: block;
-  //     position: relative;
-  //     height: var(--s-900);
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     font-weight: var(--fw-semibold);
-  //     color: var(--color-text-secondary);
-  //     min-width: 96px;
-
-  //     // Adds the fake border to active state items
-  //     &[data-state="active"],
-  //     &[aria-current="page"] {
-  //       font-weight: var(--fw-bold);
-  //       color: var(--color-text-primary);
-  //       &::after {
-  //         content: "";
-  //         position: absolute;
-  //         bottom: 0;
-  //         left: 0;
-  //         width: 100%;
-  //         height: 5px;
-  //         background: var(--color-brand);
-  //       }
-  //       //   border-bottom: 5px solid var(--color-primary);
-  //     }
-  //   }
-  // }
 }
