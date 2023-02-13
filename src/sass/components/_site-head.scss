@@ -12,7 +12,7 @@
   width: 100%;
   top: 0;
   z-index: 100;
-  font-size: var(--s-700);
+
   margin-top: var(--s-300);
 
   &__inner {
@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
+    font-size: var(--s-700);
 
     img {
       max-height: var(--s-600);
@@ -60,7 +61,7 @@
       align-items: center;
       justify-content: center;
       color: var(--color-text-secondary);
-      font-size: var(--s-600);
+      // font-size: var(--s-600);
 
       // Adds the fake border to active state items
       &[data-state="active"],
