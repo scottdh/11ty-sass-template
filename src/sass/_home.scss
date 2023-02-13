@@ -1,5 +1,30 @@
 @use "./design-tokens/breakpoints";
 
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-400);
+  padding: var(--s-800) 1rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-400);
+
+    &__image {
+      max-width: 140px;
+      margin-top: 8px;
+    }
+    &__text {
+      max-width: 16ch;
+      a {
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+}
+
 #scroll-container {
   // background-color: pink;
   padding: 0;
@@ -7,6 +32,7 @@
   min-height: fit-content;
   font-size: calc(var(--s-1300) * 2);
   overflow: hidden;
+  margin-top: var(--s-500);
 
   @include breakpoints.md {
     margin-top: var(--s-900);
@@ -45,6 +71,32 @@
     -moz-transform: translateX(-65%);
     -webkit-transform: translateX(-65%);
     transform: translateX(-65%);
+  }
+}
+
+// Reposition intro content to top of screen on medium sized screens with position absolute
+// Move Scroll area down to accommodate
+@include breakpoints.md {
+  .intro {
+    position: absolute;
+    min-width: 100%;
+    padding: 0;
+    top: 0;
+    margin: var(--s-200) 0;
+    &__content {
+      margin: 0;
+      top: var(--s-200);
+      margin: 0;
+      margin-inline-start: 25%;
+      // background-color: pink;
+      @media screen and (min-width: 1300px) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  #scroll-container {
+    margin-top: 20rem;
   }
 }
 

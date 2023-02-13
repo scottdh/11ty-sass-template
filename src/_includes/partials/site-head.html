@@ -1,26 +1,19 @@
 <a class="skip-link button" href="#main-content">Skip to content</a>
 <header role="banner" class="site-head">
-  <div class="wrapper site-head__inner fs-large">
-    <div class="site-head__inner__logo">
-      <a class="nodecoration" href="/" aria-label="{{ site.name }}"> Scott </a>
+  <div class="wrapper site-head__inner">
+    <div class="site-head__logo">
+      <a
+        href="/"
+        aria-label="{{ site.name }}"
+        class="site-head__logo__lettering"
+      >
+        Scott <span class="sr-only">Herrington</span>
+      </a>
     </div>
-    <div class="site-head__inner__cta">
-      <a href="#">Contact</a>
-    </div>
-    <div class="site-head__inner__image">
-      <img
-        src="/images/header-image.png"
-        alt="A photo of Scott sitting behind his desk"
-      />
-    </div>
-    <div class="site-head__inner__text flow">
-      <p>A product team coach and design consultant based in London, UK</p>
-      <a class="button" href="#">Book a free chat</a>
-    </div>
-    <!-- <nav class="[ nav ] [ site-head__inner__nav ]" aria-label="Primary">
+    <nav class="[ nav ] [ site-head__inner__nav ]" aria-label="Primary">
       <ul class="nav__list">
         {% for item in navigation.items %}
-        <li>
+        <li class="md-fs-large">
           <a
             href="{{ item.url }}"
             {{
@@ -34,6 +27,6 @@
         </li>
         {% endfor %}
       </ul>
-    </nav> -->
+    </nav>
   </div>
 </header>
