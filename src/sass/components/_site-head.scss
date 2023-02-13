@@ -15,10 +15,17 @@
   padding: var(--s-500) 0;
 
   &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(16px, 1fr));
     grid-template-rows: var(--s-1100);
+    min-width: 100%;
+    gap: var(--grid-gap, var(--s-500));
+
     @include breakpoints.md {
+      grid-template-columns: repeat(12, minmax(16px, 1fr));
       grid-template-rows: auto;
     }
+
     &__logo {
       flex-shrink: 0;
       grid-column: span 2;

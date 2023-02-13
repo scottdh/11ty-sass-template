@@ -3,7 +3,6 @@
 .grid {
   display: grid;
   min-width: 100%;
-  grid-template-columns: repeat(4, minmax(16px, 1fr));
   gap: var(--grid-gap, var(--s-500));
 
   .order-1 {
@@ -20,11 +19,5 @@
 
   .justify-self-center {
     justify-self: center;
-  }
-}
-
-@include breakpoints.md {
-  .grid {
-    grid-template-columns: repeat(12, minmax(16px, 1fr));
   }
 }

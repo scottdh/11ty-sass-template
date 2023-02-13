@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.html
-pagetitle: "Build teams that ship products customers love"
+pagetitle: "Scott Herrington | Product team coach"
 hero:
   eyebrow: "Consulting | Coaching | Training"
   title: "Build teams that ship products customers love"

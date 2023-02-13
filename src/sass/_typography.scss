@@ -1,7 +1,7 @@
 @use "./design-tokens/breakpoints";
 
 body {
-  font-size: var(--s-400);
+  font-size: var(--s-500);
   line-height: var(--lh-regular);
   font-family: var(--ff-sans);
   font-weight: var(--fw-regular);
@@ -9,8 +9,16 @@ body {
   letter-spacing: -0.03em;
 }
 
+a:not([class]) {
+  color: inherit;
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
 a[class] {
   text-decoration: none;
+  color: inherit;
   &:hover {
     color: var(--color-primary);
     text-decoration: underline;
@@ -29,16 +37,14 @@ a.nodecoration {
   }
 }
 
-a:not([class]) {
-  color: inherit;
-  &:hover {
-    color: var(--color-primary);
-  }
+ul,
+ol {
+  --flow-space: 0.5rem;
 }
 
 ul:not([class]) {
   li {
-    margin-bottom: 0.5em;
+    line-height: var(--lh-tight);
   }
 }
 
@@ -50,7 +56,7 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-regular);
   line-height: var(--lh-tight);
   letter-spacing: -0.03em;
 }
@@ -105,6 +111,13 @@ p.lead {
 .fs-large {
   font-size: var(--s-700);
   line-height: 1.1em;
+}
+
+.md-fs-large {
+  @include breakpoints.md {
+    font-size: var(--s-700);
+    line-height: 1.1em;
+  }
 }
 
 .eyebrow {

@@ -20,14 +20,15 @@
 }
 
 #scroll-text {
-  width: 40ch;
+  width: 40ch; // Set to minimum that ensure text doesn't wrap
   letter-spacing: -0.05em;
-  // white-space: nowrap;
+
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 
+  /* Set speed */
   -moz-animation: my-animation 28s linear infinite;
   -webkit-animation: my-animation 28s linear infinite;
   animation: my-animation 28s linear infinite;
@@ -35,11 +36,12 @@
 
 @keyframes my-animation {
   from {
-    -moz-transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -moz-transform: translateX(1%);
+    -webkit-transform: translateX(1%);
+    transform: translateX(1%);
   }
   to {
+    /* Fiddling with this will rerun the animation before the current loop exits screen. */
     -moz-transform: translateX(-65%);
     -webkit-transform: translateX(-65%);
     transform: translateX(-65%);
