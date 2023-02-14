@@ -9,24 +9,12 @@ body {
   letter-spacing: -0.03em;
 }
 
-a:not([class]) {
-  color: inherit;
+a {
+  color: var(--color-primary);
   &:hover {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
+    text-decoration: underline !important;
   }
-}
-
-a[class] {
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
-  }
-}
-
-a.muted {
-  color: inherit;
 }
 
 a.nodecoration {
