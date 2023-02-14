@@ -2,6 +2,7 @@
 
 .grid {
   display: grid;
+  min-width: 100%;
   gap: var(--grid-gap, var(--s-500));
 
   .order-1 {
@@ -18,23 +19,5 @@
 
   .justify-self-center {
     justify-self: center;
-  }
-}
-
-@include breakpoints.md {
-  .md-grid-col-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .md-grid-col-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .md-order-1 {
-    order: 1;
-  }
-
-  .md-order--1 {
-    order: -1;
   }
 }

@@ -7,14 +7,13 @@
         aria-label="{{ site.name }}"
         class="site-head__logo__lettering"
       >
-        <i class="fas fa-fire color-brand"></i>
-        Scott Herrington
+        Scott <span class="sr-only">Herrington</span>
       </a>
     </div>
     <nav class="[ nav ] [ site-head__inner__nav ]" aria-label="Primary">
       <ul class="nav__list">
         {% for item in navigation.items %}
-        <li>
+        <li class="md-fs-large">
           <a
             href="{{ item.url }}"
             {{

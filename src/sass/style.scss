@@ -14,8 +14,9 @@
 
 /* Components */
 @use "./components/site-head";
-@use "./components/footer";
+@use "./components/site-footer";
 @use "./components/button";
+@use "./components/divider";
 @use "./components/msg";
 @use "./components/skip-link";
 
@@ -23,7 +24,7 @@
 @use "./home";
 
 body {
-  background-color: var(--color-z1);
+  background-color: var(--color-z0);
 }
 
 :focus {
