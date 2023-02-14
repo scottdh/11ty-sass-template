@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--s-400);
-  padding: var(--s-800) 1rem;
+  // padding: var(--s-800) 1rem;
 
   &__content {
     display: flex;
@@ -35,18 +35,18 @@
   margin-top: var(--s-500);
 
   @include breakpoints.md {
-    margin-top: var(--s-900);
-    font-size: calc(var(--s-1300) * 1.8);
+    margin-top: var(--s-1200);
+    font-size: calc(var(--s-1300) * 1.6);
   }
 
   @include breakpoints.lg {
-    margin-top: var(--s-900);
+    margin-top: var(--s-1200);
     font-size: calc(var(--s-1300) * 2.5);
   }
 }
 
 #scroll-text {
-  width: 40ch; // Set to minimum that ensure text doesn't wrap
+  width: 40ch; // Set to minimum that ensures text doesn't wrap
   letter-spacing: -0.05em;
 
   /* animation properties */
@@ -74,29 +74,23 @@
   }
 }
 
-// Reposition intro content to top of screen on medium sized screens with position absolute
-// Move Scroll area down to accommodate
+// Reposition intro content to top of screen on medium sized screens
 @include breakpoints.md {
   .intro {
-    position: absolute;
+    position: relative;
     min-width: 100%;
     padding: 0;
     top: 0;
     margin: var(--s-200) 0;
     &__content {
       margin: 0;
-      top: var(--s-200);
-      margin: 0;
+      width: fit-content;
+      margin-top: -1.75em;
       margin-inline-start: 25%;
-      // background-color: pink;
       @media screen and (min-width: 1300px) {
         flex-direction: row;
       }
     }
-  }
-
-  #scroll-container {
-    margin-top: 20rem;
   }
 }
 
