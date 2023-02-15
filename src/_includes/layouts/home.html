@@ -1,15 +1,15 @@
 {% extends "layouts/base.html" %} {% block content %}
 <div class="intro">
-  <div class="wrapper">
-    <div class="intro__content fs-large">
-      <div class="intro__content__image">
+  <div class="intro__inner wrapper">
+    <div class="intro__inner__content fs-large">
+      <div class="intro__inner__content__image">
         <img
           src="/images/header-image.png"
           alt="A photo of Scott sitting behind his desk"
         />
       </div>
-      <div class="intro__content__text flow">
-        <p>A product team coach and design consultant based in London, UK</p>
+      <div class="intro__inner__content__text flow">
+        <p>Product team coach and design consultant based in London, UK.</p>
         <a class="button button--muted" href="#">Book a free chat</a>
       </div>
     </div>
@@ -21,5 +21,41 @@
     <span class="color-text-tertiary">Trust.</span>
   </div>
 </div>
+<article class="focus-areas panel">
+  <div class="wrapper">
+    <h2 class="section-heading">Product team coaching and training</h2>
+    <ol class="focus-areas__list">
+      <li class="focus-areas__list__item flow">
+        <h3>Empower</h3>
+        <div class="focus-areas__list__item__content">
+          <div class="focus-areas__list__item__content__image"></div>
+          <div
+            class="focus-areas__list__item__content__text flow"
+            style="--flow-space: var(--s-700)"
+          >
+            <p class="md-fs-large">
+              Empower your teams to make better product decisions and do more
+              valuable work, faster.
+            </p>
+            <ul class="table-view fs-300">
+              <li>Strategy and product management</li>
+              <li>Mapping and assessing product performance</li>
+              <li>Planning for impact, not predictability</li>
+              <li>Business wide collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="focus-areas__list__item flow">
+        <h3>Learn</h3>
+        <div class="focus-areas__list__item__image"></div>
+      </li>
+      <li class="focus-areas__list__item flow">
+        <h3>Innovate</h3>
+        <div class="focus-areas__list__item__image"></div>
+      </li>
+    </ol>
+  </div>
+</article>
 
 {% endblock %}

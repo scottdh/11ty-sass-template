@@ -1,25 +1,49 @@
 @use "./design-tokens/breakpoints";
 
 .intro {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-400);
-  padding: var(--s-800) 0;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--s-400);
-
-    &__image {
-      max-width: 140px;
-      margin-top: 8px;
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(16px, 1fr));
+    @include breakpoints.md {
+      grid-template-columns: repeat(12, minmax(16px, 1fr));
+      grid-template-rows: auto;
     }
-    &__text {
-      max-width: 16ch;
-      a {
-        color: var(--color-text-secondary);
+    &__content {
+      margin-top: var(--s-800);
+      display: flex;
+      gap: var(--s-500);
+      flex-direction: column;
+      grid-column: 1 / 4;
+      // background-color: pink;
+      @include breakpoints.md {
+        margin-top: -1.65em; // visually move content up "into" nav above
+        grid-column: 4 / 8;
+      }
+
+      @media screen and (min-width: 1200px) {
+        grid-column: 4 / 9;
+      }
+
+      @media screen and (min-width: 1400px) {
+        flex-direction: row;
+      }
+
+      @include breakpoints.lg {
+        grid-column: 5 / 9;
+      }
+
+      &__image {
+        max-width: 140px;
+        @include breakpoints.md {
+          margin-top: 0.2em; // when container is moved into nav this visually aligns image with top of text
+        }
+      }
+      &__text {
+        max-width: 16ch;
+        a {
+          color: var(--color-text-secondary);
+        }
       }
     }
   }
@@ -78,8 +102,6 @@
 @include breakpoints.md {
   .intro {
     position: relative;
-    min-width: 100%;
-    padding: 0;
     top: 0;
     margin: var(--s-200) 0;
     &__content {
@@ -89,6 +111,51 @@
       margin-inline-start: 25%;
       @media screen and (min-width: 1300px) {
         flex-direction: row;
+      }
+    }
+  }
+}
+
+.focus-areas {
+  &__list {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    &__item {
+      width: 100%;
+      counter-increment: my-awesome-counter;
+      > h3 {
+        display: inline;
+        font-size: var(--s-800);
+        @include breakpoints.lg {
+          font-size: var(--s-1000);
+        }
+      }
+      &::before {
+        content: "0" counter(my-awesome-counter);
+        font-size: var(--s-600);
+        margin-right: 10%;
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+      &__content {
+        display: grid;
+        gap: var(--s-500);
+        @include breakpoints.md {
+          grid-auto-flow: column;
+          grid-template-columns: repeat(12, minmax(16px, 1fr));
+        }
+        &__image {
+          background-color: lightgray;
+          aspect-ratio: 16 / 9;
+          @include breakpoints.md {
+            grid-column: 1 / 8;
+          }
+        }
+        &__text {
+          @include breakpoints.md {
+            grid-column: 8 / 13;
+          }
+        }
       }
     }
   }
