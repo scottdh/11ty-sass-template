@@ -6,7 +6,7 @@ body {
   font-family: var(--ff-sans);
   font-weight: var(--fw-regular);
   color: var(--color-text-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 a {
@@ -87,22 +87,21 @@ h4,
   margin-bottom: var(--s-500);
 }
 
-p.lead {
-  font-weight: var(--fw-bold);
-}
-
 .text-align-center {
   text-align: center;
 }
 
 .fs-large {
   font-size: var(--s-600);
-  line-height: 1.1em;
+  line-height: 1.2em;
+  @include breakpoints.md {
+    line-height: 1.4em;
+  }
 }
 
 .md-fs-large {
   @include breakpoints.md {
     font-size: var(--s-600);
-    line-height: 1.1em;
+    line-height: 1.4em;
   }
 }

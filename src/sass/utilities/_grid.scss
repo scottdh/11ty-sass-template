@@ -2,8 +2,11 @@
 
 .grid {
   display: grid;
-  min-width: 100%;
-  gap: var(--grid-gap, var(--s-500));
+  gap: var(--s-500);
+  @include breakpoints.md {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, minmax(16px, 1fr));
+  }
 
   .order-1 {
     order: 1;

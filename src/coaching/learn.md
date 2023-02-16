@@ -1,6 +1,6 @@
 ---
 title: "Learn"
-summary: "Increase impact, lower risk and build the right things with continuous learning"
+summary: "Implement a process of continuous discovery, to increase impact, lower risks and improve decisions."
 displayOrder: 2
 featured: true
 hero:
