@@ -15,9 +15,10 @@
       gap: var(--s-500);
       flex-direction: column;
       grid-column: 1 / 4;
-      // background-color: pink;
+
       @include breakpoints.md {
-        margin-top: -1.9em; // visually move content up "into" nav above
+        // background-color: pink;
+        margin-top: -2.15em; // visually move content up "into" nav above
         grid-column: 4 / 8;
       }
 
@@ -34,13 +35,13 @@
       }
 
       &__image {
-        max-width: 140px;
+        max-width: 9rem;
         @include breakpoints.md {
-          margin-top: 0.2em; // when container is moved into nav this visually aligns image with top of text
+          margin-top: 0.4em; // when container is moved into nav this visually aligns image with top of text
         }
       }
       &__text {
-        max-width: 16ch;
+        // max-width: 16ch;
         a {
           color: var(--color-text-secondary);
         }
@@ -117,6 +118,14 @@
 }
 
 .focus-areas {
+  &__lead {
+    &__text {
+      @include breakpoints.md {
+        margin: 0 0 var(--s-900) 0;
+        grid-column: 6 / 11;
+      }
+    }
+  }
   &__list {
     counter-reset: my-awesome-counter;
     list-style: none;
@@ -175,113 +184,21 @@
   }
 }
 
-/// OLD STUFF
-.hero {
-  position: relative;
-  padding-top: var(--s-800);
-  min-height: calc(90vh - 3em);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  article {
-    // padding: var(--s-500) 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--s-400);
-    text-align: center;
+.home-about__inner {
+  display: grid;
+  gap: var(--s-500);
+  @include breakpoints.md {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, minmax(16px, 1fr));
   }
-
-  h1 {
-    margin: 0;
-  }
-
   img {
-    margin-bottom: 3rem; //same as height of coloured-base
-    max-height: 4em;
-  }
-}
-
-img {
-  --flow-space: var(--s-900);
-}
-
-.muted-card {
-  background-color: var(--color-z0);
-  padding: var(--s-700);
-  border-radius: 1rem;
-  font-size: var(--s-300);
-  font-size: 0.9em;
-  // max-width: 28rem;
-  align-self: center;
-  ul {
-    padding-left: 1em;
-  }
-}
-
-.core-competences {
-  --flow-space: var(--s-1200);
-  padding: 0;
-  & > li {
-    grid-column-gap: 10rem;
-    --flow-space: var(--s-1200);
-    list-style: none;
-    ul {
-      font-size: 0.9em;
-      li {
-        color: var(--color-text-secondary);
-        list-style: disc;
-      }
-    }
-  }
-  &__heading {
     @include breakpoints.md {
-      grid-column-start: 2;
+      grid-column: 1/4;
     }
   }
-  &__description {
+  &__text {
     @include breakpoints.md {
-      grid-row: span 2;
-    }
-  }
-  &__image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 3rem;
-    grid-row-start: 3;
-    @include breakpoints.md {
-      grid-row: 1 / 4;
-    }
-    img {
-      max-height: 8em;
-      @include breakpoints.md {
-        max-height: 12em;
-      }
-    }
-  }
-}
-
-.workprocess__steps {
-  list-style: decimal !important;
-  padding-left: 1em;
-  & > li {
-    padding: var(--s-500) 0;
-    border-bottom: 1px solid var(--color-border-primary);
-  }
-}
-
-@include breakpoints.md {
-  #intro .grid {
-    grid-column-gap: var(--s-1200);
-    grid-row-gap: var(--s-900);
-    .intro__heading {
-      grid-column: span 2;
-    }
-    .intro__text {
-      grid-row-start: 2;
+      grid-column: 7/13;
     }
   }
 }
