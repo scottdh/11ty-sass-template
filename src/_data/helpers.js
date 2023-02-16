@@ -11,12 +11,13 @@ module.exports = {
     let response = "";
 
     if (itemUrl === pageUrl) {
-      response = 'aria-current="page"';
+      response = ' aria-current="page"';
     }
 
     if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-      response += 'data-state="active"';
+      response += ' data-state="active"';
     }
+
     return response;
   },
   /**
@@ -56,16 +57,16 @@ module.exports = {
 
     return filteredItems;
   },
-  getCurrentItemIndex(collection, item) {
-    let currentPageURL = item.url;
-
-    let findIndex = function (myArray, url) {
-      for (var i = 0; i < myArray.length; i++) {
-        if (myArray[i].url === url) {
-          return i;
-        }
-      }
-    };
-    return findIndex(collection, currentPageURL);
+  /**
+   * Take an array of keys and return back items that match.
+   * Note: items in the collection must have a key attribute in
+   * Front Matter
+   *
+   * @param {Array} collection 11ty collection
+   * @param {Array} keys collection of keys
+   * @returns {Array} result collection or empty
+   */
+  filterCollectionByKeys(collection, keys) {
+    return collection.filter((x) => keys.includes(x.data.key));
   },
 };

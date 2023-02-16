@@ -17,7 +17,7 @@
       grid-column: 1 / 4;
       // background-color: pink;
       @include breakpoints.md {
-        margin-top: -1.65em; // visually move content up "into" nav above
+        margin-top: -1.9em; // visually move content up "into" nav above
         grid-column: 4 / 8;
       }
 
@@ -54,9 +54,9 @@
   padding: 0;
   line-height: 1.1em;
   min-height: fit-content;
-  font-size: calc(var(--s-1300) * 2);
+  font-size: calc(var(--s-1100) * 2);
   overflow: hidden;
-  margin-top: var(--s-500);
+  margin-top: var(--s-600);
 
   @include breakpoints.md {
     margin-top: var(--s-1200);
@@ -120,10 +120,18 @@
   &__list {
     counter-reset: my-awesome-counter;
     list-style: none;
+    // --flow-space: var(--s-00);
+    & > li + li {
+      @include breakpoints.md {
+        border-top: 1px solid var(--color-border-primary);
+      }
+    }
+
     &__item {
       width: 100%;
       counter-increment: my-awesome-counter;
-      > h3 {
+      padding: var(--s-600) 0;
+      h3 {
         display: inline;
         font-size: var(--s-800);
         @include breakpoints.lg {
@@ -145,8 +153,14 @@
           grid-template-columns: repeat(12, minmax(16px, 1fr));
         }
         &__image {
-          background-color: lightgray;
-          aspect-ratio: 16 / 9;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          background-color: var(--color-z1);
+          img {
+            max-height: 60%;
+          }
+
           @include breakpoints.md {
             grid-column: 1 / 8;
           }
