@@ -5,13 +5,9 @@
     border-top: 1px solid var(--color-border-primary);
     padding: var(--s-400) 0;
 
-    display: grid;
-    grid-template-columns: repeat(4, minmax(16px, 1fr));
     grid-row-gap: var(--s-900);
 
     @include breakpoints.md {
-      grid-template-columns: repeat(12, minmax(16px, 1fr));
-      grid-template-rows: auto;
       grid-row-gap: var(--s-1100);
     }
 
@@ -20,13 +16,10 @@
     }
 
     &__message {
-      max-width: 26ch;
-      // max-width: 440px;
-      grid-row-start: 1;
-      grid-column: span 4;
       @include breakpoints.md {
         grid-row-start: 1;
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
+        max-width: 34ch;
       }
     }
     &__contact {
@@ -40,6 +33,7 @@
         grid-row-start: 1;
         grid-column: 7 / 12;
         align-self: end;
+        margin-top: var(--s-900);
       }
     }
     &__links {

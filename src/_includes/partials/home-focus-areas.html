@@ -17,7 +17,10 @@
       <li class="focus-areas__list__item flow">
         <h3>{{ item.data.title }}</h3>
         <div class="focus-areas__list__item__content">
-          <div class="focus-areas__list__item__content__image">
+          <div
+            class="focus-areas__list__item__content__image"
+            style="background-color: {{ item.data.hero.bgColor }};"
+          >
             <img
               src="{{ item.data.hero.image }}"
               alt="item.data.hero.imageAlt"
@@ -27,7 +30,11 @@
             class="focus-areas__list__item__content__text flow"
             style="--flow-space: var(--s-700)"
           >
-            <p class="md-fs-large">{{ item.data.summary }}</p>
+            <p
+              class="focus-areas__list__item__content__text__summary md-fs-large"
+            >
+              {{ item.data.summary }}
+            </p>
             <ul class="table-view fs-300">
               {% for skill in item.data.keySkills %}
               <li>{{ skill }}</li>
