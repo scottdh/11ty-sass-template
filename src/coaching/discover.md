@@ -1,6 +1,6 @@
 ---
-title: "Learn"
-summary: "Implement a process of continuous discovery, to increase impact, lower risks and improve decisions."
+title: "Discover"
+summary: "Lower risks and improve business results with a process of continuous customer-focused discovery."
 displayOrder: 2
 featured: true
 hero:

@@ -1,6 +1,6 @@
 ---
 title: "Empower"
-summary: "Empower your teams to make better product decisions and do more valuable work, faster."
+summary: "Enable teams to ship more value to customers faster, by establishing clear goals and decentralising decisions."
 displayOrder: 1
 featured: true
 hero:

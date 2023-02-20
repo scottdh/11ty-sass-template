@@ -3,21 +3,18 @@
 .intro {
   &__inner {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(16px, 1fr));
+
     @include breakpoints.md {
-      grid-template-columns: repeat(12, minmax(16px, 1fr));
       grid-template-rows: auto;
     }
+
     &__content {
       margin-top: var(--s-800);
       display: flex;
       gap: var(--s-400);
       flex-direction: column;
-      grid-column: 1 / 4;
 
       @include breakpoints.md {
-        // background-color: pink;
         margin-top: -2.15em; // visually move content up "into" nav above
         grid-column: 4 / 8;
       }
@@ -43,9 +40,12 @@
         }
       }
       &__text {
-        // max-width: 16ch;
+        max-width: 16ch;
         a {
           color: var(--color-text-secondary);
+        }
+        @include breakpoints.md {
+          max-width: auto;
         }
       }
     }
@@ -124,7 +124,7 @@
     &__text {
       @include breakpoints.md {
         margin: 0 0 var(--s-900) 0;
-        grid-column: 6 / 11;
+        grid-column: 2 / 8;
       }
     }
   }
@@ -141,7 +141,7 @@
     &__item {
       width: 100%;
       counter-increment: my-awesome-counter;
-      padding: var(--s-600) 0;
+      padding: var(--s-800) 0;
       h3 {
         display: inline;
         font-size: var(--s-800);
@@ -165,20 +165,22 @@
         }
         &__text {
           &__summary {
-            max-width: 24ch;
+            max-width: 40rem;
           }
         }
         &__image {
           display: flex;
           justify-content: center;
           align-items: end;
-          background-color: var(--color-z1);
           img {
             max-height: 60%;
           }
 
           @include breakpoints.md {
             grid-column: 1 / 8;
+          }
+          @include breakpoints.lg {
+            aspect-ratio: 16 / 7;
           }
         }
         &__text {
@@ -206,6 +208,46 @@
   &__text {
     @include breakpoints.md {
       grid-column: 7/13;
+    }
+  }
+}
+
+.focus-areas__testimonials {
+  margin: var(--s-900) 0;
+  figure:nth-child(1) {
+    // text-align: center;
+    @include breakpoints.md {
+      grid-column: 2 / 8;
+    }
+    img {
+      max-width: 3em;
+    }
+    .cite {
+      color: var(--color-text-secondary);
+    }
+    a {
+      color: inherit;
+    }
+  }
+  figure:nth-child(2) {
+    margin-top: var(--s-1300);
+    @include breakpoints.md {
+      grid-column: 8 / 12;
+    }
+    img {
+      max-width: 2em;
+    }
+  }
+}
+
+.focus-areas__cta {
+  margin: var(--s-1100) 0 var(--s-600) 0;
+  div {
+    @include breakpoints.md {
+      grid-column: 7 / 12;
+    }
+    a {
+      color: var(--color-primary);
     }
   }
 }

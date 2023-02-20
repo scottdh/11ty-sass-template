@@ -67,7 +67,7 @@ $color-palette: (
   "salt900": hsl(240, 4%, 40%),
   "salt1000": hsl(240, 4%, 40%),
   "salt1100": hsl(240, 4%, 16%),
-  "salt1200": hsl(240, 5%, 8%),
+  "salt1200": hsl(240, 5%, 12%),
   "salt1300": hsl(0, 0%, 0%),
 );
 
@@ -93,6 +93,6 @@ $themes: (
   ),
   dark: (
     // "text-primary": map-get($color-palette, "salt100"),
-    // "z0": map-get($color-palette, "salt1100"),,,,,,,,,,,,,,,,,,,,,,
+    // "z0": map-get($color-palette, "salt1100"),,,,
   ),
 );
