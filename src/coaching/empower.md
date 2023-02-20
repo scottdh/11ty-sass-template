@@ -8,7 +8,7 @@ hero:
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
   bgColor: "#FFE3F7"
 keySkills:
-  - "Product management for impact"
+  - "Impactful roduct management"
   - "Mapping and improving product performance"
-  - "Successful collaboration between leaders and teams"
+  - "Successful stakeholder collaboration"
 ---

@@ -11,5 +11,4 @@ keySkills:
   - "Creative collaboration"
   - "Nurturing safety for high performance"
   - "Something else"
-  - "And another thing"
 ---
