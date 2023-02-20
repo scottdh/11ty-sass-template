@@ -11,5 +11,4 @@ keySkills:
   - "Continuous discovery and design"
   - "Building an accessible trove of user insights"
   - "Another thing"
-  - "And another thing"
 ---

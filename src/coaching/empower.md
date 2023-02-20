@@ -8,8 +8,7 @@ hero:
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
   bgColor: "#FFE3F7"
 keySkills:
-  - "Strategy and product management"
-  - "Mapping and assessing product performance"
-  - "Planning for impact, not predictability"
-  - "Business wide collaboration"
+  - "Product management for impact"
+  - "Mapping and improving product performance"
+  - "Successful collaboration between leaders and teams"
 ---
