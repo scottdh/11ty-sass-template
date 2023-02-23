@@ -4,9 +4,9 @@
     <div class="focus-areas__lead grid">
       <div class="focus-areas__lead__text flow">
         <p class="fs-large">
-          I help product teams tackle their most immediate design challenges,
-          while building the skills and competences needed to consistently ship
-          products customers love.
+          I help product leaders and teams tackle their most immediate design
+          challenges, while building the skills and competences needed to
+          consistently ship products customers love.
         </p>
       </div>
     </div>
@@ -33,6 +33,9 @@
               class="focus-areas__list__item__content__text__summary md-fs-large"
             >
               {{ item.data.summary }}
+            </p>
+            <p class="fs-300 color-text-secondary fw-semibold">
+              What we'll work on
             </p>
             <ul class="table-view fs-300">
               {% for skill in item.data.keySkills %}
@@ -88,9 +91,12 @@
     </div>
     <div class="focus-areas__cta fs-large grid">
       <div class="flow">
-        <p>Interested in product team coaching for your team(s)?</p>
-        <a href="{{ coachingCTA.buttonUrl }}" class="button"
-          >How coaching works</a
+        <p>
+          Interested in improving your product teams' performance for better
+          products and results?
+        </p>
+        <a href="{{ coachingCTA.buttonUrl }}" class="button" data-type="primary"
+          >Book a free intro chat</a
         >
       </div>
     </div>

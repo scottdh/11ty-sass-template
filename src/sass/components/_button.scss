@@ -23,4 +23,7 @@ button,
       color: var(--color-primary);
     }
   }
+  &[data-type="primary"] {
+    color: var(--color-primary);
+  }
 }

@@ -1,6 +1,6 @@
 ---
 title: "Innovate"
-summary: "Create the environment needed to push ideas further and ensure innovative thinking thrives."
+summary: "Create the environment needed to fuel innovation and push ideas further."
 displayOrder: 3
 featured: true
 hero:
@@ -9,6 +9,6 @@ hero:
   bgColor: "#E3FAFF"
 keySkills:
   - "Creative collaboration"
+  - "Effective intra-team communication"
   - "Nurturing safety for high performance"
-  - "Something else"
 ---

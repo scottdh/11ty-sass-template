@@ -1,6 +1,6 @@
 ---
 title: "Discover"
-summary: "Lower risks and improve business results with a process of continuous customer-focused discovery."
+summary: "Build a process of continuous discovery to uncover needs, lower risks and achieve results."
 displayOrder: 2
 featured: true
 hero:
@@ -8,7 +8,7 @@ hero:
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
   bgColor: "#FFF9E3"
 keySkills:
-  - "Continuous discovery and design"
-  - "Building an accessible trove of user insights"
-  - "Another thing"
+  - "Build a discovery & design process that works"
+  - "Turn learning into a competitive advantage"
+  - "Diffuse insights across the wider business"
 ---
