@@ -52,50 +52,6 @@
   }
 }
 
-#scroll-container {
-  // background-color: pink;
-  padding: 0;
-  line-height: 1.1em;
-  min-height: fit-content;
-  font-size: calc(var(--s-1100) * 2);
-  overflow: hidden;
-  margin-top: var(--s-600);
-
-  @include breakpoints.md {
-    margin-top: var(--s-1200);
-    font-size: calc(var(--s-1300) * 1.6);
-  }
-}
-
-#scroll-text {
-  width: 40ch; // Set to minimum that ensures text doesn't wrap
-  letter-spacing: -0.05em;
-
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-
-  /* Set speed */
-  -moz-animation: my-animation 28s linear infinite;
-  -webkit-animation: my-animation 28s linear infinite;
-  animation: my-animation 28s linear infinite;
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(1%);
-    -webkit-transform: translateX(1%);
-    transform: translateX(1%);
-  }
-  to {
-    /* Fiddling with this will rerun the animation before the current loop exits screen. */
-    -moz-transform: translateX(-65%);
-    -webkit-transform: translateX(-65%);
-    transform: translateX(-65%);
-  }
-}
-
 // Reposition intro content to top of screen on medium sized screens
 @include breakpoints.md {
   .intro {
