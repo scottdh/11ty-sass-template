@@ -1,7 +1,7 @@
 ---
 pagetitle: "Working with me"
 title: "Working with me"
-layout: "layouts/coaching-landing.html"
+layout: "layouts/coaching.html"
 corecompetences:
   - eyebrow: "Strategy and focus"
     title: "Move forward faster, together"

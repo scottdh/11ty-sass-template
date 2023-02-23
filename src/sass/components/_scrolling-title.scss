@@ -1,0 +1,100 @@
+@use "../design-tokens/breakpoints";
+
+#scroll-container {
+  // background-color: pink;
+  padding: 0;
+  line-height: 1.1em;
+  min-height: fit-content;
+  font-size: calc(var(--s-1100) * 2);
+  overflow: hidden;
+  margin-top: var(--s-600);
+
+  @include breakpoints.md {
+    margin-top: var(--s-1200);
+    font-size: calc(var(--s-1300) * 1.6);
+  }
+}
+
+#scroll-text {
+  width: 40ch; // Set to minimum that ensures text doesn't wrap
+  letter-spacing: -0.05em;
+
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  /* Set speed */
+  -moz-animation: my-animation 28s linear infinite;
+  -webkit-animation: my-animation 28s linear infinite;
+  animation: my-animation 28s linear infinite;
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(1%);
+    -webkit-transform: translateX(1%);
+    transform: translateX(1%);
+  }
+  to {
+    /* Fiddling with this will rerun the animation before the current loop exits screen. */
+    -moz-transform: translateX(-65%);
+    -webkit-transform: translateX(-65%);
+    transform: translateX(-65%);
+  }
+}
+
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  background-color: #d34444;
+  overflow: hidden;
+  z-index: 1;
+
+  &__title {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transform: scale(2);
+    transition: all 1s ease;
+    & > div {
+      display: flex;
+      animation: scrollText 33s infinite linear;
+    }
+    h1 {
+      margin: 0;
+      font-size: 140px;
+      color: rgba(255, 255, 255, 1);
+      transition: all 2s ease;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+  }
+}
+
+/*div:hover {
+    animation-play-state: paused;
+  }*/
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
