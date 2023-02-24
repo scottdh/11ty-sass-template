@@ -45,21 +45,20 @@
 // }
 
 .scroll-container {
-  font-size: calc(var(--s-1100) * 2.2);
+  font-size: calc(var(--s-1100) * 2);
   display: flex;
   position: relative;
   width: 100%;
-  height: 1em;
-  margin: var(--s-1000) auto var(--s-400) 0;
+  height: 1.2em;
+  margin: var(--s-1000) auto 0 0;
   overflow: hidden;
   z-index: 1;
   @include breakpoints.md {
-    font-size: calc(var(--s-1100) * 2.8);
+    font-size: calc(var(--s-1100) * 2.4);
   }
 
   &__title {
     display: flex;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -72,12 +71,19 @@
     transition: all 1s ease;
     & > div {
       display: flex;
-      gap: 0.25em;
-      animation: scrollText 33s infinite linear;
+      gap: 0.1em;
+      animation: scrollText 20s infinite linear;
+      -o-animation: scrollText 20s infinite linear;
+      -moz-animation: scrollText 20s infinite linear;
+      -webkit-animation: scrollText 20s infinite linear;
     }
     h1 {
+      font-weight: 400;
       font-size: inherit;
       transition: all 2s ease;
+      span:nth-child(even) {
+        color: var(--color-text-tertiary);
+      }
     }
   }
 }
@@ -85,6 +91,38 @@
 /*div:hover {
     animation-play-state: paused;
   }*/
+
+/* For Opera */
+@-o-keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* For Mozilla Firefox */
+@-moz-keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* For Google Chrome and Safari */
+@-webkit-keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* The standard */
 @keyframes scrollText {
   from {
     transform: translateX(0%);

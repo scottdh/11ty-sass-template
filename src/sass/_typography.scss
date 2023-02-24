@@ -45,7 +45,7 @@ h4,
 
 h1.major,
 .h1.major {
-  font-size: var(--s-900);
+  font-size: var(--s-1100);
   letter-spacing: -0.03em;
 }
 
@@ -88,11 +88,6 @@ h4,
 }
 
 figure {
-  // border-left: 4px solid var(--color-text-primary);
-  // padding-left: 2rem;
-  // blockquote {
-  //   // font-family: var(--ff-serif);
-  // }
   figcaption {
     font-size: var(--s-300);
   }

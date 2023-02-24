@@ -10,7 +10,6 @@
 @use "./utilities/wrapper";
 @use "./utilities/sr-only";
 @use "./utilities/panel";
-@use "./utilities/tinted-base";
 
 /* Components */
 @use "./components/site-head";
@@ -24,6 +23,7 @@
 
 /* Pages */
 @use "./home";
+@use "./page";
 
 body {
   background-color: var(--color-z0);

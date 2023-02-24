@@ -1,0 +1,25 @@
+@use "./design-tokens/breakpoints";
+
+.page-content {
+  ol,
+  ul {
+    padding-inline-start: 3rem;
+    & > li + li {
+      margin-block-start: 1rem;
+    }
+  }
+}
+
+.recommended-posts {
+  @include breakpoints.md {
+    grid-row-start: 3;
+    grid-column: 2 / 8;
+  }
+}
+
+.tags-list {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  //   padding-inline-start: 1em;
+}

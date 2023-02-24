@@ -1,6 +1,9 @@
 ---
 title: "Articles"
 layout: "layouts/feed.html"
+scrollingTitle:
+  - "Writing."
+  - "Writing."
 pagination:
   data: collections.blog
   size: 5

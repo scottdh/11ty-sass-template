@@ -1,4 +1,8 @@
 .wrapper {
-  max-width: 100%;
-  padding: 0 1rem;
+  max-width: 60rem;
+  margin-inline: auto;
+  padding: 0 3%;
+  &[data-width="full"] {
+    max-width: 100%;
+  }
 }

@@ -1,6 +1,7 @@
 .table-view {
   display: grid;
   list-style: none;
+  padding-inline-start: 0;
 
   li {
     padding: var(--s-200) 0;
