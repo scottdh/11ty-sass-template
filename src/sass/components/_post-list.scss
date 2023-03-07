@@ -1,0 +1,14 @@
+.post-list {
+  &__item {
+    &__date {
+      display: block;
+      font-size: var(--s-200);
+      color: var(--color-text-secondary);
+      //   text-transform: uppercase;
+    }
+    &__link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

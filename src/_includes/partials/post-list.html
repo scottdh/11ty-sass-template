@@ -1,14 +1,19 @@
 <div class="[ dot-shadow panel ] [ bg-secondary-glare ]" id="post-list">
-  <div class="[ wrapper ] [ flow flow-space-700 ]">
+  <div class="[ flow flow-space-700 ]">
     {% if postListHeadline %}
-    <h2 class="[ headline ] [ measure-micro ]">{{ postListHeadline }}</h2>
+    <h2 class="section-heading">{{ postListHeadline }}</h2>
     {% endif %}
     <div>
       <ol class="[ post-list ] [ flow ]">
         {% for item in postListItems %}
         <li class="[ post-list__item ] [ leading-tight measure-long ]">
-          <a href="{{ item.url }}" class="post-list__link"
+          <a href="{{ item.url }}" class="post-list__item__link fs-large"
             >{{ item.data.title }}</a
+          >
+          <time
+            class="[ post-list__item__date ]"
+            datetime="{{ item.date | w3DateFilter }}"
+            >{{ item.date | dateFilter }}</time
           >
         </li>
         {% endfor %}

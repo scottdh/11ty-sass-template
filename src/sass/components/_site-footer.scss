@@ -4,10 +4,7 @@
   &__inner {
     border-top: 1px solid var(--color-border-primary);
     padding-block: var(--s-400);
-
-    @include breakpoints.md {
-      grid-row-gap: var(--s-1100);
-    }
+    grid-row-gap: var(--s-1100);
 
     a {
       color: var(--color-text-primary);

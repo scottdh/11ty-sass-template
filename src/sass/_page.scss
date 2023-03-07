@@ -1,6 +1,13 @@
 @use "./design-tokens/breakpoints";
 
 .page-content {
+  margin-bottom: var(--s-1200);
+  &__inner {
+    @include breakpoints.md {
+      grid-column: 2 / 12;
+      max-width: 64ch;
+    }
+  }
   ol,
   ul {
     padding-inline-start: 3rem;
@@ -11,10 +18,10 @@
 }
 
 .recommended-posts {
-  @include breakpoints.md {
-    grid-row-start: 3;
-    grid-column: 2 / 8;
-  }
+  // @include breakpoints.md {
+  //   grid-row-start: 3;
+  //   grid-column: 2 / 8;
+  // }
 }
 
 .tags-list {
