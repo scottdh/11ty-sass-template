@@ -18,10 +18,7 @@
 }
 
 .recommended-posts {
-  // @include breakpoints.md {
-  //   grid-row-start: 3;
-  //   grid-column: 2 / 8;
-  // }
+  margin-bottom: var(--s-900);
 }
 
 .tags-list {

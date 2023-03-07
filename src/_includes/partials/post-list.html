@@ -6,14 +6,14 @@
     <div>
       <ol class="[ post-list ] [ flow ]">
         {% for item in postListItems %}
-        <li class="[ post-list__item ] [ leading-tight measure-long ]">
-          <a href="{{ item.url }}" class="post-list__item__link fs-large"
-            >{{ item.data.title }}</a
-          >
+        <li class="[ post-list__item ] [ measure-long ]">
           <time
             class="[ post-list__item__date ]"
             datetime="{{ item.date | w3DateFilter }}"
             >{{ item.date | dateFilter }}</time
+          >
+          <a href="{{ item.url }}" class="post-list__item__link"
+            >{{ item.data.title }}</a
           >
         </li>
         {% endfor %}

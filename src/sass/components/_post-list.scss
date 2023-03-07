@@ -2,13 +2,42 @@
   &__item {
     &__date {
       display: block;
-      font-size: var(--s-200);
       color: var(--color-text-secondary);
-      //   text-transform: uppercase;
+      font-size: var(--s-300);
     }
     &__link {
+      font-size: var(--s-700);
+      line-height: var(--lh-tight);
       text-decoration: none;
       color: inherit;
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.5em;
+        content: "\f178";
+        margin-inline-start: 0.25em;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+}
+
+// specific styling for post-list on writing home page
+.feed {
+  .post-list {
+    &__item {
+      &__date {
+        font-size: var(--s-400);
+      }
+      &__link {
+        font-size: var(--s-800);
+        line-height: var(--lh-tight);
+      }
     }
   }
 }
