@@ -1,0 +1,96 @@
+<article class="focus-areas panel">
+  <div class="wrapper flow" data-width="full">
+    <h2 class="section-heading">Coaching programmes</h2>
+
+    <ol class="focus-areas__list flow">
+      {% for item in collections.programmes %}
+      <li class="focus-areas__list__item flow">
+        <h3>{{ item.data.title }}</h3>
+        <div class="focus-areas__list__item__content">
+          <div
+            class="focus-areas__list__item__content__image"
+            style="background-color: {{ item.data.hero.bgColor }}"
+          >
+            <img
+              src="{{ item.data.hero.image }}"
+              alt="item.data.hero.imageAlt"
+            />
+          </div>
+          <div
+            class="focus-areas__list__item__content__text flow"
+            style="--flow-space: var(--s-700)"
+          >
+            <p
+              class="focus-areas__list__item__content__text__summary md-fs-large"
+            >
+              {{ item.data.summary }}
+            </p>
+            <p class="fs-300 color-text-secondary fw-semibold">
+              What we'll work on
+            </p>
+            <ul class="table-view fs-300">
+              {% for skill in item.data.keySkills %}
+              <li>{{ skill }}</li>
+              {% endfor %}
+            </ul>
+            <a class="button" href="{{ item.data.url }}">Learn more</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+    <div class="focus-areas__testimonials grid">
+      <figure class="[ focus-areas__testimonial md-fs-large flow ]">
+        <img
+          src="https://media.licdn.com/dms/image/C5603AQE3bb4bAmHtYg/profile-displayphoto-shrink_800_800/0/1517665322244?e=1682553600&v=beta&t=dQxpgrgUzdD8Id0hMCqi-lsidEyqaxhlRvDloQ1BCHQ"
+          alt=""
+        />
+        <blockquote>
+          "The speed at which you worked and the transparency of the process was
+          something we're not used to. In these few weeks the team's achieved
+          more than in the last 2 years it feels like."
+        </blockquote>
+        <figcaption>
+          <span class="cite"
+            ><a
+              href="https://www.linkedin.com/in/timothy-mcdermott-3b27739/"
+              target="_blank"
+              >Timothy McDermott</a
+            >, CEO, Nadex</span
+          >
+        </figcaption>
+      </figure>
+      <!-- <figure class="[ home-testimonial fs-large flow ]">
+        <img
+          src="https://media.licdn.com/dms/image/C5103AQFmS21Q9G8tKQ/profile-displayphoto-shrink_800_800/0/1517551526775?e=1682553600&v=beta&t=JhadJPD1TwI7QRdE9BnSrEiI5yOBDsg2CmQghwqvPV4"
+          alt=""
+        />
+        <blockquote>
+          "Scott has been amazing, not only helping us with getting UX research
+          and design back on track, but also ingraining a customer centric
+          culture in the whole company."
+        </blockquote>
+        <figcaption>
+          <span class="cite"
+            ><a
+              href="https://www.linkedin.com/in/androniki-menelaou-7994aa60/"
+              target="_blank"
+              >Androniki Menelaou</a
+            >, COO & co-founder, Katana Labs</span
+          >
+        </figcaption>
+      </figure> -->
+    </div>
+    <div class="focus-areas__cta fs-large grid">
+      <div class="flow">
+        <p>
+          Wrestling with a tough product challenge and looking to improve the
+          way your teams work?
+        </p>
+        <a href="{{ coachingCTA.buttonUrl }}" class="button" data-type="primary"
+          >Book a free intro chat</a
+        >
+      </div>
+    </div>
+  </div>
+</article>

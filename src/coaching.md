@@ -2,6 +2,15 @@
 pagetitle: "Working with me"
 title: "Working with me"
 layout: "layouts/coaching.html"
+headerIntroBlock:
+  image: "/images/scott-at-desk.png"
+  imageAlt: "An image of Scott sitting at his desk behind a laptop"
+  text: "Let's build teams that ship products customers love"
+  buttonText: "Get started"
+  buttonUrl: "#footer"
+scrollingTitle:
+  - "Coaching."
+  - "Coaching."
 corecompetences:
   - eyebrow: "Strategy and focus"
     title: "Move forward faster, together"
@@ -42,7 +51,3 @@ workprocess:
   - step: "Achieve the performance your teams are capable of, and your business needs"
     explanation: "You bask in the glory of the incredible work your teams are doing :)"
 ---
-
-That’s why empowered, self-driven product teams are the backbone of today's most successful tech businesses.
-These teams excel at discovery, to continuously uncover new opportunities and more effective solutions. They experiment rapidly, to minimise risks and costs while learning how to maximise impact. And their members collaborate creatively, to push themselves and each others’ ideas further than anyone would have known to ask for.
-These are the teams I love to help product companies build.

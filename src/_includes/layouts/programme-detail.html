@@ -1,0 +1,8 @@
+{% extends "layouts/base.html" %} {% block content %}
+<article>
+  <div class="[ flow wrapper ]" data-width="full">
+    {% include "partials/scrolling-title.html" %} {{ content | safe }}
+  </div>
+</article>
+
+{% endblock %}
