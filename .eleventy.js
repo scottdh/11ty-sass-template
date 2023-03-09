@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images/");
 
   // Returns work items, sorted by display order
-  eleventyConfig.addCollection("focusAreas", (collection) => {
+  eleventyConfig.addCollection("programmes", (collection) => {
     return sortByDisplayOrder(
       collection.getFilteredByGlob("./src/coaching/*.md")
     );

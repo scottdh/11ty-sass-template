@@ -1,0 +1,9 @@
+@use "./design-tokens/breakpoints";
+
+.coaching__intro__inner {
+  div {
+    @include breakpoints.md {
+      grid-column: 6 / 12;
+    }
+  }
+}

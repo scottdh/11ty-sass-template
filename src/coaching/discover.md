@@ -1,5 +1,9 @@
 ---
+url: /coaching/discover
 title: "Discover"
+scrollingTitle:
+  - "Discover."
+  - "Discover."
 summary: "Build a process of continuous discovery to uncover needs, lower risks and achieve results."
 displayOrder: 2
 featured: true
@@ -12,3 +16,5 @@ keySkills:
   - "Turn learning into a competitive advantage"
   - "Diffuse insights across the wider business"
 ---
+
+DISCOVER - UNDER CONSTRUCTION

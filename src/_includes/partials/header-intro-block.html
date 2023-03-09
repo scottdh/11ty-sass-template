@@ -3,13 +3,15 @@
     <div class="intro__inner__content fs-large">
       <div class="intro__inner__content__image">
         <img
-          src="/images/scott-at-desk.png"
-          alt="An image of Scott sitting at his desk behind a laptop"
+          src="{{ headerIntroBlock.image }}"
+          alt="{{ headerIntroBlock.imageAlt }}"
         />
       </div>
       <div class="intro__inner__content__text flow">
-        <p>Product team coach and design consultant based in London, UK.</p>
-        <a class="button button--muted" href="#footer">Get in touch</a>
+        <p>{{ headerIntroBlock.text }}</p>
+        <a class="button button--muted" href="{{ headerIntroBlock.buttonUrl }}"
+          >{{ headerIntroBlock.buttonText }}</a
+        >
       </div>
     </div>
   </div>

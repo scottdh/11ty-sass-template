@@ -1,5 +1,9 @@
 ---
+url: /coaching/innovate
 title: "Innovate"
+scrollingTitle:
+  - "Innovate."
+  - "Innovate."
 summary: "Create the environment needed to fuel innovation and push ideas further."
 displayOrder: 3
 featured: true
@@ -12,3 +16,5 @@ keySkills:
   - "Effective intra-team communication"
   - "Nurturing safety for high performance"
 ---
+
+INNOVATE - UNDER CONSTRUCTION

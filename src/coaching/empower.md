@@ -1,5 +1,9 @@
 ---
+url: /coaching/empower
 title: "Empower"
+scrollingTitle:
+  - "Empower."
+  - "Empower."
 summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 displayOrder: 1
 featured: true
@@ -12,3 +16,5 @@ keySkills:
   - "Product mapping and prioritising improvements"
   - "Effective collaboration with stakeholders"
 ---
+
+EMPOWER - UNDER CONSTRUCTION
