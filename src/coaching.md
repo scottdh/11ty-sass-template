@@ -3,7 +3,7 @@ pagetitle: "Working with me"
 title: "Working with me"
 layout: "layouts/coaching.html"
 headerIntroBlock:
-  image: "/images/scott-at-desk.png"
+  image: "/images/scott-in-NewYork.png"
   imageAlt: "An image of Scott sitting at his desk behind a laptop"
   text: "Let's build teams that ship products customers love"
   buttonText: "Get started"
@@ -51,3 +51,5 @@ workprocess:
   - step: "Achieve the performance your teams are capable of, and your business needs"
     explanation: "You bask in the glory of the incredible work your teams are doing :)"
 ---
+
+UNDER CONSTRUCTION

@@ -17,4 +17,4 @@ keySkills:
   - "Effective collaboration with stakeholders"
 ---
 
-This is the empower page
+EMPOWER - UNDER CONSTRUCTION
