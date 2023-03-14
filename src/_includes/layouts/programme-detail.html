@@ -1,7 +1,54 @@
 {% extends "layouts/base.html" %} {% block content %}
 <article>
-  <div class="[ flow wrapper ]" data-width="full">
-    {% include "partials/scrolling-title.html" %} {{ content | safe }}
+  <div class="[ flow ]" data-width="full">
+    {% include "partials/scrolling-title.html" %}
+    <div class="panel programme-outline">
+      <div class="wrapper" data-width="full">
+        <h2 class="section-heading">Overview</h2>
+        {% include "partials/programme-stepper.html" %}
+        <div class="grid programme-outline__header">
+          <h3>{{ summary }}</h3>
+          <div
+            class="programme-hero-image"
+            style="background-color: {{ hero.bgColor }}"
+          >
+            <img src="{{ hero.image }}" alt="hero.imageAlt" />
+          </div>
+        </div>
+        <div class="grid programme-outline__details">
+          <div class="programme-outline__details__description flow">
+            {% for paragraph in programmeDescription %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+          </div>
+          <div class="programme-outline__details__outcomes flow">
+            <h4>Programme outcomes</h4>
+            <ul class="flow">
+              {% for item in programmeOutcomes %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel programme-activities">
+      <div class="wrapper" data-width="full">
+        <h2 class="section-heading">What we'll get up to</h2>
+        <ol class="programme-activities__list">
+          {% for item in programmeActivities %}
+          <li class="programme-activities__list__item flow">
+            <h5 class="programme-activities__list__item__title">
+              {{ item.title }}
+            </h5>
+            <p class="programme-activities__list__item__description">
+              {{ item.description }}
+            </p>
+          </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
   </div>
 </article>
 

@@ -1,0 +1,19 @@
+<div class="programme-stepper">
+  <ol class="programme-stepper__list">
+    {% for item in collections.programmes %}
+    <li class="programme-stepper__list__item">
+      <a class="arrow" href="{{ item.url }}">{{ item.data.title }}</a>
+      <div
+        class="programme-stepper-bar"
+        {{
+        helpers.getCurrentProgramme(item.url,
+        page.url,
+        item.data.hero.bgColor)
+        |
+        safe
+        }}
+      ></div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

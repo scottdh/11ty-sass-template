@@ -1,0 +1,26 @@
+.programme-stepper {
+  margin-bottom: var(--s-1000);
+  &__list {
+    list-style: none;
+    list-style-position: inside;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: var(--s-300);
+    color: var(--color-text-secondary);
+    &__item {
+      counter-increment: programme;
+      .programme-stepper-bar {
+        height: 0.5em;
+        background-color: var(--color-grey3);
+      }
+      &::before {
+        content: "0" counter(programme);
+        margin-inline-end: 0.5rem;
+      }
+      a {
+        color: inherit;
+      }
+    }
+  }
+}

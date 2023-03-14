@@ -22,11 +22,14 @@
 @use "./components/scrolling-title";
 @use "./components/post-list";
 @use "./components/page-header";
+@use "./components/programme-hero-image";
+@use "./components/programme-stepper";
 
 /* Pages */
 @use "./home";
 @use "./coaching";
 @use "./page";
+@use "./programme-detail";
 
 body {
   background-color: var(--color-z0);

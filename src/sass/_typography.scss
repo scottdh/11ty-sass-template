@@ -25,6 +25,23 @@ a.nodecoration {
   }
 }
 
+a.arrow {
+  text-decoration: none;
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.7em;
+    content: "\f178";
+    margin-inline-start: 0.25em;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
 ul:not([class]) {
   li {
     line-height: var(--lh-tight);
