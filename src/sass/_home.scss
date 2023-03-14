@@ -119,19 +119,9 @@
             max-width: 40rem;
           }
         }
-        &__image {
-          display: flex;
-          justify-content: center;
-          align-items: end;
-          img {
-            max-height: 60%;
-          }
-
+        .programme-hero-image {
           @include breakpoints.md {
             grid-column: 1 / 8;
-          }
-          @include breakpoints.lg {
-            // aspect-ratio: 16 / 7;
           }
         }
         &__text {

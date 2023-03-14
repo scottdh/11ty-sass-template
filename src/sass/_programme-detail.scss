@@ -1,0 +1,23 @@
+@use "./design-tokens/breakpoints";
+
+.programme-outline {
+  &__description {
+    @include breakpoints.md {
+      grid-column: 1 / 6;
+    }
+  }
+  &__outcomes {
+    @include breakpoints.md {
+      grid-column: 8 / 13;
+    }
+
+    ol,
+    ul {
+      list-style: disc;
+      padding-inline-start: 3rem;
+      & > li + li {
+        margin-block-start: 1rem;
+      }
+    }
+  }
+}
