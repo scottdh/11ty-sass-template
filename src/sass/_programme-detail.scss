@@ -1,22 +1,65 @@
 @use "./design-tokens/breakpoints";
 
 .programme-outline {
-  &__description {
-    @include breakpoints.md {
-      grid-column: 1 / 6;
+  &__header {
+    h3 {
+      @include breakpoints.md {
+        grid-column: 1 / 6;
+      }
+    }
+    .programme-hero-image {
+      height: 12em;
+      @include breakpoints.md {
+        grid-column: 8 / 13;
+      }
     }
   }
-  &__outcomes {
+  &__details {
+    margin-top: var(--s-800);
+    &__description {
+      --flow-space: var(--s-500);
+      @include breakpoints.md {
+        grid-column: 1 / 6;
+      }
+    }
+    &__outcomes {
+      @include breakpoints.md {
+        grid-column: 8 / 13;
+      }
+
+      ol,
+      ul {
+        list-style: disc;
+        padding-inline-start: 3rem;
+        & > li + li {
+          margin-block-start: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.programme-activities {
+  &__list {
+    display: grid;
     @include breakpoints.md {
-      grid-column: 8 / 13;
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    ol,
-    ul {
-      list-style: disc;
-      padding-inline-start: 3rem;
-      & > li + li {
-        margin-block-start: 1rem;
+    gap: var(--s-800);
+    &__item {
+      counter-increment: programme-activities;
+      &__title {
+        font-size: var(--s-500);
+      }
+      &__description {
+        // font-size: var(--s-300);
+        color: var(--color-text-secondary);
+      }
+      &::before {
+        content: "0" counter(programme-activities);
+        font-size: var(--s-600);
+        margin-bottom: 1rem;
       }
     }
   }

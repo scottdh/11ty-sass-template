@@ -1,10 +1,11 @@
 @use "../design-tokens/breakpoints";
 
 .site-footer {
+  margin-top: var(--s-1000);
   &__inner {
     border-top: 1px solid var(--color-border-primary);
     padding-block: var(--s-400);
-    grid-row-gap: var(--s-1100);
+    grid-row-gap: var(--s-900);
 
     a {
       color: var(--color-text-primary);
@@ -26,6 +27,7 @@
         color: var(--color-text-secondary);
       }
       @include breakpoints.md {
+        margin-top: var(--s-800);
         grid-row-start: 1;
         grid-column: 7 / 12;
         align-self: end;

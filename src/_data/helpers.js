@@ -20,6 +20,17 @@ module.exports = {
 
     return response;
   },
+  getCurrentProgramme(itemUrl, pageUrl, color) {
+    let response = "";
+
+    if (itemUrl === pageUrl) {
+      response = ` style="background-color:${color}"`;
+    } else {
+      response = "";
+    }
+
+    return response;
+  },
   /**
    * Filters out the passed item from the passed collection
    * and randomises and limits them based on flags

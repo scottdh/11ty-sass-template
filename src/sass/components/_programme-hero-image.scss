@@ -6,10 +6,3 @@
     max-height: 50%;
   }
 }
-
-// set aspect ratio on image for programme-details page so there's an implicit height set.
-.programme-outline__outcomes {
-  .programme-hero-image {
-    aspect-ratio: 16 / 7;
-  }
-}
