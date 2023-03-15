@@ -31,6 +31,17 @@ module.exports = {
 
     return response;
   },
+  createLinksInStepper(itemUrl, pageUrl, programmeTitle) {
+    let response = "";
+
+    if (itemUrl === pageUrl) {
+      response = `${programmeTitle}`;
+    } else {
+      response = `<a class="arrow" href="${itemUrl}">${programmeTitle}</a>`;
+    }
+
+    return response;
+  },
   /**
    * Filters out the passed item from the passed collection
    * and randomises and limits them based on flags

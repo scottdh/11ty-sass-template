@@ -1,11 +1,14 @@
 {% extends "layouts/base.html" %} {% block content %}
 <article>
-  <div class="[ flow ]" data-width="full">
+  <div class="[ flow ]">
+    <div class="wrapper gap-top-600" data-width="full">
+      {% include "partials/programme-stepper.html" %}
+    </div>
     {% include "partials/scrolling-title.html" %}
     <div class="panel programme-outline">
       <div class="wrapper" data-width="full">
         <h2 class="section-heading">Overview</h2>
-        {% include "partials/programme-stepper.html" %}
+
         <div class="grid programme-outline__header">
           <h3>{{ summary }}</h3>
           <div

@@ -16,7 +16,7 @@
       }
       &::before {
         content: "0" counter(programme);
-        margin-inline-end: 0.5rem;
+        // margin-inline-end: 0.5rem;
       }
       a {
         color: inherit;
