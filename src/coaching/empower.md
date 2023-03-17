@@ -6,9 +6,12 @@ scrollingTitle:
   - "Empower."
 summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 programmeDescription:
-  - 'The vast majority of product companies leverage just a fraction of what the talented people they employ are capable of. This programme aims to change that, by helping leaders and teams develop the tools, language and shared principles they need to move away from limiting "dictate and deliver" approaches, to one of limitless potential - "collaborate and empower".'
-  - "Your product company's best, most valuable ideas will never come from customers or leaders. They come from cross-functional product teams that deeply understand their customers, their product, the technology that drives it, and their business. "
-  - "The key to unlocking this potential is to shift away from seeing this team as one that simply build features in service of the busines and instead, a lean, mean learning machine that serves customers in ways that reliably grow their business."
+  - "This programme lays the foundation for high-performance."
+  - "The vast majority of product companies leverage just a fraction of what the talented people they employ are capable of, with top-down, 'backlog driven' approaches to decision-making that bypass so many of the skills and talents of their teams. Not only does this lead to reduced team engagement, it means those most qualified to learn about customers and devise innovative solutions are rarely given the opportunity in any meaningful way."
+  - "Empowered, self-driven product teams are a proven answer answer to many of these challenges, and it's why they form the backbone of today's most successful tech businesses."
+  - "When teams of engineers, designers and product managers are empowered to improve the lives of customers they've gotten to know first-hand, with solutions they've devised and developed themselves, incredible things happen. Motivation, creativity and team effectiveness skyrocket. Along with the success of their product and business."
+  - "Though the benefits of empowering teams are clear, it's rarely pursued or achieved. The root cause being a bias towards control and a lack of trust between leaders and teams."
+  - "That's exactly what I'll help you and your teams address with this programme, by working with you to develop the environment and tools needed to effectively communicate strategy, intent and progress, which in turn boosts reassurance and trust so leaders can lead and teams can get on with serving customers and growing the business. All applied to your most immediate challenges."
 programmeOutcomes:
   - "A visual map of your product and how well it’s performing in key areas, to better support strategic conversations between teams and stakeholders"
   - "A more focussed approach to documenting customer insights and product improvement ideas, to fuel better discovery, and build a long-term competitive advantage."
