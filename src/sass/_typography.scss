@@ -9,6 +9,11 @@ body {
   letter-spacing: -0.03em;
 }
 
+strong {
+  // font-weight: var(--fw-semibold);
+  font-size: var(--s-500);
+}
+
 a {
   color: var(--color-primary);
   &:hover {

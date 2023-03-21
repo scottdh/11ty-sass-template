@@ -6,12 +6,12 @@ scrollingTitle:
   - "Empower."
 summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 programmeDescription:
-  - "This programme lays the foundation for high-performance."
-  - "The vast majority of product companies leverage just a fraction of what the talented people they employ are capable of, with top-down, 'backlog driven' approaches to decision-making that bypass so many of the skills and talents of their teams. Not only does this lead to reduced team engagement, it means those most qualified to learn about customers and devise innovative solutions are rarely given the opportunity in any meaningful way."
-  - "Empowered, self-driven product teams are a proven answer to many of these challenges, and it's why they form the backbone of today's most successful tech businesses."
-  - "When teams of engineers, designers and product managers are empowered to improve the lives of customers they've gotten to know first-hand, with solutions they've devised and developed themselves, incredible things happen. Motivation, creativity and team effectiveness skyrocket. Along with the success of their product and business."
-  - "Though the benefits of empowering teams are clear, it's rarely pursued or achieved. The root cause being a bias towards control and a lack of trust between leaders and teams."
-  - "That's exactly what I'll help you and your teams address with this programme, by working with you to develop the environment and tools needed to effectively communicate strategy, intent and progress, which in turn boosts reassurance and trust so leaders can lead and teams can get on with serving customers and growing the business. All applied to your most immediate challenges."
+  - "This programme lays the foundation for effective product leadership and high-performing teams."
+  - "The vast majority of product companies leverage just a fraction of what the talented people they employ are capable of, with top-down, 'backlog driven' approaches to decision-making that bypass so many of the skills and talents of their teams. Not only does this lead to reduced team engagement, it limits teams' ability to learn, innovate and deliver effective solutions that grow the business quickly."
+  - "The answer?"
+  - "Empowered, self-driven product teams. When teams are given the autonomy to improve the lives of customers they've got to know first-hand, with solutions they've devised and developed themselves, incredible things happen. Motivation, creativity and team effectiveness skyrocket. Along with the success of their product and business."
+  - "To empower teams successfully however, shared-understanding of the business' goals, as well as effective two-way communication between leaders and teams at a strategic level is crucial. This is exactly what I'll help you address. And in doing so, we'll also bring a focusing degree of clarity to your product's biggest opportunities and priorities, from which we can move forward with greater trust, speed and confidence."
+
 programmeOutcomes:
   - "A visual map of your product and how well it’s performing in key areas, to better support strategic conversations between teams and stakeholders"
   - "A more focussed approach to documenting customer insights and product improvement ideas, to fuel better discovery, and build a long-term competitive advantage."

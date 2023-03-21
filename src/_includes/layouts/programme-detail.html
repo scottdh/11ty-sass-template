@@ -7,7 +7,7 @@
     {% include "partials/scrolling-title.html" %}
     <div class="panel programme-outline">
       <div class="wrapper" data-width="full">
-        <h2 class="section-heading">Overview</h2>
+        <h2 class="section-heading">Programme overview</h2>
 
         <div class="grid programme-outline__header">
           <h3>{{ summary }}</h3>
@@ -21,7 +21,7 @@
         <div class="grid programme-outline__details">
           <div class="programme-outline__details__description flow">
             {% for paragraph in programmeDescription %}
-            <p>{{ paragraph }}</p>
+            <p>{{ paragraph | safe }}</p>
             {% endfor %}
           </div>
           <div class="programme-outline__details__outcomes flow">
