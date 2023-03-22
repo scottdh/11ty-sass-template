@@ -74,8 +74,9 @@
   &__lead {
     &__text {
       @include breakpoints.md {
-        margin: 0 0 var(--s-900) 0;
-        grid-column: 2 / 8;
+        margin: 0 0 var(--s-800) 0;
+        grid-column: 2 / 12;
+        max-width: 56ch;
       }
     }
   }
@@ -89,43 +90,63 @@
     }
 
     &__item {
-      width: 100%;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(12, minmax(16px, 1fr));
       counter-increment: my-awesome-counter;
-      padding: var(--s-800) 0;
+      padding: var(--s-600) 0;
+      @include breakpoints.md {
+        padding: var(--s-800) 0;
+      }
       h3 {
         display: inline;
         font-size: var(--s-800);
+        grid-row: 1/2;
+        margin-inline-start: 1rem;
+        @include breakpoints.md {
+          margin-inline-start: 0;
+        }
         @include breakpoints.lg {
           font-size: var(--s-1000);
         }
       }
+
       &::before {
+        display: flex;
+        align-items: end;
         content: "0" counter(my-awesome-counter);
         font-size: var(--s-600);
-        margin-right: 10%;
-        line-height: 1;
-        margin-bottom: 1rem;
       }
       &__content {
+        --flow-space: 0;
         display: grid;
-        gap: var(--s-500);
+        grid-row-gap: var(--s-500);
+        grid-row: 2/3;
+        grid-column: 1 / 13;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(12, minmax(16px, 1fr));
         @include breakpoints.md {
-          grid-auto-flow: column;
-          grid-template-columns: repeat(12, minmax(16px, 1fr));
+          grid-column-gap: var(--s-600);
         }
         &__text {
+          grid-row: 3/4;
+          grid-column: 1 / 13;
+          @include breakpoints.md {
+            grid-row: 2/3;
+            grid-column: 8 / 13;
+          }
           &__summary {
             max-width: 40rem;
           }
         }
         .programme-hero-image {
+          aspect-ratio: 16 / 9;
+          grid-column: 1 / 13;
+          grid-row: 2/3;
           @include breakpoints.md {
+            aspect-ratio: auto;
+            grid-row: 2/3;
             grid-column: 1 / 8;
-          }
-        }
-        &__text {
-          @include breakpoints.md {
-            grid-column: 8 / 13;
           }
         }
       }
@@ -157,11 +178,9 @@
     display: flex;
     gap: var(--s-1000);
     flex-direction: column;
-
     @include breakpoints.md {
       flex-direction: row;
-      gap: var(--s-1000);
-      padding: 0 var(--s-1000);
+      gap: var(--s-1300);
     }
   }
 
@@ -177,16 +196,16 @@
   img {
     max-width: 3em;
   }
-  figure:nth-child(1) {
-    @include breakpoints.md {
-      grid-column: 2 / 7;
-    }
-  }
-  figure:nth-child(2) {
-    @include breakpoints.md {
-      grid-column: 7 / 12;
-    }
-  }
+  // figure:nth-child(1) {
+  //   @include breakpoints.md {
+  //     grid-column: 2 / 5;
+  //   }
+  // }
+  // figure:nth-child(2) {
+  //   @include breakpoints.md {
+  //     grid-column: 7 / 12;
+  //   }
+  // }
 }
 
 .focus-areas__cta {
