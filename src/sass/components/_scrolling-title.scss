@@ -55,7 +55,7 @@
   overflow: hidden;
   z-index: 1;
   @include breakpoints.md {
-    font-size: calc(var(--s-1100) * 2.4);
+    font-size: calc(var(--s-1200) * 2.2);
   }
 
   &__title {
