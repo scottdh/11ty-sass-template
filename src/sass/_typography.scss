@@ -9,6 +9,9 @@ body {
   letter-spacing: -0.03em;
 }
 
+.highlight {
+  background-color: lightgoldenrodyellow;
+}
 strong {
   // font-weight: var(--fw-semibold);
   font-size: var(--s-500);
@@ -107,6 +110,7 @@ h4,
 p.lead {
   font-size: var(--s-600);
 }
+
 figure {
   figcaption {
     font-size: var(--s-300);

@@ -153,29 +153,38 @@
 }
 
 .focus-areas__testimonials {
-  margin: var(--s-900) 0;
-  figure:nth-child(1) {
-    // text-align: center;
+  &__inner {
+    display: flex;
+    gap: var(--s-1000);
+    flex-direction: column;
+
     @include breakpoints.md {
-      grid-column: 2 / 8;
+      flex-direction: row;
+      gap: var(--s-1000);
+      padding: 0 var(--s-1000);
     }
-    img {
-      max-width: 3em;
-    }
-    .cite {
-      color: var(--color-text-secondary);
-    }
-    a {
-      color: inherit;
+  }
+
+  blockquote {
+    font-size: var(--s-500);
+  }
+  .cite {
+    color: var(--color-text-secondary);
+  }
+  a {
+    color: inherit;
+  }
+  img {
+    max-width: 3em;
+  }
+  figure:nth-child(1) {
+    @include breakpoints.md {
+      grid-column: 2 / 7;
     }
   }
   figure:nth-child(2) {
-    margin-top: var(--s-1300);
     @include breakpoints.md {
-      grid-column: 8 / 12;
-    }
-    img {
-      max-width: 2em;
+      grid-column: 7 / 12;
     }
   }
 }

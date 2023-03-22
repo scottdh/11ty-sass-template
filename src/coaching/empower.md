@@ -41,5 +41,5 @@ hero:
 keySkills:
   - "Establishing clear goals and team objectives"
   - "Product mapping and prioritising improvements"
-  - "Effective collaboration with stakeholders"
+  - "Effective collaboration between leaders and teams"
 ---
