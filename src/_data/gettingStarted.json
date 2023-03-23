@@ -1,0 +1,22 @@
+{
+  "steps": [
+    {
+      "step": "Free ~30min introductory chat",
+      "description": "We discuss your challenges and goals. If I think I can help, and you like what you hear... we move on.",
+      "button": "Book now",
+      "buttonUrl": "#"
+    },
+    {
+      "step": "I conduct a fixed-price 'taster' workshop",
+      "description": "The team and I get to know each other while workshopping a current challenge. There's no better way for us to get to know each other, plus we deliver something of real value."
+    },
+    {
+      "step": "I put together a tailored programme.",
+      "description": "If the team buy-in, and I think I can help, I I'll put together a tailored programme for ~1-3 months. A rolling monthly contract means you’re in control."
+    },
+    {
+      "step": "The team(s) and I get cracking, with regular reviews",
+      "description": "I work with the team. We regularly review progress against outcomes."
+    }
+  ]
+}

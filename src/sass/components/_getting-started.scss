@@ -1,0 +1,36 @@
+@use "../design-tokens/breakpoints";
+
+.getting-started {
+  &__inner {
+    @include breakpoints.md {
+      h2 {
+        grid-column: 3 / 13;
+        .subhead {
+          display: block;
+          color: var(--color-text-secondary);
+        }
+      }
+      ol {
+        // grid-row: 2/3;
+        grid-column: 1 / 13;
+
+        li {
+          padding: var(--s-200) 0;
+          border-bottom: 1px solid var(--color-border-primary);
+          &:first-child {
+            border-top: 1px solid var(--color-border-primary);
+          }
+
+          h5 {
+            grid-column: 3/5;
+          }
+          p {
+            grid-column: 6/11;
+            font-size: var(--s-300);
+            color: var(--color-text-secondary);
+          }
+        }
+      }
+    }
+  }
+}
