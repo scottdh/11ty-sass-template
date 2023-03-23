@@ -39,7 +39,7 @@ hero:
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
   bgColor: "#FFE3F7"
 keySkills:
-  - "Establishing clear goals and team objectives"
   - "Product mapping and prioritising improvements"
-  - "Effective collaboration between leaders and teams"
+  - "Establishing clear goals and team objectives"
+  - "Leadership and team collaboration"
 ---

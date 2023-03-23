@@ -1,7 +1,7 @@
 <article class="getting-started panel">
     <div class="getting-started__inner wrapper" data-width="full">
       <div class="grid">
-        <h2>Sound good? <span class="subhead">Here's how it works</span></h2>
+        <h2>Sound good? <span class="subhead">Here's how it works.</span></h2>
         <ol>
           {% for item in gettingStarted.steps %}
           <li class="grid">
@@ -11,6 +11,11 @@
             <p>
               {{ item.description }}
             </p>
+            {% if item.button %}
+            <a class="button" href="{{ item.button.url }}" data-type="primary"
+              >{{ item.button }}</a
+            >
+            {% endif %}
           </li>
           {% endfor %}
         </ol>
