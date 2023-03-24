@@ -2,7 +2,7 @@
 
 .programme-outline {
   &__header {
-    h3 {
+    &__text {
       @include breakpoints.md {
         grid-column: 1 / 6;
       }
@@ -15,7 +15,7 @@
     }
   }
   &__details {
-    margin-top: var(--s-800);
+    margin-top: var(--s-1200);
     &__description {
       --flow-space: var(--s-500);
       @include breakpoints.md {
@@ -24,6 +24,7 @@
     }
     &__outcomes {
       @include breakpoints.md {
+        margin-top: var(--s-1200);
         grid-column: 8 / 13;
       }
 

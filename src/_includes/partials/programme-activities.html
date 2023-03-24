@@ -1,0 +1,17 @@
+<div class="panel programme-activities">
+  <div class="wrapper" data-width="full">
+    <h2 class="section-heading">What we'll get up to</h2>
+    <ol class="programme-activities__list">
+      {% for item in programmeActivities %}
+      <li class="programme-activities__list__item flow">
+        <h5 class="programme-activities__list__item__title">
+          {{ item.title }}
+        </h5>
+        <p class="programme-activities__list__item__description">
+          {{ item.description }}
+        </p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>

@@ -7,12 +7,15 @@
     {% include "partials/scrolling-title.html" %}
     <div class="panel programme-outline">
       <div class="wrapper" data-width="full">
-        <h2 class="section-heading">Programme overview</h2>
+        <h2 class="section-heading">{{ title }} overview</h2>
 
         <div class="grid programme-outline__header">
-          <h3>{{ summary }}</h3>
+          <div class="programme-outline__header__text">
+            <h3>{{ summary }}</h3>
+          </div>
+
           <div
-            class="programme-hero-image"
+            class="programme-outline__header__image programme-hero-image"
             style="background-color: {{ hero.bgColor }}"
           >
             <img src="{{ hero.image }}" alt="hero.imageAlt" />
@@ -25,7 +28,7 @@
             {% endfor %}
           </div>
           <div class="programme-outline__details__outcomes flow">
-            <h4>Programme outcomes</h4>
+            <h4>Key outcomes</h4>
             <ul class="flow">
               {% for item in programmeOutcomes %}
               <li>{{ item }}</li>
@@ -35,23 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="panel programme-activities">
-      <div class="wrapper" data-width="full">
-        <h2 class="section-heading">What we'll get up to</h2>
-        <ol class="programme-activities__list">
-          {% for item in programmeActivities %}
-          <li class="programme-activities__list__item flow">
-            <h5 class="programme-activities__list__item__title">
-              {{ item.title }}
-            </h5>
-            <p class="programme-activities__list__item__description">
-              {{ item.description }}
-            </p>
-          </li>
-          {% endfor %}
-        </ol>
-      </div>
-    </div>
+    {% include "partials/getting-started.html" %}
   </div>
 </article>
 
