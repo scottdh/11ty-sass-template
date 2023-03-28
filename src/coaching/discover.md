@@ -4,7 +4,7 @@ title: "Discover"
 scrollingTitle:
   - "Discover."
   - "Discover."
-summary: "Enable teams to continually uncover unmet customer needs, design better solutions and achieve business results."
+summary: "Build a discovery process to uncover unmet user needs, design better solutions and achieve business results."
 displayOrder: 2
 featured: true
 hero:

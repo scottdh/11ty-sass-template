@@ -4,7 +4,7 @@ title: "Empower"
 scrollingTitle:
   - "Empower."
   - "Empower."
-summary: "Unlock your teams' ability to make decisions, move fast and ship value to customers sooner."
+summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 programmeDescription:
   - "This programme lays the foundation for effective product leadership and high-performing teams."
   - "The vast majority of product companies leverage just a fraction of what the talented people they employ are capable of, with top-down, 'backlog driven' approaches to decision-making that bypass so many of the skills and talents of their teams."
