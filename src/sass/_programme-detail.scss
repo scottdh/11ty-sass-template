@@ -4,7 +4,7 @@
   &__header {
     &__text {
       @include breakpoints.md {
-        grid-column: 1 / 6;
+        grid-column: 1 / 7;
       }
     }
     .programme-hero-image {
@@ -19,12 +19,11 @@
     &__description {
       --flow-space: var(--s-500);
       @include breakpoints.md {
-        grid-column: 1 / 6;
+        grid-column: 1 / 7;
       }
     }
     &__outcomes {
       @include breakpoints.md {
-        margin-top: var(--s-1200);
         grid-column: 8 / 13;
       }
 
