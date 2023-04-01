@@ -6,13 +6,12 @@ scrollingTitle:
   - "Empower."
 summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 programmeDescription:
-  - "This programme lays the foundation for effective product leadership and high-performing teams."
-  - "The vast majority of product companies leverage just a fraction of what the talented people they employ are capable of, with top-down, 'backlog driven' approaches to decision-making that bypass so many of the skills and talents of their teams."
-  - "Not only does this lead to reduced team engagement, it limits teams' ability to learn, innovate and deliver effective solutions that grow the business quickly."
-  - "The answer?"
-  - "Empowered, self-driven product teams, combined with an outcome-driven approach to leadership. When teams are given the autonomy to improve the lives of customers they've got to know first-hand, with solutions they've devised and developed themselves to achieve negotiated outcomes, incredible things happen. Motivation, creativity and team effectiveness skyrocket. Along with the success of their product and business."
-  - "There's just one catch though. To empower teams successfully, shared-understanding of the business' goals, as well as effective, continuous two-way communication between leaders and teams at a strategic level is crucial. But is so rarely the case. This is exactly what I'll help you address. And in doing so, we'll also bring clarity to your product's biggest opportunities and priorities, from which we can move forward with greater trust and speed."
-
+  - "<strong>In this coaching programme, we'll dig into your business' current challenges and lay the foundation for empowered, high-performing teams.</strong>"
+  - "To survive in volatile market conditions where tech, customer expectations and competition evolve at pace, continuous learning and speed are crucial. This is why empowered, self-driven product teams form the backbone of today's most successful tech organisations."
+  - "These teams aren't simply handed an ever-lengthening list of unproven features to estimate and build, sprint after sprint. Such a 'command and control' approach not only leverages just a fraction of what teams are capable of, leading to reduced engagement, but it actively thwarts long term success. This is because it robs them of the opportunity to learn, adapt and innovate."
+  - "Instead, empowered teams are more like special forces units or competitive sports teams. They're given a strategic objective and trusted to use their diverse skills and talents to learn from customers, act and adapt fast.... and get the job done. Each time, improving their own understanding of customers and what it takes to succeed, by serving them in ways that grow the business."
+  - "In short, they're responsible for results, not just code. And this changes everything. Creating an environment primed for learning, continuous improvement, speed and innovation."
+  - "<h4>Our challenge</h4>"
 programmeOutcomes:
   - "A visual map of your product and how well it’s performing in key areas, to better support strategic conversations between teams and stakeholders"
   - "Leadership and teams can readily identify target opportunities and outcomes that will bring real business value, rather than simply outputs to be delivered."
