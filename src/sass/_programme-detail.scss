@@ -24,6 +24,7 @@
     }
     &__outcomes {
       @include breakpoints.md {
+        font-size: var(--s-300);
         grid-column: 8 / 13;
       }
 

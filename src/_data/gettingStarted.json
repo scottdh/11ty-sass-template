@@ -2,13 +2,13 @@
   "steps": [
     {
       "step": "Free ~30min introductory chat",
-      "description": "We discuss your challenges and goals. If I think I can help, and you like what you hear, we move on.",
+      "description": "We discuss your challenges and goals. If I can help, and you like what you hear, we move on.",
       "button": "Book now",
-      "buttonUrl": "#"
+      "buttonUrl": "https://calendly.com/scottherrington-design/30min"
     },
     {
-      "step": "Low risk 'taster' workshop",
-      "description": "The team and I workshop a current challenge together. You get to know me, I learn about them, plus we deliver something of immediate value."
+      "step": "Low risk intro workshop",
+      "description": "The team and I workshop a current challenge together. You get to know me, I learn about them and the business, plus we deliver something valuable."
     },
     {
       "step": "Stick or twist?",

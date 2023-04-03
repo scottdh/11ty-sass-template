@@ -6,11 +6,13 @@ scrollingTitle:
   - "Empower."
 summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 programmeDescription:
-  - "<strong>In this coaching programme, we'll dig into your business' current challenges and lay the foundation for empowered, high-performing teams.</strong>"
-  - "To survive in volatile market conditions where tech, customer expectations and competition evolve at pace, continuous learning and speed are crucial. This is why empowered, self-driven product teams form the backbone of today's most successful tech organisations."
-  - "These teams aren't simply handed an ever-lengthening list of unproven features to estimate and build, sprint after sprint. Such a 'command and control' approach not only leverages just a fraction of what teams are capable of, leading to reduced engagement, but it actively thwarts long term success. This is because it robs them of the opportunity to learn, adapt and innovate."
-  - "Instead, empowered teams are more like special forces units or competitive sports teams. They're given a strategic objective and trusted to use their diverse skills and talents to learn from customers, act and adapt fast.... and get the job done. Each time, improving their own understanding of customers and what it takes to succeed, by serving them in ways that grow the business."
-  - "In short, they're responsible for results, not just code. And this changes everything. Creating an environment primed for learning, continuous improvement, speed and innovation."
+  - "<strong>The focus of this programme is to dig into your business' current challenges and lay the foundation for empowered, high-performing teams.</strong>"
+  - "To survive in today's volatile market conditions where tech, customer expectations and competition evolve at pace, continuous learning and speed are essential. This is why empowered, self-driven product teams form the backbone of today's most successful tech organisations."
+  - "<h4 class='h5'>Why are empowered teams so much more effective?</h4>"
+  - "Empowered teams aren't simply handed an ever-lengthening list of unproven features to estimate and build, sprint after sprint. Instead, they're more like special forces units or competitive sports teams. They're given a strategic objective to achieve and the autonomy to pursue it, by making fast, informed decisions based on real-time learning."
+  - "This means they're responsible for not only designs and code, but results too. <em>And this changes everything</em>."
+  - "Entrusted with this responsibility, empowered teams excel at <a href='../discover'>discovery</a>, to uncover genuine opportunities and customer needs. They experiment rapidly, to refine solutions, minimise risks and maximise results. And they collaborate closely with the wider business, taking onboard feedback to improve their own thinking, and feeding back insights to improve others'. With each cycle, their understanding of customers and what it takes to succeed improves. As does the wider organisation's."
+  - "The result is an organisation primed for learning, continuous improvement, speed and innovation. And it's this that leads to better products, built faster, with less waste and greater business success."
   - "<h4>Our challenge</h4>"
 programmeOutcomes:
   - "A visual map of your product and how well it’s performing in key areas, to better support strategic conversations between teams and stakeholders"

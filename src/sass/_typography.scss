@@ -17,6 +17,10 @@ strong {
   // font-size: var(--s-500);
 }
 
+em {
+  font-style: italic;
+}
+
 a {
   color: var(--color-primary);
   &:hover {
@@ -96,6 +100,12 @@ h4,
 .h4 {
   font-size: var(--s-600);
   --flow-space: var(--s-900);
+}
+
+h5,
+.h5 {
+  font-size: var(--s-500);
+  --flow-space: var(--s-700);
 }
 
 .section-heading {
