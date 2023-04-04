@@ -1,4 +1,4 @@
-{% set pageTitle = site.name + ' | ' + pagetitle %} {# We don't want any
+{% set pageTitle = site.name + ' | ' + title %} {# We don't want any
 duplication. This is likely for the home page. #} {% if site.name === title %}
 {% set pageTitle = title %} {% endif %} {% set siteTitle = site.name %} {% set
 currentUrl = site.url + page.url %} {# If the page’s Front Matter has specific

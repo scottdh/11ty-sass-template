@@ -1,5 +1,5 @@
 ---
-title: "Articles"
+title: "Writing"
 layout: "layouts/feed.html"
 scrollingTitle:
   - "Writing."

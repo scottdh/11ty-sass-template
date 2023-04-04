@@ -25,11 +25,13 @@
 @use "./components/programme-hero-image";
 @use "./components/programme-stepper";
 @use "./components/getting-started";
+@use "./components/newsletter-widget";
 
 /* Pages */
 @use "./home";
 @use "./coaching";
 @use "./page";
+@use "./feed";
 @use "./programme-detail";
 
 body {

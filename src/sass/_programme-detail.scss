@@ -17,6 +17,9 @@
   &__details {
     margin-top: var(--s-1200);
     &__description {
+      & > p:first-child {
+        font-weight: var(--fw-bold);
+      }
       --flow-space: var(--s-500);
       @include breakpoints.md {
         grid-column: 1 / 7;

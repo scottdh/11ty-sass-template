@@ -1,0 +1,12 @@
+.newsletter-widget {
+  .title {
+    .subhead {
+      display: block;
+      font-size: var(--s-400);
+      color: var(--color-text-secondary);
+    }
+  }
+  button {
+    font-size: inherit;
+  }
+}

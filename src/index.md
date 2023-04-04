@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.html
-pagetitle: "Product team coach"
+title: "Product team coach"
 headerIntroBlock:
   image: "/images/scott-at-desk.png"
   imageAlt: "An image of Scott sitting at his desk behind a laptop"
