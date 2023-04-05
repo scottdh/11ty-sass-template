@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/fonts/");
   eleventyConfig.addPassthroughCopy("./src/images/");
 
-  // Returns work items, sorted by display order
+  // Returns programmes, sorted by display order
   eleventyConfig.addCollection("programmes", (collection) => {
     return sortByDisplayOrder(
       collection.getFilteredByGlob("./src/coaching/*.md")

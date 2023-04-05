@@ -1,12 +1,21 @@
 <div class="newsletter-widget flow">
   <h3 class="title">
-    Product RE:Wired <span class="subhead">By Scott Herrington</span>
+    Product Re:Wired <span class="subhead">By Scott Herrington</span>
   </h3>
   <p>
-    3 ideas, every week, to help you improve your products and team performance.
+    3 ideas to help you improve your products and team performance, delivered
+    every week.
   </p>
-  <form action="" class="flow">
-    <input type="text" />
-    <button data-type="primary">Upgrade your ideas</button>
+  <form
+    action="https://buttondown.email/api/emails/embed-subscribe/productrewired"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/productrewired', 'popupwindow')"
+    class="flow embeddable-buttondown-form"
+  >
+    <label for="bd-email">Enter your email</label>
+    <input type="email" name="email" id="bd-email" />
+    <button type="submit" data-type="primary">Upgrade your ideas</button>
+    <!-- <input type="submit" data-type="primary" value="Upgrade your ideas" /> -->
   </form>
 </div>

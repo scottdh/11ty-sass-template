@@ -30,23 +30,23 @@
 }
 
 // specific styling for post-list on writing home page
-.feed {
-  .post-list {
-    --flow-space: var(--s-800);
-    &__item {
-      &__date {
-        font-size: var(--s-400);
-      }
-      &__link {
-        font-size: var(--s-700);
-        @include breakpoints.md {
-          font-size: var(--s-800);
-        }
-        @include breakpoints.lg {
-          font-size: var(--s-900);
-          line-height: var(--lh-tight);
-        }
-      }
-    }
-  }
-}
+// .feed {
+//   .post-list {
+//     --flow-space: var(--s-800);
+//     &__item {
+//       &__date {
+//         font-size: var(--s-400);
+//       }
+//       &__link {
+//         font-size: var(--s-700);
+//         @include breakpoints.md {
+//           font-size: var(--s-800);
+//         }
+//         @include breakpoints.lg {
+//           font-size: var(--s-900);
+//           line-height: var(--lh-tight);
+//         }
+//       }
+//     }
+//   }
+// }

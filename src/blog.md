@@ -6,7 +6,7 @@ scrollingTitle:
   - "Writing."
 pagination:
   data: collections.blog
-  size: 5
+  size: 100
 permalink: "blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
 paginationPrevText: "Newer posts"
 paginationNextText: "Older posts"

@@ -1,16 +1,17 @@
 @use "./design-tokens/breakpoints";
 
 .feed {
+  grid-row-gap: 800px;
   &__main-content {
     @include breakpoints.md {
-      grid-column: 1 / 9;
+      grid-column: 5 / 13;
     }
     // To style post-list in feed go to _post-list.scss
   }
 
   &__sidebar {
     @include breakpoints.md {
-      grid-column: 10 / 13;
+      grid-column: 1 / 4;
     }
   }
 }

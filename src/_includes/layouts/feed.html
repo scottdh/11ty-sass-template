@@ -6,6 +6,10 @@ this is a tag, grab those items instead as one large collection #} {% if tag %}
 %} {% endif %} {% block content %} {% include "partials/scrolling-title.html" %}
 <article class="feed panel">
   <div class="wrapper grid" data-width="full">
+    <section class="feed__sidebar">
+      <h2 class="section-heading">Newsletter</h2>
+      {% include "partials/newsletter-widget.html" %}
+    </section>
     <section class="feed__main-content">
       {% if tag %}
       <h2 class="section-heading">{{ pageHeaderTitle }}</h2>
@@ -18,10 +22,6 @@ this is a tag, grab those items instead as one large collection #} {% if tag %}
         so don't render in that situation #} {% if not tag %} {% include
         "partials/pagination.html" %} {% endif %}
       </div>
-    </section>
-    <section class="feed__sidebar">
-      <h2 class="section-heading">Newsletter</h2>
-      {% include "partials/newsletter-widget.html" %}
     </section>
   </div>
 </article>

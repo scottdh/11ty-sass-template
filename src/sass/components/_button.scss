@@ -1,5 +1,6 @@
 button,
-.button {
+.button,
+input[type="submit"] {
   display: block;
   width: fit-content;
   border: none;
