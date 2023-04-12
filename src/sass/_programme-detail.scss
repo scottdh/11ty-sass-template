@@ -4,13 +4,13 @@
   &__header {
     &__text {
       @include breakpoints.md {
-        grid-column: 1 / 8;
+        grid-column: 1 / 7;
       }
     }
     .programme-hero-image {
       height: 12em;
       @include breakpoints.md {
-        grid-column: 9 / 13;
+        grid-column: 8 / 13;
       }
     }
   }
@@ -23,13 +23,13 @@
       }
       --flow-space: var(--s-500);
       @include breakpoints.md {
-        grid-column: 1 / 8;
+        grid-column: 1 / 7;
       }
     }
     &__outcomes {
       @include breakpoints.md {
         // font-size: var(--s-300);
-        grid-column: 9 / 13;
+        grid-column: 8 / 13;
       }
 
       ol,

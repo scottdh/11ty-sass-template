@@ -8,7 +8,9 @@ this is a tag, grab those items instead as one large collection #} {% if tag %}
   <div class="wrapper grid" data-width="full">
     <section class="feed__sidebar">
       <h2 class="section-heading">Newsletter</h2>
-      {% include "partials/newsletter-widget.html" %}
+      <div class="mini-widget">
+        {% include "partials/newsletter-widget.html" %}
+      </div>
     </section>
     <section class="feed__main-content">
       {% if tag %}
