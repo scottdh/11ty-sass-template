@@ -4,31 +4,32 @@
   &__header {
     &__text {
       @include breakpoints.md {
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
       }
     }
     .programme-hero-image {
       height: 12em;
       @include breakpoints.md {
-        grid-column: 8 / 13;
+        grid-column: 9 / 13;
       }
     }
   }
   &__details {
     margin-top: var(--s-1200);
     &__description {
+      max-width: 62ch;
       & > p:first-child {
         font-weight: var(--fw-bold);
       }
       --flow-space: var(--s-500);
       @include breakpoints.md {
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
       }
     }
     &__outcomes {
       @include breakpoints.md {
-        font-size: var(--s-300);
-        grid-column: 8 / 13;
+        // font-size: var(--s-300);
+        grid-column: 9 / 13;
       }
 
       ol,
@@ -57,7 +58,8 @@
         font-size: var(--s-500);
       }
       &__description {
-        // font-size: var(--s-300);
+        --flow-space: var(--s-400);
+        font-size: var(--s-300);
         color: var(--color-text-secondary);
       }
       &::before {

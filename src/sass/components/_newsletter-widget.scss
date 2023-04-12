@@ -2,7 +2,8 @@
   background-color: #ffe3f7;
   // border: 1px solid var(--color-primary);
   padding: var(--s-500) var(--s-300);
-  font-size: var(--s-300);
+  font-size: var(--s-400);
+  line-height: 1.5em;
   margin-bottom: var(--s-800);
   .title {
     font-size: var(--s-600);
@@ -15,6 +16,7 @@
   form {
     --flow-space: var(--s-300);
     label {
+      display: block;
       font-size: var(--s-300);
       font-weight: var(--fw-semibold);
     }
