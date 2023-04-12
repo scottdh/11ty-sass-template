@@ -1,9 +1,9 @@
 ---
-url: /coaching/innovate
-title: "Innovate"
+url: /coaching/excel
+title: "Excel"
 scrollingTitle:
-  - "Innovate."
-  - "Innovate."
+  - "Excel."
+  - "Excel."
 summary: "Create the environment needed to fuel innovation and push ideas further."
 displayOrder: 3
 featured: true
