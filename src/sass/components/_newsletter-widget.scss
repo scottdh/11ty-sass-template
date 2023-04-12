@@ -1,19 +1,27 @@
+@use "../design-tokens/breakpoints";
+
 .newsletter-widget {
   &__content {
     max-width: 40rem;
     margin-inline: auto;
   }
-  text-align: center;
+
   background-color: #ffe3f7;
-  // border: 1px solid var(--color-primary);
   padding: var(--s-600) var(--s-300);
-  font-size: var(--s-400);
+  font-size: var(--s-300);
+  @include breakpoints.md {
+    font-size: var(--s-400);
+    text-align: center;
+  }
   margin-bottom: var(--s-800);
   .title {
-    // font-size: var(--s-600);
+    font-size: var(--s-500);
+    @include breakpoints.md {
+      font-size: var(--s-700);
+    }
     .subhead {
-      // display: block;
-      // font-size: var(--s-300);
+      display: block;
+      font-size: var(--s-300);
       color: var(--color-text-secondary);
     }
   }
@@ -23,19 +31,26 @@
       display: block;
       font-size: var(--s-300);
       font-weight: var(--fw-semibold);
-      text-align: center;
+      @include breakpoints.md {
+        text-align: center;
+      }
     }
     input[type="email"] {
       --flow-space: 0;
       width: 100%;
-      text-align: center;
+
       padding: 0.25rem 0.5rem;
+      @include breakpoints.md {
+        text-align: center;
+      }
     }
     input[type="submit"],
     button {
       --flow-space: var(--s-200);
       font-size: var(--s-400);
-      margin-inline: auto;
+      @include breakpoints.md {
+        margin-inline: auto;
+      }
     }
   }
 }

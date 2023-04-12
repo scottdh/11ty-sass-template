@@ -3,5 +3,9 @@
 %} {% include "partials/home-programmes.html" %} {% include
 "partials/home-testimonials.html" %} {% include "partials/getting-started.html"
 %} {% include "partials/home-about.html" %}
-<div class="panel">{% include "partials/newsletter-widget.html" %}</div>
+<div class="panel">
+  <div class="wrapper" data-width="full">
+    {% include "partials/newsletter-widget.html" %}
+  </div>
+</div>
 {% endblock %}
