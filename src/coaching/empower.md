@@ -37,7 +37,7 @@ featured: true
 hero:
   image: "/images/team-empower.svg"
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
-  bgColor: "#FFE3F7"
+  bgColor: "lavenderblush"
 keySkills:
   - "Product mapping and prioritising improvements"
   - "Establishing clear goals and team objectives"

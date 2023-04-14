@@ -7,20 +7,9 @@
       <!-- Supercharge your product and team's performance with one email per week -->
     </h3>
     <p>
-      Supercharge your products and team's performance with actionable ideas and
-      inspiring thoughts, delivered to your inbox each week.
+      Build better products and high-performing teams with ideas and
+      straight-forward, actionable advice from 15 years in tech.
     </p>
-    <form
-      action="https://buttondown.email/api/emails/embed-subscribe/productrewired"
-      method="post"
-      target="popupwindow"
-      onsubmit="window.open('https://buttondown.email/productrewired', 'popupwindow')"
-      class="flow embeddable-buttondown-form"
-    >
-      <label for="bd-email">Your email</label>
-      <input type="email" name="email" id="bd-email" />
-      <button type="submit" data-type="primary">Upgrade your ideas</button>
-      <!-- <input type="submit" data-type="primary" value="Upgrade your ideas" /> -->
-    </form>
+    {% include "./substack-embed.html" %}
   </div>
 </div>
