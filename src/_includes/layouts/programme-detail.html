@@ -13,14 +13,19 @@
           <div class="programme-outline__header__text">
             <h2>{{ summary }}</h2>
           </div>
-
           <div
             class="programme-outline__header__image programme-hero-image"
             style="background-color: {{ hero.bgColor }}"
           >
             <img src="{{ hero.image }}" alt="hero.imageAlt" />
           </div>
+          <ul class="programme-outline__header__benefits table-view fs-300">
+            {% for skill in keySkills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
         </div>
+
         <div class="grid programme-outline__details">
           <div class="programme-outline__details__description flow">
             {% for paragraph in programmeDescription %}

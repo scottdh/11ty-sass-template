@@ -2,6 +2,7 @@
 
 .programme-outline {
   &__header {
+    grid-row-gap: var(--s-1000);
     &__text {
       @include breakpoints.md {
         grid-column: 1 / 7;
@@ -13,9 +14,15 @@
         grid-column: 8 / 13;
       }
     }
+    &__benefits {
+      @include breakpoints.md {
+        grid-column: 1 / 7;
+        grid-row: 2;
+      }
+    }
   }
   &__details {
-    margin-top: var(--s-1200);
+    margin-block-start: var(--s-1000);
     &__description {
       max-width: 62ch;
       & > p:first-child {
@@ -28,7 +35,6 @@
     }
     &__outcomes {
       @include breakpoints.md {
-        // font-size: var(--s-300);
         grid-column: 8 / 13;
       }
 

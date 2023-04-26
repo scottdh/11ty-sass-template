@@ -7,10 +7,10 @@ scrollingTitle:
 summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
 programmeDescription:
   - "The focus of this programme is to dig into your business' current challenges and lay the foundation for empowered, high-performing teams."
-  - "Empowered teams form the backbone of today's most successful product organisations. Unlike most, these teams aren't simply handed an ever-lengthening list of unproven features to estimate, design and build, sprint after sprint. Instead, they're more like a special forces unit. They're given a strategic objective to achieve and the autonomy to pursue it as they see fit, by making fast, informed decisions based on real-time learning."
-  - "This means they're responsible not only for designs and code, but results too. <strong>And this changes everything</strong>."
-  - "It changes how leaders lead, driving innovation, not hampering it with micro-management. It changes how teams work, contributing to long-term success, not just the next thing on the list. And it changes the culture, from one that optimises for what's easily measured such as productivity and output, to one that optimises for what matters -  continuous learning and improvement, agility and results."
-  - "<h4>Our challenge</h4>"
+  - "Empowered teams form the backbone of today's most successful product organisations. These teams, unlike most, aren't limited to delivering a prescribed list of unproven features, sprint after sprint. Instead, they're given a strategic objective to achieve and the autonomy to pursue it as they see fit. Which they do by making fast, informed decisions based on real-time data and learning."
+  - "This freedom, combined with a relentless focus on customer needs and a shared responsibility for delivering results is the key to high-performance. <em>Enabling empowered teams to build not just the next thing on the list, but an understanding of customers and what it takes to build products that succeed</em>."
+  - "Together, we'll develop the environment and skills needed to successfully empower and lead your own teams. We'll break down your products' current challenges in ways that everyone can understand and contribute to solving. And we'll look at how to define and assign objectives teams can own, so that they can begin quickly and transparently tackling your business' top priorities in new and more effective ways."
+programmeQuote: "Most teams build the next thing on the list. Empowered teams build an understanding of customers and what it takes to succeed."
 programmeOutcomes:
   - "A visual map of your product and how well it’s performing in key areas, to better support strategic conversations between teams and stakeholders"
   - "Leadership and teams can readily identify target opportunities and outcomes that will bring real business value, rather than simply outputs to be delivered."
@@ -39,7 +39,7 @@ hero:
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
   bgColor: "lavenderblush"
 keySkills:
-  - "Product mapping and prioritising improvements"
-  - "Establishing clear goals and team objectives"
-  - "Leadership and team collaboration"
+  - "Transform the way your team thinks and works"
+  - "Map your product and establish objectives"
+  - "Develop a process leaders and teams trust"
 ---

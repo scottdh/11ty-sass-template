@@ -16,13 +16,16 @@ keySkills:
   - "Turn learning into a competitive advantage"
   - "Diffuse insights across the wider business"
 programmeDescription:
-  - "This programme lays the foundation for continuous product improvement and long-term success."
-  - "Many products fail because of an over-confidence in the value of our ideas and a bias towards measuring productivity rather than outcomes. The result is invariably a product that grows in functionality and complexity, but without the business growth to justify the energy and hard work, or the learning needed for long-term success."
-  - "Discovery is a continuous set of customer-focussed activities that addresses all this, to increase the likelihood that the time, money and energy invested in product development generates a positive return. On top of that, these activities also help uncover a constant stream of new opportunities, while building a treasure trove of customer insights to help capitalise on them."
+  - "This programme sets your newly empowered teams up for success, by developing the habits they'll need to continuously improve their product in ways that reliably achieve objectives."
+  - "Many products fail because of an over-confidence in the value of our ideas and a bias towards measuring what's easy rather than what matters. The result is invariably a product that grows in functionality and complexity, but without the business growth to justify the energy and hard work. Or the learning needed for long-term success."
+  - "We'll set up your teams to succeed by developing continuous cycle of customer-focussed activities that addresses all this, to increase the likelihood that the time, money and energy invested in product development generates a positive return. On top of that, these activities will also help uncover a constant stream of new opportunities, while building a treasure trove of customer insights to help capitalise on them."
   - "In short, product discovery brings teams closer to customers, uncovers new opportunities, increases the likelihood of business results and builds a competitive advantage your competition can't copy."
 programmeOutcomes:
-  - "Teams are able to generate more, higher quality ideas"
-  - "Team members feel safer and more confident to voice their opinions"
+  - "Teams are able to continuously identify new opportunities to achieve objectives and grow the business."
+  - "Multiple frameworks to help teams turn opportunities into testable assumptions, to minimse waste from biases or false beliefs."
+  - "A cost-effective user-research process, enabling teams to rapidly design and carry out tests to inform next steps, increasing the likelihood of success."
+  - "Leaders and teams have a process for responding in real-time to what's learnt, to manage expectations and aid planning efforts."
+  - "A forum where teams can share insights across the business, improving others' thinking, while inviting feedback to improve theirs."
 programmeActivities:
   - title: "Make space for discovery"
     description: "Product teams should be continually engaged in two activities - working out what to build (discovery) and building it (development). Undoubtedly your team's prioritised development, so together we'll work out how best make space for discovery."
