@@ -4,7 +4,7 @@ title: "Empower"
 scrollingTitle:
   - "Empower."
   - "Empower."
-summary: "Unlock your teams' ability to make better decisions, move faster and ship more value to customers sooner."
+summary: "Unlock your teams' ability to move faster, make better decisions and deliver greater value."
 programmeDescription:
   - "The focus of this programme is to dig into your business' current challenges and lay the foundation for empowered, high-performing teams."
   - "Empowered teams form the backbone of today's most successful product organisations. These teams, unlike most, aren't limited to delivering a prescribed list of unproven features, sprint after sprint. Instead, they're given a strategic objective to achieve and the autonomy to pursue it as they see fit. They do this by making fast, informed decisions based on real-time data and learning."
