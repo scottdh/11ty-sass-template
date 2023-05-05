@@ -18,7 +18,7 @@ keySkills:
 programmeDescription:
   - "This programme sets your newly empowered teams up for success, by developing the habits they'll need to continuously improve their product in ways that reliably grow your business."
   - "Many products fail because of an over-confidence in the value of our ideas and a bias towards measuring what's easy rather than what matters. The result is invariably a product that grows in functionality and complexity, but without the business growth to justify the energy and hard work. Or the learning needed for long-term success."
-  - "We'll set up your teams to succeed by developing continuous cycle of customer-focussed activities that addresses all this, to increase the likelihood that the time, money and energy invested in product development generates a positive return. On top of that, these activities will also help uncover a constant stream of new opportunities, while building a treasure trove of customer insights to help capitalise on them."
+  - "We'll set up your teams to succeed by developing a continuous cycle of customer-focussed activities that addresses this, increasing the likelihood that the time, money and energy invested in product development drives growth. On top of that, these activities will also help uncover a constant stream of new opportunities, while building a treasure trove of customer insights to help capitalise on them."
   - "In short, product discovery brings teams closer to customers, uncovers new opportunities, increases the likelihood of business results and builds a competitive advantage your competition can't copy."
   - "<em>Ready to develop or upgrade your teams' discovery process? Book a free introductory chat below.</em>"
 programmeOutcomes:
