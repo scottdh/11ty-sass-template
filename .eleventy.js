@@ -12,6 +12,8 @@ module.exports = function (eleventyConfig) {
   // Set directories to pass through to the dist folder
   eleventyConfig.addPassthroughCopy("./src/fonts/");
   eleventyConfig.addPassthroughCopy("./src/images/");
+  // Copy `img/favicon/` to `_site/`
+  eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
 
   // Returns programmes, sorted by display order
   eleventyConfig.addCollection("programmes", (collection) => {
