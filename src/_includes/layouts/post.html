@@ -3,7 +3,7 @@ other posts that aren’t this one for the 'more from the blog' feed #} {% set
 recommendedPosts = helpers.getSiblingContent(collections.blog, page) %} {#
 Render post date and any tags that this post has been filed under #} {% set
 pageHeaderSummary %}
-<p class="lead">{{ articleSummary | safe }}</p>
+<p class="lead measure-short">{{ articleSummary | safe }}</p>
 {% if tags %}
 <p class="sr-only" id="tags-desc">Tags that this post has been filed under.</p>
 <ul class="tags-list" aria-describedby="tags-desc">
