@@ -2,12 +2,12 @@
 pageHeaderSummary = content %} {% set postListItems = pagination.items %} {# If
 this is a tag, grab those items instead as one large collection #} {% if tag %}
 {% set postListItems = collections[tag] %} {% set scrollingTitle = ['#' + tag, '
-'+ '#' + tag] %} {% set pageHeaderTitle = 'Blog posts filed under “' + tag + '”'
-%} {% endif %} {% block content %} {% include "partials/scrolling-title.html" %}
+'+ '#' + tag] %} {% set pageHeaderTitle = 'Notes filed under “' + tag + '”' %}
+{% endif %} {% block content %} {% include "partials/scrolling-title.html" %}
 <article class="feed panel">
   <div class="wrapper grid" data-width="full">
     <section class="feed__sidebar">
-      <h2 class="section-heading">Newsletter</h2>
+      <!-- <h2 class="section-heading">Newsletter</h2> -->
       <div class="mini-widget">
         {% include "partials/newsletter-widget.html" %}
       </div>
@@ -16,7 +16,7 @@ this is a tag, grab those items instead as one large collection #} {% if tag %}
       {% if tag %}
       <h2 class="section-heading">{{ pageHeaderTitle }}</h2>
       {% else %}
-      <h2 class="section-heading">Articles</h2>
+      <h2 class="section-heading">Notes</h2>
       {% endif %}
       <div class="flow">
         {% include "partials/post-list.html" %} {# If we leave pagination in for

@@ -14,6 +14,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images/");
   // Copy `img/favicon/` to `_site/`
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
+  // Copy image folder in posts to /blog
+  eleventyConfig.addPassthroughCopy({ "./src/posts/media": "/blog/media" });
 
   // Returns programmes, sorted by display order
   eleventyConfig.addCollection("programmes", (collection) => {
