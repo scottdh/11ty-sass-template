@@ -1,6 +1,6 @@
 ---
 url: "Avoiding garbage research responses"
-title: "Avoiding garbage research responses"
+title: 'Avoiding "Garbage" Research Responses'
 articleSummary: "A few rules of thumb when coming up with customer interview questions."
 date: "2023-05-25"
 tags: ["discover"]

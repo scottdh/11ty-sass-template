@@ -1,6 +1,6 @@
 ---
-url: "Football Legend Thierry Henrys Lesson in Enhacing Teammates"
-title: "Football Legend Thierry Henry's Lesson in Enhacing Teammates."
+url: "Football Legend Lesson in Enhacing Teammates"
+title: "A Football Legend's Lesson in Enhacing Teammates."
 articleSummary: "Thierry Henry recalls some advice he got from his manager at Arsenal, Arsene Wenger, which changed his mindset. Making him a better team player, and Arsenal a better team."
 date: "2023-05-24"
 tags: ["excel"]
