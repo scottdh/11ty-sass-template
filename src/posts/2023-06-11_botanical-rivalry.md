@@ -1,7 +1,7 @@
 ---
 url: "The Botanical Battle"
 title: "The Botanical Battle Between a Lone Genius and an Empowering Leader"
-articleSummary: "In a whimsical English country village a lone genius and an empowering leader compete for this summer's most profitable botanical gift. But who will triumph?."
+articleSummary: "In a whimsical English country village a lone genius and an empowering leader compete for this summer's most profitable botanical gift. But who will triumph?"
 date: "2023-06-11"
 tags: ["empower"]
 ---
