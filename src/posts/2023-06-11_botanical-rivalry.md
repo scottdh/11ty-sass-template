@@ -12,7 +12,7 @@ In the quaint English village of Lilliput, two garden centres stand locked in an
 
 First, we have Mr. Taylor, who is utterly convinced that vases will be this year's summer hit.
 
-It's obvious really. Just last week, his dear mum and sister, unbeknownst to each other, had both purchased vases for Aunt June's grand 70th birthday celebration. What's more, Mr. Taylor also happened to stumble upon a skilled potter in the pub one evening, who specialised in them. And if that combo wasn't serendipitous enough, he caught wind that the bigger city based competition were investing big in new vase collections too! The universe was clearly tapping him on the shoulder, whispering its encouragement.
+It's obvious really. Just last week, his dear mum and sister, unbeknownst to each other, both purchased vases for Aunt June's grand 70th birthday celebration. What's more, Mr. Taylor also happened to stumble upon a skilled potter in the pub one evening, who specialised in them. And if that combo wasn't serendipitous enough, he caught wind that the bigger city based competition were investing big in new vase collections too! The universe was clearly tapping him on the shoulder, whispering its encouragement.
 
 With that, he commissioned some designs and set his plan in motion.
 
