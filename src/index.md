@@ -4,7 +4,7 @@ title: "Product team coach"
 headerIntroBlock:
   image: "/images/scott-at-desk.png"
   imageAlt: "An image of Scott sitting at his desk behind a laptop"
-  text: "Agile Coach & Product Design Consultant."
+  text: "Agile Product Management & UX Design Consultant."
   buttonText: "Get in touch"
   buttonUrl: "#footer"
 scrollingTitle:
