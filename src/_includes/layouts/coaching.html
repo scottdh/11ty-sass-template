@@ -1,6 +1,5 @@
 {% extends "layouts/base.html" %} {% block content %} {% include
-"partials/header-intro-block.html" %} {% include "partials/scrolling-title.html"
-%}
+"partials/scrolling-title.html" %}
 <div class="coaching__intro panel">
   <div class="wrapper" data-width="full">
     <h2 class="section-heading">Intro</h2>
@@ -11,11 +10,13 @@
           successful tech businesses.
         </p>
         <p class="fs-large">
-          These teams excel at discovery, to continuously uncover new
-          opportunities and more effective solutions.They experiment rapidly, to
-          minimise risks and costs while learning how to maximise business
-          results. And their diverse members collaborate creatively, to push
-          each others’ ideas further than anyone would have known to ask for.
+          These teams <strong>excel at discovery</strong>, to continuously
+          uncover new opportunities and more effective solutions. They
+          <strong>experiment rapidly</strong>, to minimise risks and costs while
+          learning how to maximise business results. And their diverse members
+          <strong>collaborate creatively</strong>
+          , to push each others’ ideas further than anyone would have known to
+          ask for.
         </p>
         <p class="fs-large">
           These are the teams I love to help product leaders build.
@@ -24,5 +25,49 @@
     </div>
   </div>
 </div>
+<article class="focus-areas panel">
+  <div class="wrapper flow" data-width="full">
+    <h2 class="section-heading">Coaching and workshops</h2>
 
-{% endblock %}
+    <ol class="focus-areas__list flow">
+      {% for item in collections.programmes %}
+      <li class="focus-areas__list__item flow">
+        <h3>{{ item.data.title }}</h3>
+        <div class="focus-areas__list__item__content">
+          <div
+            class="programme-hero-image"
+            style="background-color: {{ item.data.hero.bgColor }}"
+          >
+            <img
+              src="{{ item.data.hero.image }}"
+              alt="item.data.hero.imageAlt"
+            />
+          </div>
+          <div
+            class="focus-areas__list__item__content__text flow"
+            style="--flow-space: var(--s-700)"
+          >
+            <p
+              class="focus-areas__list__item__content__text__summary md-fs-large"
+            >
+              {{ item.data.summary }}
+            </p>
+            <p class="fs-300 color-text-secondary fw-semibold">
+              What we'll work on
+            </p>
+            <ul class="table-view fs-300">
+              {% for skill in item.data.keySkills %}
+              <li>{{ skill }}</li>
+              {% endfor %}
+            </ul>
+            <a class="button" href="{{ item.data.url }}" data-type="primary"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</article>
+{% include "partials/getting-started.html" %} {% endblock %}

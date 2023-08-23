@@ -70,16 +70,16 @@
   }
 }
 
-.focus-areas {
-  &__lead {
-    &__text {
-      @include breakpoints.md {
-        margin: 0 0 var(--s-800) 0;
-        grid-column: 2 / 12;
-        max-width: 48ch;
-      }
+.home__intro__inner {
+  div {
+    @include breakpoints.md {
+      grid-column: 2 / 12;
+      max-width: 48ch;
     }
   }
+}
+
+.focus-areas {
   &__list {
     counter-reset: my-awesome-counter;
     list-style: none;
