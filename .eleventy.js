@@ -24,6 +24,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // Returns work, sorted by display order
+  eleventyConfig.addCollection("work", (collection) => {
+    return sortByDisplayOrder(collection.getFilteredByGlob("./src/work/*.md"));
+  });
+
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection("blog", (collection) => {
     return [...collection.getFilteredByGlob("./src/posts/*.md")].reverse();
