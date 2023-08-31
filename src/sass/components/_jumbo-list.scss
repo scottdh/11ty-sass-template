@@ -1,0 +1,115 @@
+@use "../design-tokens/breakpoints";
+
+.jumbo-list {
+  counter-reset: jumbo-counter;
+  list-style: none;
+  & > li + li {
+    @include breakpoints.md {
+      border-top: 1px solid var(--color-border-primary);
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, minmax(16px, 1fr));
+    counter-increment: jumbo-counter;
+    padding: var(--s-600) 0;
+    @include breakpoints.md {
+      padding: var(--s-800) 0;
+    }
+    h3 {
+      display: inline;
+      font-size: var(--s-800);
+      grid-row: 1/2;
+      margin-inline-start: 1rem;
+      @include breakpoints.md {
+        margin-inline-start: 0;
+      }
+    }
+
+    &::before {
+      display: flex;
+      align-items: end;
+      content: "0" counter(jumbo-counter);
+      font-size: var(--s-600);
+    }
+    &__content {
+      --flow-space: 0;
+      display: grid;
+      grid-row-gap: var(--s-500);
+      grid-row: 2/3;
+      grid-column: 1 / 13;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(12, minmax(16px, 1fr));
+      @include breakpoints.md {
+        grid-column-gap: var(--s-600);
+      }
+      &__text {
+        grid-row: 3/4;
+        grid-column: 1 / 13;
+        @include breakpoints.md {
+          grid-row: 2/3;
+          grid-column: 8 / 13;
+        }
+        &__summary {
+          max-width: 40rem;
+        }
+      }
+      &__image {
+        // background-color: pink;
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        grid-column: 1 / 13;
+        grid-row: 2/3;
+        @include breakpoints.md {
+          aspect-ratio: auto;
+          grid-row: 2/3;
+          grid-column: 1 / 8;
+        }
+      }
+    }
+  }
+}
+
+.jumbo-list__item__content__image {
+  &.resolver {
+    background-color: lightcyan;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: 10%;
+      max-width: 80%;
+      top: 10%;
+    }
+  }
+  &.ig {
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: 10%;
+      max-width: 60%;
+      top: 10%;
+    }
+  }
+
+  &.nadex {
+    // background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    // background-size: cover;
+    background-color: lavenderblush;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: 15%;
+      max-width: 70%;
+      top: 10%;
+      border: 8px solid white;
+      transform: rotate(-10deg);
+    }
+  }
+}

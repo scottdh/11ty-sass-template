@@ -1,0 +1,51 @@
+{% extends "layouts/base.html" %} {% block content %}
+<article>
+  <div class="[ flow ]">
+    {% include "partials/scrolling-title.html" %}
+    <div class="panel casestudy-outline">
+      <div class="wrapper" data-width="full">
+        <h2 class="section-heading">{{ title }} overview</h2>
+        <div class="grid casestudy-outline__header">
+          <div class="casestudy-outline__header__text flow">
+            <h2>{{ summary }}</h2>
+            <p class="measure-short">{{ intro }}</p>
+          </div>
+          <div class="casestudy-outline__header__image {{ hero.cssClass }}">
+            <img src="{{ hero.image }}" alt="hero.imageAlt" />
+          </div>
+          <!-- <ul class="casestudy-outline__header__benefits table-view fs-300">
+            {% for skill in keySkills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+          </ul> -->
+        </div>
+
+        <div class="grid casestudy-outline__details">
+          <div class="casestudy-outline__details__description flow">
+            {% for paragraph in casestudyDescription %}
+            <p>{{ paragraph | safe }}</p>
+            {% endfor %}
+          </div>
+          <div class="casestudy-outline__details__outcomes flow">
+            <h2 class="section-heading">Results</h2>
+            <ul class="casestudy-activities__list">
+              {% for item in results %}
+              <li class="casestudy-activities__list__item flow">
+                <h5 class="casestudy-activities__list__item__title">
+                  {{ item.title }}
+                </h5>
+                <p class="casestudy-activities__list__item__description">
+                  {{ item.description }}
+                </p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "partials/getting-started.html" %}
+  </div>
+</article>
+
+{% endblock %}

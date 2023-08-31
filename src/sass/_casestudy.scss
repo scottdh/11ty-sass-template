@@ -1,0 +1,108 @@
+@use "./design-tokens/breakpoints";
+
+.casestudy-outline {
+  &__header {
+    grid-row-gap: var(--s-1000);
+    &__text {
+      @include breakpoints.md {
+        grid-column: 1 / 7;
+      }
+      p {
+        font-size: var(--s-500);
+      }
+    }
+    &__image {
+      aspect-ratio: 16 / 9;
+      @include breakpoints.md {
+        grid-column: 8 / 13;
+      }
+      &.resolver {
+        background-color: lightcyan;
+        position: relative;
+        overflow: hidden;
+        img {
+          position: absolute;
+          left: 10%;
+          max-width: 100%;
+          top: 10%;
+        }
+      }
+      &.ig {
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+        img {
+          position: absolute;
+          left: 10%;
+          max-width: 60%;
+          top: 10%;
+        }
+      }
+
+      &.nadex {
+        // background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+        // background-size: cover;
+        background-color: lavenderblush;
+        position: relative;
+        overflow: hidden;
+        img {
+          position: absolute;
+          left: 15%;
+          max-width: 70%;
+          top: 10%;
+          border: 8px solid white;
+          transform: rotate(-10deg);
+        }
+      }
+    }
+    &__benefits {
+      @include breakpoints.md {
+        grid-column: 1 / 7;
+        grid-row: 2;
+      }
+    }
+  }
+  &__details {
+    margin-block-start: var(--s-1000);
+    &__description {
+      max-width: 62ch;
+      & > p:first-child {
+        font-weight: var(--fw-bold);
+      }
+      --flow-space: var(--s-500);
+      @include breakpoints.md {
+        grid-column: 1 / 7;
+      }
+    }
+    &__outcomes {
+      @include breakpoints.md {
+        grid-column: 8 / 13;
+      }
+    }
+  }
+}
+
+.casestudy-activities {
+  &__list {
+    display: grid;
+    gap: var(--s-800);
+    &__item {
+      counter-increment: casestudy-activities;
+      border-bottom: 1px solid var(--color-border-primary);
+      padding-block-end: var(--s-800);
+      &__title {
+        font-size: var(--s-500);
+      }
+      &__description {
+        --flow-space: var(--s-400);
+        font-size: var(--s-300);
+        color: var(--color-text-secondary);
+      }
+      &::before {
+        content: "0" counter(casestudy-activities);
+        font-size: var(--s-600);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

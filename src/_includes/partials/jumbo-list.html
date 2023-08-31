@@ -1,19 +1,18 @@
-<ol class="focus-areas__list flow">
+<ol class="jumbo-list flow">
   {% for item in collections.work %}
-  <li class="focus-areas__list__item flow">
+  <li class="jumbo-list__item flow">
     <h3>{{ item.data.title }}</h3>
-    <div class="focus-areas__list__item__content">
+    <div class="jumbo-list__item__content">
       <div
-        class="programme-hero-image"
-        style="background-color: {{ item.data.hero.bgColor }}"
+        class="jumbo-list__item__content__image {{ item.data.hero.cssClass }}"
       >
         <img src="{{ item.data.hero.image }}" alt="item.data.hero.imageAlt" />
       </div>
       <div
-        class="focus-areas__list__item__content__text flow"
+        class="jumbo-list__item__content__text flow"
         style="--flow-space: var(--s-700)"
       >
-        <p class="focus-areas__list__item__content__text__summary md-fs-large">
+        <p class="jumbo-list__item__content__text__summary md-fs-large">
           {{ item.data.summary }}
         </p>
         <p class="fs-300 color-text-secondary fw-semibold">

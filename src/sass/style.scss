@@ -25,6 +25,7 @@
 @use "./components/programme-hero-image";
 @use "./components/programme-stepper";
 @use "./components/getting-started";
+@use "./components/jumbo-list";
 @use "./components/newsletter-widget";
 
 /* Pages */
@@ -33,6 +34,7 @@
 @use "./page";
 @use "./feed";
 @use "./programme-detail";
+@use "./casestudy";
 
 body {
   background-color: var(--color-z0);
