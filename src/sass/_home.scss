@@ -72,9 +72,13 @@
 
 .home__intro__inner {
   div {
+    font-size: var(--s-600);
+    line-height: 1.3;
+    padding-block: var(--s-600) var(--s-800);
     @include breakpoints.md {
       grid-column: 2 / 12;
-      max-width: 48ch;
+      font-size: var(--s-700);
+      max-width: 40ch;
     }
   }
 }

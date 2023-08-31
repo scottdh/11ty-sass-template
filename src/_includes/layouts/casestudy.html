@@ -4,7 +4,7 @@
     {% include "partials/scrolling-title.html" %}
     <div class="panel casestudy-outline">
       <div class="wrapper" data-width="full">
-        <h2 class="section-heading">{{ title }} overview</h2>
+        <h2 class="section-heading">Case Study</h2>
         <div class="grid casestudy-outline__header">
           <div class="casestudy-outline__header__text flow">
             <h2>{{ summary }}</h2>
@@ -22,12 +22,10 @@
 
         <div class="grid casestudy-outline__details">
           <div class="casestudy-outline__details__description flow">
-            {% for paragraph in casestudyDescription %}
-            <p>{{ paragraph | safe }}</p>
-            {% endfor %}
+            {{ content | safe }}
           </div>
           <div class="casestudy-outline__details__outcomes flow">
-            <h2 class="section-heading">Results</h2>
+            <h3>Results</h3>
             <ul class="casestudy-activities__list">
               {% for item in results %}
               <li class="casestudy-activities__list__item flow">
@@ -44,7 +42,17 @@
         </div>
       </div>
     </div>
-    {% include "partials/getting-started.html" %}
+    <div class="focus-areas__cta fs-large grid">
+      <div class="flow">
+        <p>
+          Wrestling with a tough product challenge and need a lead designer with
+          a proven track record?
+        </p>
+        <a href="{{ coachingCTA.buttonUrl }}" class="button" data-type="primary"
+          >Book a free intro call</a
+        >
+      </div>
+    </div>
   </div>
 </article>
 

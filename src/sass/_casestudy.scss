@@ -3,9 +3,10 @@
 .casestudy-outline {
   &__header {
     grid-row-gap: var(--s-1000);
+    padding-block-end: var(--s-1000);
     &__text {
       @include breakpoints.md {
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
       }
       p {
         font-size: var(--s-500);
@@ -14,7 +15,7 @@
     &__image {
       aspect-ratio: 16 / 9;
       @include breakpoints.md {
-        grid-column: 8 / 13;
+        grid-column: 9 / 13;
       }
       &.resolver {
         background-color: lightcyan;
@@ -57,7 +58,7 @@
     }
     &__benefits {
       @include breakpoints.md {
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
         grid-row: 2;
       }
     }
@@ -65,18 +66,21 @@
   &__details {
     margin-block-start: var(--s-1000);
     &__description {
-      max-width: 62ch;
+      p {
+        max-width: 62ch;
+      }
+
       & > p:first-child {
         font-weight: var(--fw-bold);
       }
       --flow-space: var(--s-500);
       @include breakpoints.md {
-        grid-column: 1 / 7;
+        grid-column: 1 / 8;
       }
     }
     &__outcomes {
       @include breakpoints.md {
-        grid-column: 8 / 13;
+        grid-column: 9 / 13;
       }
     }
   }
@@ -85,11 +89,12 @@
 .casestudy-activities {
   &__list {
     display: grid;
-    gap: var(--s-800);
+    gap: var(--s-600);
     &__item {
       counter-increment: casestudy-activities;
-      border-bottom: 1px solid var(--color-border-primary);
-      padding-block-end: var(--s-800);
+      background-color: var(--color-grey2);
+      padding-block: var(--s-500) var(--s-800);
+      padding-inline: var(--s-400);
       &__title {
         font-size: var(--s-500);
       }
