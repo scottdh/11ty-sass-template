@@ -8,7 +8,6 @@
         <div class="grid casestudy-outline__header">
           <div class="casestudy-outline__header__text flow">
             <h2>{{ summary }}</h2>
-            <p class="measure-short">{{ intro }}</p>
           </div>
           <div class="casestudy-outline__header__image {{ hero.cssClass }}">
             <img src="{{ hero.image }}" alt="hero.imageAlt" />
@@ -19,26 +18,14 @@
             {% endfor %}
           </ul>
         </div>
+        <div class="panel flow">
+          {% for p in intro %}
+          <p class="measure-medium">{{ p }}</p>
+          {% endfor %}
+        </div>
         <div class="panel results">
           <h2 class="section-heading">Results</h2>
           {% include "partials/medium-list.html" %}
-        </div>
-        <div class="panel background">
-          <h2 class="section-heading">Background</h2>
-          <div class="flow measure-medium">
-            <p>
-              Resolver is a UK based business, dedicated to improving the world
-              of Alternative Dispute Resolution (ADR), and championing better
-              outcomes for consumers.
-            </p>
-            <p>
-              Their latest product offering is Accord, a SaaS Online Dispute
-              Resolution (ODR) platform, aimed at ADR organisations all over the
-              world. These organisations bring disputing parties together, to
-              help them find amicable resolutions to their disputes without
-              involving messy and expensive court proceedings.
-            </p>
-          </div>
         </div>
 
         <div class="panel whatIdid">
