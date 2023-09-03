@@ -111,7 +111,7 @@ h5,
 .section-heading {
   font-size: var(--s-400);
   @include breakpoints.md {
-    font-size: var(--s-500);
+    font-size: var(--s-400);
   }
   // font-weight: var(--fw-light);
   color: var(--color-text-secondary);

@@ -75,38 +75,12 @@
       }
       --flow-space: var(--s-500);
       @include breakpoints.md {
-        grid-column: 1 / 8;
+        grid-column: 6 / 13;
       }
     }
     &__outcomes {
       @include breakpoints.md {
-        grid-column: 9 / 13;
-      }
-    }
-  }
-}
-
-.casestudy-activities {
-  &__list {
-    display: grid;
-    gap: var(--s-600);
-    &__item {
-      counter-increment: casestudy-activities;
-      background-color: var(--color-grey2);
-      padding-block: var(--s-500) var(--s-800);
-      padding-inline: var(--s-400);
-      &__title {
-        font-size: var(--s-500);
-      }
-      &__description {
-        --flow-space: var(--s-400);
-        font-size: var(--s-300);
-        color: var(--color-text-secondary);
-      }
-      &::before {
-        content: "0" counter(casestudy-activities);
-        font-size: var(--s-600);
-        margin-bottom: 1rem;
+        grid-column: 1 / 5;
       }
     }
   }

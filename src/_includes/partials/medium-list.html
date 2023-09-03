@@ -1,0 +1,8 @@
+<ol class="medium-list">
+  {% for item in results %}
+  <li class="medium-list__item flow">
+    <h5 class="medium-list__item__title">{{ item.title }}</h5>
+    <p class="medium-list__item__description">{{ item.description }}</p>
+  </li>
+  {% endfor %}
+</ol>
