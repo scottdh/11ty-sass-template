@@ -85,3 +85,21 @@
     }
   }
 }
+
+.whatIdid {
+  &__content {
+    max-width: var(--measure-long);
+
+    img {
+      // max-width: 100%;
+      margin-block: var(--s-800);
+    }
+    ol,
+    ul {
+      padding-inline-start: 3rem;
+      & > li + li {
+        margin-block-start: 1rem;
+      }
+    }
+  }
+}

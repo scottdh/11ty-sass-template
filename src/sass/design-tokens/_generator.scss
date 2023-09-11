@@ -24,6 +24,9 @@ GENERATE CUSTOM VARIABLES
   @each $size, $value in sizing-spacing.$size-scale {
     --s-#{$size}: #{$value};
   }
+  @each $size, $value in sizing-spacing.$measure {
+    --measure-#{$size}: #{$value};
+  }
   // typography-tokens
   @each $item, $value in typography-tokens.$ff {
     --ff-#{$item}: #{$value};
