@@ -35,11 +35,6 @@
           <h2 class="section-heading">What I did</h2>
           <div class="flow whatIdid__content">{{ content | safe }}</div>
         </div>
-        <div class="panel whatIdid">
-          <h2 class="section-heading">Gallery</h2>
-          {% for image in gallery %}
-          <img src="{{ image.image }}" alt="{{ image.imageAlt}}" /> {% endfor %}
-        </div>
       </div>
     </div>
     <div class="focus-areas__cta fs-large grid">

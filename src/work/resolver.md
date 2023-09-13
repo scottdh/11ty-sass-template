@@ -5,11 +5,11 @@ scrollingTitle:
   - "Resolver."
   - "Resolver."
 displayOrder: 1
-summary: "How I helped Resolver design a SaaS platform and secure their first customer"
+summary: "How I helped Resolver build a SaaS platform, going from zero to first customer in 18 weeks."
 intro:
-  - "I was hired to help Resolver design and build the UK's first purpose-built Online Dispute Resolution (ORD) platform Accord. Accord's vision was to make the emotionally charged, time-consuming and complex process of dispute resolution easier, more effective and cheaper for everyone involved."
+  - "I was hired to help Resolver design and build the UK's first purpose-built Online Dispute Resolution (ODR) platform Accord. Accord's vision was to make the emotionally charged, time-consuming and complex process of dispute resolution easier, more effective and cheaper for everyone involved."
   - "Funding for the project had been secured, but further funds would be dependant on whether concrete customer interest could be attracted, defined by payments for trials, within the next 6 months."
-  - "It was a tough deadline, particularly for complex, enterprise B2B2C software. But if the idea was valuable, I was confident we'd be able to identify and deliver the most valuable aspects organisations would be willing to pay for quickly. Even if it was just a fraction of what was to come."
+  - "It was a tough deadline, particularly for complex, enterprise B2B2C software. By using a user-centric approach to discovery and design however, we were quickly able to pinpoint the biggest pain-points customers had and find compelling solutions we thought we could deliver quickly. The result was not only concrete interest, but a paying customer in just 4 months."
 hero:
   image: "/images/work/resolver/resolver_uiMockup.png"
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
@@ -21,11 +21,11 @@ keySkills:
   - "Agile design coaching"
 results:
   - title: "Zero to first customer within 4 months"
-    description: "Build a shared understanding. In nec tellus feugiat, egestas diam ac, pharetra quam. Nam vel libero id massa pulvinar aliquet. Phasellus sit amet tortor enim. Quisque vel scelerisque ipsum, sed dapibus sapien. Nullam et velit sed ante faucibus ultricies. "
+    description: "Two months sooner than hoped, we onboarded our first paying customer thanks to a compelling negotiation phase that would mean significantly reduced costs."
   - title: "300% increase in cases resolved before costly mediation."
-    description: "In nec tellus feugiat, egestas diam ac, pharetra quam. Nam vel libero id massa pulvinar aliquet. Phasellus sit amet tortor enim."
+    description: "Our first customer saw a 300% increase in number of cases resolved before mediation, thanks to Accord's messaging and focused negotiation flows."
   - title: "5 of UK's biggest ADR providers paid for pre-integration trials"
-    description: "In nec tellus feugiat, egestas diam ac, pharetra quam. Nam vel libero id massa pulvinar aliquet. Phasellus sit amet tortor enim."
+    description: "With promising initial results from live customers, the sales team secured interest from some of the UK's largest Ombudsmen services, with 5 commiting to  paid trials."
 gallery:
   - image: "/images/work/resolver/resolver_gallery-1.png"
     imageAlt: "A screenshot showing Accord's main dispute UI, displayed on a MacBook Pro"
@@ -110,22 +110,28 @@ The rest of the week, I spent with professional mediators in Europe and North Am
 
 <img src="{{ images.usabilityTesting }}" alt="images.usabilityTestingAlt">
 
-<h3>6. Design and Deliver Value.</h3>
+<h3>6. Continuous Discovery and Delivering a Valuable Beta.</h3>
 
 We were now confident we knew how to solve the problem of parsing new cases quickly and effectively for mediators. A problem that would help them do a better job, faster. And help us begin sowing the seeds to sell Accord too. This reduced a huge amount of underlying risk in the entire project.
 
-With confidence in where we were headed, our focus turned to delivering something we could sell ASAP. What if we could help disputants resolve cases before a costly mediator need get involved, via a simple negotiation flow?
+With confidence in where we were headed, our focus turned to delivering something we could sell ASAP.
 
-The assumption was that, now discussions were being recorded on the ADR provider's Accord instance, both parties may act more reconciliatory than before.
+We had an assumption that, once discussions were being recorded on the ADR provider's Accord instance, initiator's would feel heard and both parties may act more reconciliatory than before. There was a real chance that a guided negotiation process, which was easier to deliver than mediation, may offer real value.
 
 In just a week, working in tandem with engineers, I had designed a simple negotiation process where disputants could clearly state what they wanted or were willing to offer, with reasoning. It wasn't flexible, but it was clear and something we could deliver in a short space of time, in a way that contributed to the longer term vision.
 
 To test it, we got permission from an interested party to import a number of recent cases and have their customers use it to negotiate a resolution. These customers were picked by the provider and informed they were using a beta version.
 
-The results were very encouraging, very quickly, with a well above industry average resolution rate.
+The results were hugely encouraging, despite it being a small sample of 20 cases. So much so, they wanted to trial Accord with more cases.
 
-<img src="{{ images.caseCreation }}" alt="images.caseCreationAlt">
-<img src="{{ images.caseCreation2 }}" alt="images.caseCreation2Alt">
 <img src="{{ images.mediation }}" alt="images.mediationAlt">
 
 <h3>8. Onboarding our First Customer</h3>
+
+After an intense period of design and development over 6 weeks, we were ready to onboard our first paying customer with a slimmed down version of Accord. Cases would be imported from their existing system, which meant we didn't need to have the case creation functionality to launch.
+
+Within a month, Accord's resolution figures for the negotiation phase were 300% higher than the customer's pre-mediation baseline. A figure that represented a huge cost-saving in admin and personnel. That isn't to say the experience was perfect. There were many wrinkles to iron out with regards to messaging, notifications and solution flexibility. But initial impressions exceeded what'd we'd hoped to achieve so early.
+
+These initial results then fuelled further interest from other ADR providers.
+
+From there, it was a case of improving the product with incoming, live customer data and building out the additional resolution phases, such as mediation and adjudication.
