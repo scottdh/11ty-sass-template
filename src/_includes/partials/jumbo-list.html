@@ -1,0 +1,33 @@
+<ol class="jumbo-list flow">
+  {% for item in collections.work %}
+  <li class="jumbo-list__item flow">
+    <h3>{{ item.data.title }}</h3>
+    <div class="jumbo-list__item__content">
+      <div
+        class="jumbo-list__item__content__image {{ item.data.hero.cssClass }}"
+      >
+        <img src="{{ item.data.hero.image }}" alt="item.data.hero.imageAlt" />
+      </div>
+      <div
+        class="jumbo-list__item__content__text flow"
+        style="--flow-space: var(--s-700)"
+      >
+        <p class="jumbo-list__item__content__text__summary md-fs-large">
+          {{ item.data.summary }}
+        </p>
+        <!-- <p class="fs-300 color-text-secondary fw-semibold">
+          What we'll work on
+        </p> -->
+        <ul class="table-view fs-300">
+          {% for skill in item.data.keySkills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+        <a class="button" href="{{ item.data.url }}" data-type="primary"
+          >{{ item.data.buttonText }}</a
+        >
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ol>

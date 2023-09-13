@@ -1,6 +1,6 @@
 ---
-url: "Embracing conflict goldfish bowl head"
-title: "Embracing conflict - Imagine they've a goldfish bowl for a head."
+url: "Embracing conflict"
+title: "Embracing conflict with Team Mates."
 articleSummary: "Trenton Moss offers some sage advice for managing conflict which involves imagining people have goldfish bowls in their heads."
 date: "2023-06-11"
 tags: ["excel"]

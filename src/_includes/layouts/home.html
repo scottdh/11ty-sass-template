@@ -1,8 +1,29 @@
 {% extends "layouts/base.html" %} {% block content %} {% include
 "partials/header-intro-block.html" %} {% include "partials/scrolling-title.html"
-%} {% include "partials/home-programmes.html" %} {% include
-"partials/home-testimonials.html" %} {% include "partials/home-about.html" %} {%
-include "partials/getting-started.html" %}
+%}
+<div class="home__intro panel">
+  <div class="wrapper" data-width="full">
+    <!-- <h2 class="section-heading">Intro</h2> -->
+    <div class="home__intro__inner grid">
+      <div class="flow measure-long">
+        <p>
+          <span class="color-text-secondary">My name's Scott.</span><br />
+          I help product teams tackle their biggest design challenges, while
+          building the culture and skills needed to consistently ship products
+          customers love.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<article class="focus-areas panel">
+  <div class="wrapper flow" data-width="full">
+    <h2 class="section-heading">How I've helped others</h2>
+    {% include "partials/jumbo-list.html" %}
+  </div>
+</article>
+{% include "partials/home-testimonials.html" %} {% include
+"partials/home-about.html" %}
 <div class="panel">
   <div class="wrapper" data-width="full">
     {% include "partials/newsletter-widget.html" %}

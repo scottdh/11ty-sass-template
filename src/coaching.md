@@ -3,7 +3,7 @@ pagetitle: "Working with me"
 title: "Working with me"
 layout: "layouts/coaching.html"
 headerIntroBlock:
-  image: "/images/scott-in-NewYork.png"
+  image: "/images/scott-at-desk.png"
   imageAlt: "An image of Scott sitting at his desk behind a laptop"
   text: "Let's build teams that ship products customers love"
   buttonText: "Get started"
