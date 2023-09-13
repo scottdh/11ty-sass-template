@@ -28,10 +28,10 @@ results:
   - title: "5 of UK's biggest ADR providers paid for pre-integration trials"
     description: "With promising initial results from live customers, the sales team secured interest from some of the UK's largest Ombudsmen services, with 5 commiting to  paid trials."
 gallery:
-  - image: "/images/work/resolver/resolver_gallery-1.png"
-    imageAlt: "A screenshot showing Accord's main dispute UI, displayed on a MacBook Pro"
+  - image: "/images/work/resolver/resolver_hi-fidelity-negotiation.png"
+    imageAlt: "A screenshot showing Accord's main dispute UI, displayed on a MacBook Pro and mobile device."
   - image: "/images/work/resolver/resolver_hi-fidelity-caseCreation.png"
-    imageAlt: "A screenshot showing the first step in Accord's case creation flow.  "
+    imageAlt: "A screenshot showing the first step in Accord's case creation flow."
 images:
   miroStoryMap: "/images/work/resolver/resolver_userStoryMapMiro.png"
   miroStoryMapAlt: "The first story map I built with the Accord product team"
