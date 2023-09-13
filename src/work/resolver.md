@@ -6,10 +6,11 @@ scrollingTitle:
   - "Resolver."
 displayOrder: 1
 summary: "How I helped Resolver build a SaaS platform, going from zero to first customer in 18 weeks."
+buttonText: "Follow the Journey"
 intro:
-  - "I was hired to help Resolver design and build the UK's first purpose-built Online Dispute Resolution (ODR) platform Accord. Accord's vision was to make the emotionally charged, time-consuming and complex process of dispute resolution easier, more effective and cheaper for everyone involved."
-  - "Funding for the project had been secured, but further funds would be dependant on whether concrete customer interest could be attracted, defined by payments for trials, within the next 6 months."
-  - "It was a tough deadline, particularly for complex, enterprise B2B2C software. By using a user-centric approach to discovery and design however, we were quickly able to pinpoint the biggest pain-points customers had and find compelling solutions we thought we could deliver quickly. The result was not only concrete interest, but a paying customer in just 4 months."
+  - "I was hired to help Resolver design and build the UK's first purpose-built Online Dispute Resolution (ODR) platform Accord."
+  - "By using a user-centric approach to discovery and design, we were quickly able to pinpoint the biggest pain-points customers had and find compelling solutions we thought we could deliver quickly."
+  - "The result was not only concrete interest, but a paying customer in just 4 months."
 hero:
   image: "/images/work/resolver/resolver_uiMockup.png"
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
@@ -29,6 +30,8 @@ results:
 gallery:
   - image: "/images/work/resolver/resolver_gallery-1.png"
     imageAlt: "A screenshot showing Accord's main dispute UI, displayed on a MacBook Pro"
+  - image: "/images/work/resolver/resolver_hi-fidelity-caseCreation.png"
+    imageAlt: "A screenshot showing the first step in Accord's case creation flow.  "
 images:
   miroStoryMap: "/images/work/resolver/resolver_userStoryMapMiro.png"
   miroStoryMapAlt: "The first story map I built with the Accord product team"
@@ -46,7 +49,17 @@ images:
   mediationAlt: "A screenshot showing Accord's main dispute UI, displayed on a MacBook Pro"
 ---
 
-<h3>1. Surface Internal Knowledge and Ideas</h3>
+<ol>
+<li><a href="#surfaceKnowledge">Surface Internal Knowledge and Ideas</a></li>
+<li><a href="#initialDiscovery">Initial Discovery</a></li>
+<li><a href="#frameProblem">Frame the Problem and Define a Focus</a></li>
+<li><a href="#reduceCosts">Reduce Costs, Risks and Dev time.</a></li>
+<li><a href="#testAndLearn">Test and Learn</a></li>
+<li><a href="#continuousDiscovery">Continuous Discovery and Delivering a Valuable Beta.</a></li>
+<li><a href="#firstCustomer">Expectation Beating Results</a></li>
+</ol>
+
+<h3 id="surfaceKnowledge">Surface Internal Knowledge and Ideas</h3>
 
 Resolver built their business on championing consumer rights. They intimately understood the problems consumers faced, as well as the ADR industry that existed to help them.
 
@@ -56,7 +69,7 @@ There's no better tool for this than User Story Mapping. It's hands on, easy for
 
 <img src="{{ images.miroStoryMap }}" alt="images.miroStoryMapAlt">
 
-<h3>2. "Just Enough" Research</h3>
+<h3 id="initialDiscovery">Initial Discovery</h3>
 
 Now that we had a map of what Resolver thought they needed to build, I was able to see their mental model of the resolution process and pull out the assumptions and hypotheses that drove their ideas. Now it was time to put this knowledge to the test as quickly and cheaply as possible.
 
@@ -74,7 +87,7 @@ As I went, I involved the entire product team as much as possible. By planning t
 
 <img src="{{ images.notionStoryMap }}" alt="images.notionStoryMapAlt">
 
-<h3>3. Frame the Problem and Define a Focus.</h3>
+<h3 id="frameProblem">Frame the Problem and Define a Focus.</h3>
 
 As we realised from the story map, this product was ambitious in size and scope. We needed to agree on a focus area, and at this early stage, this meant identifying the areas of greatest value and potential risk.
 
@@ -85,7 +98,7 @@ As we realised from the story map, this product was ambitious in size and scope.
 <li><strong>Focus problem: Initial evaluation of a dispute.</strong> Evaluating disputes and deciding how to proceed was a huge painpoint for mediators. Often information was incomplete, spread over different systems and took a long time to uncover key details. <em>If we failed to solve this problem effectively for mediators, little else in the product would matter.</em></li>
 </ul>
 
-<h3>4. Reduce Costs, Risks and Dev time.</h3>
+<h3 id="reduceCosts">Reduce Costs, Risks and Dev time.</h3>
 
 Now we'd framed the problem we wanted to tackle, I planned and facilitated a design sprint to help us answer these questions and begin fleshing out designs that would help us test our ideas and assumptions. The product team and key stakeholders, such as sales, marketing and sponsors were involved.
 
@@ -95,7 +108,7 @@ Though we didn't know what the final design would be yet, engineering could begi
 
 <img src="{{ images.sprint }}" alt="images.sprintAlt">
 
-<h3>5. Test and Learn.</h3>
+<h3 id="testAndLearn">Test and Learn.</h3>
 
 I spent 2 days preparing low-fidelity UIs that would enable us to test our assumptions. These were simply stimuli at this stage, to poke at certain ideas.
 
@@ -110,7 +123,7 @@ The rest of the week, I spent with professional mediators in Europe and North Am
 
 <img src="{{ images.usabilityTesting }}" alt="images.usabilityTestingAlt">
 
-<h3>6. Continuous Discovery and Delivering a Valuable Beta.</h3>
+<h3 id="continuousDiscovery">Continuous Discovery and Delivering a Valuable Beta.</h3>
 
 We were now confident we knew how to solve the problem of parsing new cases quickly and effectively for mediators. A problem that would help them do a better job, faster. And help us begin sowing the seeds to sell Accord too. This reduced a huge amount of underlying risk in the entire project.
 
@@ -126,7 +139,7 @@ The results were hugely encouraging, despite it being a small sample of 20 cases
 
 <img src="{{ images.mediation }}" alt="images.mediationAlt">
 
-<h3>8. Onboarding our First Customer</h3>
+<h3 id="firstCustomer">Expectation Beating Results</h3>
 
 After an intense period of design and development over 6 weeks, we were ready to onboard our first paying customer with a slimmed down version of Accord. Cases would be imported from their existing system, which meant we didn't need to have the case creation functionality to launch.
 

@@ -1,6 +1,6 @@
 ---
-url: "An Ante-Natal Class Inspired Exercise to Build Better Teams"
-title: "An Ante-Natal Class Inspired Exercise to Build Better Teams."
+url: "An Exercise to Build Better Teams"
+title: "An Exercise to Build Better Teams."
 articleSummary: "A nice little exercise for members of product teams to build a better working relationship that I stole from my first ante-natal class"
 date: "2023-05-15"
 tags: ["excel"]

@@ -4,12 +4,13 @@ title: "IG"
 scrollingTitle:
   - "IG Group."
   - "IG Group."
-displayOrder: 3
+displayOrder: 2
 summary: "How I helped IG reclaim its title as the global leader in retail trading."
+buttonText: "View the Evolution"
 intro:
   - "IG is an industry leader in retail trading and I was asked to develop a design vision and strategy for the evolution of their mobile trading platforms."
-  - "To do this, I led a discovery and design process, supported by a talented team of UI, dev and QA colleagues in London and Krakow. These efforts helped us uncover weaknesses in the existing apps and hugely valuable insights into the evolving role of mobile in traders lives."
-  - "The result was numerous user experience improvements that enabled traders to complete key tasks much faster, and a validated long-term design direction that laid the foundation for IG's continued success."
+  - "These efforts led to the discovery of valuable user insights, numerous user experience improvements, and a validated long-term design direction for the future development of all IG's mobile trading platforms."
+  - "5 years on, the bluprint we laid then has proven to be a great success."
 hero:
   image: "/images/work/ig/IG-hero-image.png"
   imageAlt: "A product team in front of a product map, with a clear understanding of their role and objectives"
@@ -32,12 +33,32 @@ images:
   uiChangesAlt: ""
   researchStats: "/images/work/ig/ig_researchStats.jpg"
   researchStatsAlt: "3 charts showing that 52% of trades were performed on mobile, 35% of mobile sessions lasted less than 10 seconds and 82% of clients traded 5 markets or fewer"
+  marketOrderUserFlow: "/images/work/ig/ig_market-order-user-flow.png"
+  marketOrderUserFlowAlt: "A wireflow diagram show the steps and UI changes for the key task of placing a market order."
+  prototype: "/images/work/ig/ig_prototype.jpg"
+  prototypeAlt: "A screenshot showing the prototype we built to test our assumptions"
+  testing: "/images/work/ig/ig_testing.jpg"
+  testingAlt: "A screenshot showing a customer testing our prototype on their device"
 gallery:
   - image: "/images/work/ig/ig_gallery-main.png"
     imageAlt: "A screenshot showing Accord's main dispute UI, displayed on a MacBook Pro"
+  - image: "/images/work/ig/ig_market-order-user-flow.png"
+    imageAlt: "A wireflow diagram show the steps and UI changes for the key task of placing a market order."
+  - image: "/images/work/ig/ig_prototype.jpg"
+    imageAlt: "A screenshot showing the prototype we built to test our assumptions"
 ---
 
-<h2>The brief</h2>
+<ol>
+<li><a href="#theBrief">The Brief</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#sharedFoundations">Laying Shared Foundations</a></li>
+<li><a href="#discovery">Initial Discovery</a></li>
+<li><a href="#sharedUnderstanding">Workshops to Build Shared Understanding</a></li>
+<li><a href="#prototypeAndTest">Prototyping and Usability Testing</a></li>
+<li><a href="#wrappingThingsUp">Wrapping Things Up</a></li>
+</ol>
+
+<h2 id="theBrief">The brief</h2>
 
 The eagerly awaited 2015 annual Investment Trends Report had arrived. For the first time ever, IG's flagship app had slipped from the top spot... to third. IG had invested heavily in their apps the previous two years, making them by far the most feature-packed on the market, but this 'more is more' approach obviously wasn't resonating with clients.
 
@@ -53,7 +74,7 @@ Unfortunately, due to the time-pressured nature of past improvements, the mobile
 <li><strong>Align</strong> the mobile apps with the visual identity forged by the recently released desktop trading app, to aid a consistent multi-platform trading experience.</li>
 </ol>
 
-<h2>Benchmarking</h2>
+<h2 id="benchmarking">Benchmarking</h2>
 
 The first task was to begin benchmarking the current design and user experience, so we'd have something to measure proposed improvements against.
 
@@ -69,7 +90,7 @@ It's straight-forward, and I find it great for getting user-centric, and natural
 <li>iOS and Android looked and felt like they were built by different companies. Navigation, task-flows, UI and even labels were inconsistent. This, meant scaling optimal solutions for both would be impossible in the current state.</li>
 </ol>
 
-<h2>Laying Shared Foundations.</h2>
+<h2 id="sharedFoundations">Laying Shared Foundations.</h2>
 
 Always trying to find silver-linings, I thought I could take advantage of the tech-debt clean up by working with developers on a mobile design system, that would bring about greater consistency between iOS and Android, where it made sense.
 
@@ -77,7 +98,7 @@ Though this didn't address the major problems, as that would require more fundam
 
 <img src="{{ images.uiChanges }}" alt="{{ images.uiChangesAlt }}">
 
-<h2>Discovery</h2>
+<h2 id="discovery">Initial Discovery</h2>
 
 With the initial evaluation complete, it was time to begin uncovering insights that would drive our design decisions.
 
@@ -138,7 +159,7 @@ In parallel, I spent a lot of time getting data from B.I. (Business Intelligence
 
 Once we'd sorted, categorised and analysed the data, we had a wealth of insights and research deliverables to work with. The outcomes included a set of trader personas/archetypes detailing characteristics to design for, and numerous hypotheses to begin exploring.
 
-<h2>Building a Shared Understanding</h2>
+<h2 id="sharedUnderstanding">Workshops to Build Shared Understanding</h2>
 
 If we are not only to "get the right design" but also "get the design right" when implemented, building shared understanding of the project's goals, user insights, and plan of action is essential.
 
@@ -146,9 +167,9 @@ I planned and facilitated workshops with the mobile development teams in both Lo
 
 <strong>Insight.</strong> <em>Involving the rest of the mobile product teams only once much of the research had already been conducted isn't my preferred way of working. Far from it, but despite the PO's understanding for whole team involvement, the prevailing project-management culture was against us. You have to pick your battles, and this was a compromise.</em>
 
-<h2>Prototype and Test</h2>
+<h2 id="prototypeAndTest">Prototyping and Usability Testing</h2>
 
-With a good amount of research, and everyone on the same page, it was time to roll up our sleeves. The aim was to explore and validate the hypotheses formed in step 3 for each of the Red Routes. We wanted to produce a good-quality, thorough prototype for Premium client testing, which would help uncover new insights and inform iterative improvements... or total rethinks.
+With a good amount of research, and everyone on the same page, it was time to roll up our sleeves. The aim was to explore and validate the hypotheses formed in the initial discovery phase for all key tasks. We wanted to produce a good-quality, thorough prototype for Premium client testing, which would help uncover new insights and inform iterative improvements... or total rethinks.
 
 <strong>The steps we took</strong>
 
@@ -164,3 +185,13 @@ With a good amount of research, and everyone on the same page, it was time to ro
   </li>
   <li><strong>Prototyping</strong> Together with the UI designer we took the wire-flows and went slightly higher fidelity in Framer. This allowed us to sense check the data and layouts in the wireframes, and ensure each responded well to different device sizes - including tablet. If these basic things break down, we catch them early. Once we were happy, we plumbed in some real data from IG's API which really tested the layout, as we got real market names and prices in place.</li>
 </ol>
+
+One major obstacle we had in this process was the same one shared by anyone designing in niche markets - access to clients for usability testing. This reality meant usability testing with real target clients was saved until we had explored all 3 sprints.
+
+To help mitigate the issues that arise when you don't have the ability to frequently check assumptions, we turned to colleagues from around the business, particularly Trading Services team members.
+
+<img src="{{ images.marketOrderUserFlow }}" alt="{{ images.marketOrderUserFlowAlt }}">
+<img src="{{ images.prototype }}" alt="{{ images.prototypeAlt }}">
+<img src="{{ images.testing }}" alt="{{ images.testingAlt }}">
+
+<h2 id="wrappingThingsUp">Wrapping things Up</h2>
