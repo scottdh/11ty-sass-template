@@ -83,6 +83,21 @@
   }
 }
 
+.home-videos__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-500);
+  div {
+    flex: 1;
+    max-width: 20rem;
+    min-width: 10rem;
+    img {
+      // object-fit: fill;
+      width: 100%;
+    }
+  }
+}
+
 .home-about__inner {
   display: grid;
   gap: var(--s-500);

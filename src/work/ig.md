@@ -193,5 +193,3 @@ To help mitigate the issues that arise when you don't have the ability to freque
 <img src="{{ images.marketOrderUserFlow }}" alt="{{ images.marketOrderUserFlowAlt }}">
 <img src="{{ images.prototype }}" alt="{{ images.prototypeAlt }}">
 <img src="{{ images.testing }}" alt="{{ images.testingAlt }}">
-
-<h2 id="wrappingThingsUp">Wrapping things Up</h2>
