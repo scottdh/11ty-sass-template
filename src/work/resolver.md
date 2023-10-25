@@ -18,7 +18,7 @@ hero:
   cssClass: "resolver"
 keySkills:
   - "Leading product discovery and design"
-  - "UX design, prototyping and testing"
+  - "UX and UI design, prototyping and testing"
   - "Agile design coaching"
 results:
   - title: "Zero to first customer within 4 months"
@@ -136,8 +136,6 @@ In just a week, working in tandem with engineers, I had designed a simple negoti
 To test it, we got permission from an interested party to import a number of recent cases and have their customers use it to negotiate a resolution. These customers were picked by the provider and informed they were using a beta version.
 
 The results were hugely encouraging, despite it being a small sample of 20 cases. So much so, they wanted to trial Accord with more cases.
-
-<img src="{{ images.mediation }}" alt="images.mediationAlt">
 
 <h3 id="firstCustomer">Expectation Beating Results</h3>
 
