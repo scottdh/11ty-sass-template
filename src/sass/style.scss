@@ -12,30 +12,9 @@
 @use "./utilities/panel";
 
 /* Components */
-@use "./components/site-head";
-@use "./components/site-footer";
-@use "./components/button";
-@use "./components/divider";
-@use "./components/msg";
-@use "./components/skip-link";
-@use "./components/table-view";
-@use "./components/scrolling-title";
-@use "./components/post-list";
-@use "./components/page-header";
-@use "./components/programme-hero-image";
-@use "./components/programme-stepper";
-@use "./components/getting-started";
-@use "./components/jumbo-list";
-@use "./components/medium-list";
-@use "./components/newsletter-widget";
 
 /* Pages */
 @use "./home";
-@use "./coaching";
-@use "./page";
-@use "./feed";
-@use "./programme-detail";
-@use "./casestudy";
 
 body {
   background-color: var(--color-z0);

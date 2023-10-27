@@ -68,7 +68,7 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
@@ -121,7 +121,8 @@ h5,
 }
 
 p.lead {
-  font-size: var(--s-600);
+  font-size: var(--s-500);
+  font-weight: var(--fw-medium);
 }
 
 blockquote {
